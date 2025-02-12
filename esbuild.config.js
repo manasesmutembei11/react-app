@@ -1,12 +1,11 @@
-// esbuild.config.js
 const esbuild = require('esbuild');
 
 esbuild.build({
-    entryPoints: ['src/index.js'],
+    entryPoints: ['src/index.jsx'],
     bundle: true,
-    outdir: 'dist',
-    loader: {
-        '.js': 'jsx',
-    },
+    outfile: 'dist/bundle.js',
     minify: true,
+    sourcemap: true,
+    target: ['es2015'],
+    jsx: 'react-jsx',
 }).catch(() => process.exit(1));
