@@ -1,5 +1,6 @@
 // src/components/UserList.jsx
 import React from 'react';
+import { format } from 'date-fns';
 
 const UserList = ({ users }) => {
     return (
@@ -12,16 +13,18 @@ const UserList = ({ users }) => {
                             <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Age</th>
+                            <th>Date of birth</th>
+                            <th>Gender</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {users.map((user) => (
-                            <tr key={user.id}>
+                        {users.map((user, index) => (
+                            <tr key={index}>
                                 <td>{user.id}</td>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
-                                <td>{user.age}</td>
+                                <td>{format(user.dateOfBirth.toISOString(), 'dd-MM-yyyy')}</td>
+                                <td>{user.gender}</td>
                             </tr>
                         ))}
                     </tbody>
