@@ -10,7 +10,6 @@ const UserList = ({ users }) => {
                 <table className="table table-striped">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Date of birth</th>
@@ -20,7 +19,6 @@ const UserList = ({ users }) => {
                     <tbody>
                         {users.map((user, index) => (
                             <tr key={index}>
-                                <td>{user.id}</td>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{format(user.dateOfBirth.toISOString(), 'dd-MM-yyyy')}</td>

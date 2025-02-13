@@ -14,7 +14,8 @@ const userSchema = z.object({
         }
 
     ),
-    gender: z.string()
+    gender: z.string(),
+    phone: z.phone()
 });
 
 const UserForm = ({ onSave }) => {
