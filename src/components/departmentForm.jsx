@@ -8,18 +8,19 @@ const schema = z.object({
     code: z.string().min(3, 'Code is required'),
     name: z.string().min(3, 'Name is required'),
     description: z.string().min(3, 'Description is required'),
+    id: z.string()
 
 });
 
 const DepartmentForm = ({ onSave }) => {
-    const [formData, setFormData] = useState({ code: '', name: '', description: '' });
+    const [formData, setFormData] = useState({ code: '', name: '', description: '', id: '' });
     const [errors, setErrors] = useState({});
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const validatedData = schema.parse(formData);
         onSave(validatedData);
-        axios.post('https://localhost:7117/api/User/save', validatedData)
+        axios.post('https://localhost:7117/api/Department/Save', validatedData)
             .then(response => {
                 console.log('User saved:', response.data);
                 setUsers([...formData, response.data]);
@@ -83,7 +84,7 @@ const DepartmentForm = ({ onSave }) => {
                             name="description"
                             className="form-control"
                             id="description"
-                            value={formData.name}
+                            value={formData.description}
                             onChange={handleChange}
                             placeholder='Enter department description'
                         />

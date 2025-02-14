@@ -1,10 +1,9 @@
 // src/components/UserForm.jsx
 import React, { useState } from 'react';
-import { date, z } from 'zod';
+import { z } from 'zod';
 import DatePicker from 'react-datepicker';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css'
-import { FaCalendarAlt } from "react-icons/fa";
 
 const userSchema = z.object({
     name: z.string().min(1, 'Name is required'),
