@@ -1,16 +1,14 @@
 // src/components/Navbar.jsx
 import React from 'react';
 
-const Navbar = ({ onAddUser, onAddDepartment }) => {
+const Navbar = () => {
     return (
         <div className="container mt-5">
             <nav>
                 <h1>User Management App</h1>
-                <button className="btn btn-primary" onClick={onAddDepartment}>Add Department</button>
-                <button className="btn btn-primary" onClick={onAddUser}>Add New User</button>
-
+                <Link to="/add-user" className="btn btn-primary mr-2">Add New User</Link>
+                <Link to="/add-department" className="btn btn-secondary">Add New Department</Link>
             </nav>
-
         </div>
 
     );

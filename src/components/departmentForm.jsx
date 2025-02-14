@@ -3,12 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { z } from 'zod';
 import 'react-phone-input-2/lib/style.css'
 import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 
 const schema = z.object({
     code: z.string().min(3, 'Code is required'),
     name: z.string().min(3, 'Name is required'),
     description: z.string().min(3, 'Description is required'),
-    id: z.string()
+    id: uuidv4(),
 
 });
 
@@ -18,9 +19,9 @@ const DepartmentForm = ({ onSave }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const validatedData = schema.parse(formData);
-        onSave(validatedData);
-        axios.post('https://localhost:7117/api/Department/Save', validatedData)
+        // const validatedData = schema.parse(formData);
+        onSave(formData);
+        axios.post('https://localhost:7117/api/Department/Save', formData)
             .then(response => {
                 console.log('User saved:', response.data);
                 setUsers([...formData, response.data]);

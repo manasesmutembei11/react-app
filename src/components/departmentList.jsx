@@ -1,7 +1,18 @@
 
 import React from 'react';
 
-const DepartmentList = ({ departments }) => {
+const DepartmentList = () => {
+    const { state } = useContext(AppContext);
+
+    useEffect(() => {
+        axios.get('https://localhost:7117/api/Department/list')
+            .then(response => {
+                dispatch({ type: 'SET_DEPARTMENTS', payload: response.data });
+            })
+            .catch(error => {
+                console.error('Error fetching departments:', error);
+            });
+    }, [dispatch]);
     return (
         <div className="DepartmentList">
             <div className="container mt-4">
@@ -16,7 +27,7 @@ const DepartmentList = ({ departments }) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {departments.map((department, index) => (
+                        {state.departments.map((department, index) => (
                             <tr key={index}>
                                 <td>{department.code}</td>
                                 <td>{department.name}</td>
