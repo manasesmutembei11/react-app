@@ -6,6 +6,8 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css'
 import { useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
+import AppContext from '../context/AppContext';
+import { useContext } from 'react';
 
 const userSchema = z.object({
     name: z.string().min(1, 'Name is required'),
@@ -19,6 +21,7 @@ const UserForm = ({ onSave }) => {
     const [formData, setFormData] = useState({ name: '', email: '', dateOfBirth: null, gender: '', phone: '' });
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
+    const { dispatch } = useContext(AppContext);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -26,12 +29,9 @@ const UserForm = ({ onSave }) => {
 
         try {
             const validatedData = userSchema.parse(formData);
-            console.log("Validated Data:", validatedData);
-
-            onSave(validatedData);
+            dispatch({ type: 'SAVE_USER', payload: validatedData });
             navigate("/users");
             setFormData({ name: '', email: '', dateOfBirth: null, gender: '', phone: '' });
-
             setErrors({});
         } catch (err) {
             if (err instanceof z.ZodError) {
