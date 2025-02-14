@@ -1,40 +1,46 @@
 // src/components/UserForm.jsx
 import React, { useState } from 'react';
-import { z } from 'zod';
+import { date, z } from 'zod';
 import DatePicker from 'react-datepicker';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css'
 import { useNavigate } from 'react-router-dom';
+import { format } from 'date-fns';
 
 const userSchema = z.object({
     name: z.string().min(1, 'Name is required'),
     email: z.string().email('Invalid email address'),
-    dateOfBirth: z.date(),
+    dateOfBirth: z.date().nullable(),
     gender: z.string(),
     phone: z.string().max(15, 'Invalid phone number'),
 });
 
 const UserForm = ({ onSave }) => {
-    const [formData, setFormData] = useState({ name: '', email: '', dateOfBirth: null, gender: '', phone: 0 });
+    const [formData, setFormData] = useState({ name: '', email: '', dateOfBirth: null, gender: '', phone: '' });
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log("Form Submitted!", formData);  // Debug log
+
         try {
             const validatedData = userSchema.parse(formData);
+            console.log("Validated Data:", validatedData);
+
             onSave(validatedData);
-            console.log("data", validatedData)
-            setFormData({ name: '', email: '', dateOfBirth: null });
+            navigate("/users");
+            setFormData({ name: '', email: '', dateOfBirth: null, gender: '', phone: '' });
+
             setErrors({});
-            navigate("/users")
         } catch (err) {
             if (err instanceof z.ZodError) {
                 setErrors(err.flatten().fieldErrors);
+                console.error("Validation Errors:", err.flatten().fieldErrors);
             }
         }
-
     };
+
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -59,7 +65,7 @@ const UserForm = ({ onSave }) => {
             <div className="container mt-5">
                 <h2 className="text-center mb-4">Create User</h2>
                 <form onSubmit={handleSubmit}>
-                    <div class="col-md-6 mb-2">
+                    <div className="col-md-6 mb-2">
                         <label htmlFor='name'>Name:</label>
                         <input
                             type="text"
@@ -72,7 +78,7 @@ const UserForm = ({ onSave }) => {
                         />
                         {errors.name && <div className="text-danger">{errors.name[0]}</div>}
                     </div>
-                    <div class="col-md-6 mb-2">
+                    <div className="col-md-6 mb-2">
                         <label htmlFor='email'>Email:</label>
                         <input
                             type="email"
@@ -100,42 +106,35 @@ const UserForm = ({ onSave }) => {
                         </div>
                         {errors.dateOfBirth && <div className="text-danger">{errors.dateOfBirth}</div>}
                     </div>
-
-                    <div class="col-md-6 mb-2">
-                        <div className="form-group">
-                            <label>Gender</label>
-                            <div className="form-check">
-                                <input
-                                    className="form-check-input"
-                                    type="checkbox"
-                                    id="male"
-                                    name="gender"
-                                    value="male"
-                                    checked={formData.gender === 'male'}
-                                    onChange={handleChange}
-                                />
-                                <label className="form-check-label" htmlFor="male">
-                                    Male
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input
-                                    className="form-check-input"
-                                    type="checkbox"
-                                    id="female"
-                                    name="gender"
-                                    value="female"
-                                    checked={formData.gender === 'female'}
-                                    onChange={handleChange}
-                                />
-                                <label className="form-check-label" htmlFor="female">
-                                    Female
-                                </label>
-                            </div>
-
+                    <div className="col-md-6 mb-2">
+                        <label>Gender</label>
+                        <div className="form-check">
+                            <input
+                                className="form-check-input"
+                                type="radio"
+                                id="male"
+                                name="gender"
+                                value="male"
+                                checked={formData.gender === 'male'}
+                                onChange={handleChange}
+                            />
+                            <label className="form-check-label" htmlFor="male">Male</label>
+                        </div>
+                        <div className="form-check">
+                            <input
+                                className="form-check-input"
+                                type="radio"
+                                id="female"
+                                name="gender"
+                                value="female"
+                                checked={formData.gender === 'female'}
+                                onChange={handleChange}
+                            />
+                            <label className="form-check-label" htmlFor="female">Female</label>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-2">
+
+                    <div className="col-md-6 mb-2">
                         <PhoneInput
                             country={'ke'}
                             value={formData.phone}

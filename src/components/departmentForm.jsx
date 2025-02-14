@@ -49,7 +49,7 @@ const DepartmentForm = ({ onSave }) => {
     };
 
     return (
-        <div className='UserForm'>
+        <div className='DepartmentForm'>
             <div className="container mt-5">
                 <h2 className="text-center mb-4">Create Department</h2>
                 <form onSubmit={handleSubmit}>
@@ -94,7 +94,7 @@ const DepartmentForm = ({ onSave }) => {
                     </div>
 
 
-                    <button class="btn btn-info" type="submit">Save User</button>
+                    <button class="btn btn-info" type="submit">Save Department</button>
                 </form>
 
             </div>

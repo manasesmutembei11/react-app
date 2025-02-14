@@ -21,7 +21,7 @@ const DepartmentList = () => {
     return (
         <div className="DepartmentList">
             <div className="container mt-4">
-                <h1 className="text-center mb-4">Description Data</h1>
+                <h1 className="text-center mb-4">DEPARTMENT Data</h1>
                 <table className="table table-striped">
                     <thead>
                         <tr>
