@@ -5,22 +5,25 @@ import UserList from './components/UserList';
 import UserForm from './components/UserForm';
 import DepartmentForm from './components/departmentForm';
 import DepartmentList from './components/departmentList';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Routes>
-        <Route path="/add-user" component={UserForm} />
-        <Route path="/add-department" component={DepartmentForm} />
-        <Route path="/users" component={UserList} />
-        <Route path="/departments" component={DepartmentList} />
-        <Route path="/" exact>
-          <UserList />
-          <DepartmentList />
-        </Route>
-      </Routes>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/add-user" element={<UserForm />} />
+          <Route path="/add-department" element={<DepartmentForm />} />
+          <Route path="/users" element={<UserList />} />
+          <Route path="/departments" element={<DepartmentList />} />
+          <Route path="/" element={<UserList />} />
+
+        </Routes>
+
+      </BrowserRouter>
+
+
     </div>
   );
 };
