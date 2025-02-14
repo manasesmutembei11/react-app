@@ -2,24 +2,20 @@
 import React, { useState } from 'react';
 import { date, z } from 'zod';
 import DatePicker from 'react-datepicker';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css'
+import { FaCalendarAlt } from "react-icons/fa";
 
 const userSchema = z.object({
     name: z.string().min(1, 'Name is required'),
     email: z.string().email('Invalid email address'),
-    dateOfBirth: z.date().refine((dateOfBirth) => {
-        return dateOfBirth.toLocaleString();
-    },
-        {
-            message: "Date must be in the past",
-        }
-
-    ),
+    dateOfBirth: z.date(),
     gender: z.string(),
-    phone: z.phone()
+    phone: z.string().max(15, 'Invalid phone number'),
 });
 
 const UserForm = ({ onSave }) => {
-    const [formData, setFormData] = useState({ name: '', email: '', dateOfBirth: null });
+    const [formData, setFormData] = useState({ name: '', email: '', dateOfBirth: null, gender: '', phone: 0 });
     const [errors, setErrors] = useState({});
 
     const handleSubmit = (e) => {
@@ -45,6 +41,13 @@ const UserForm = ({ onSave }) => {
         setFormData({
             ...formData,
             dateOfBirth,
+        });
+    };
+
+    const handlePhoneChange = (value) => {
+        setFormData({
+            ...formData,
+            phone: value,
         });
     };
 
@@ -79,19 +82,22 @@ const UserForm = ({ onSave }) => {
                         />
                         {errors.email && <div className="text-danger">{errors.email[0]}</div>}
                     </div>
-                    <div class="col-md-6 mb-2">
-                        <label htmlFor="dateOfBirth">Select a Date</label>
-                        <DatePicker
-                            name='dateOfBirth'
-                            selected={formData.dateOfBirth}
-                            onChange={handleDateChange}
-                            className="form-control"
-                            id="dateOfBirth"
-                            dateFormat="dd-MM-yyyy"
-                            placeholder="Please select date of birth"
-                        />
+                    <div className="col-md-6 mb-2">
+                        <label htmlFor="dateOfBirth" className="form-label">Select a Date</label>
+                        <div className="input-group">
+                            <DatePicker
+                                selected={formData.dateOfBirth}
+                                onChange={handleDateChange}
+                                className="form-control"
+                                id="dateOfBirth"
+                                dateFormat="dd-MM-yyyy"
+                                placeholderText="Please select date of birth"
+                            />
+
+                        </div>
                         {errors.dateOfBirth && <div className="text-danger">{errors.dateOfBirth}</div>}
                     </div>
+
                     <div class="col-md-6 mb-2">
                         <div className="form-group">
                             <label>Gender</label>
@@ -125,6 +131,19 @@ const UserForm = ({ onSave }) => {
                             </div>
 
                         </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <PhoneInput
+                            country={'ke'}
+                            value={formData.phone}
+                            onChange={handlePhoneChange}
+                            inputProps={{
+                                name: 'phone',
+                                required: true,
+                                autoFocus: true,
+                            }}
+                        />
+                        {errors.phone && <div className="text-danger">{errors.phone}</div>}
                     </div>
 
                     <button class="btn btn-info" type="submit">Save User</button>

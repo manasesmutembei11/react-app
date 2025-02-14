@@ -14,6 +14,7 @@ const UserList = ({ users }) => {
                             <th>Email</th>
                             <th>Date of birth</th>
                             <th>Gender</th>
+                            <th>Phone</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -23,6 +24,7 @@ const UserList = ({ users }) => {
                                 <td>{user.email}</td>
                                 <td>{format(user.dateOfBirth.toISOString(), 'dd-MM-yyyy')}</td>
                                 <td>{user.gender}</td>
+                                <td>{user.phone}</td>
                             </tr>
                         ))}
                     </tbody>
