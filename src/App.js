@@ -10,18 +10,17 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/add-user" element={<UserForm />} />
-          <Route path="/add-department" element={<DepartmentForm />} />
-          <Route path="/users" element={<UserList />} />
-          <Route path="/departments" element={<DepartmentList />} />
-          <Route path="/" element={<UserList />} />
 
-        </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/add-user" element={<UserForm />} />
+        <Route path="/add-department" element={<DepartmentForm />} />
+        <Route path="/users" element={<UserList />} />
+        <Route path="/departments" element={<DepartmentList />} />
+        <Route path="/" element={<DepartmentList />} />
 
-      </BrowserRouter>
+      </Routes>
+
 
 
     </div>

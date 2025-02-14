@@ -4,6 +4,7 @@ import { z } from 'zod';
 import DatePicker from 'react-datepicker';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css'
+import { useNavigate } from 'react-router-dom';
 
 const userSchema = z.object({
     name: z.string().min(1, 'Name is required'),
@@ -16,6 +17,7 @@ const userSchema = z.object({
 const UserForm = ({ onSave }) => {
     const [formData, setFormData] = useState({ name: '', email: '', dateOfBirth: null, gender: '', phone: 0 });
     const [errors, setErrors] = useState({});
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -25,11 +27,13 @@ const UserForm = ({ onSave }) => {
             console.log("data", validatedData)
             setFormData({ name: '', email: '', dateOfBirth: null });
             setErrors({});
+            navigate("/users")
         } catch (err) {
             if (err instanceof z.ZodError) {
                 setErrors(err.flatten().fieldErrors);
             }
         }
+
     };
 
     const handleChange = (e) => {

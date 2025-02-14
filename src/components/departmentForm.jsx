@@ -4,44 +4,45 @@ import { z } from 'zod';
 import 'react-phone-input-2/lib/style.css'
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
+import { useNavigate } from 'react-router-dom';
+import App from '../App';
 
 const schema = z.object({
     code: z.string().min(3, 'Code is required'),
     name: z.string().min(3, 'Name is required'),
     description: z.string().min(3, 'Description is required'),
-    id: uuidv4(),
 
 });
 
 const DepartmentForm = ({ onSave }) => {
-    const [formData, setFormData] = useState({ code: '', name: '', description: '', id: '' });
+    const [formData, setFormData] = useState({
+        id: uuidv4(),
+        code: '',
+        name: '',
+        description: ''
+    });
     const [errors, setErrors] = useState({});
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // const validatedData = schema.parse(formData);
-        onSave(formData);
-        axios.post('https://localhost:7117/api/Department/Save', formData)
-            .then(response => {
-                console.log('User saved:', response.data);
-                setUsers([...formData, response.data]);
-            })
-            .catch(error => {
-                if (error instanceof z.ZodError) {
-                    setErrors(error.flatten().fieldErrors);
-                }
-            });
-    };
+        try {
+            const validatedData = schema.parse(formData);
+            const response = await axios.post('https://localhost:7117/api/Department/Save', validatedData);
+            console.log('Department saved:', response.data);
+            if (onSave) {
+                onSave(response.data);
+            }
+            navigate("/departments");
 
-    useEffect(() => {
-        axios.get('https://localhost:7117/api/Department/pagedlist')
-            .then(response => {
-                setFormData(response.data);
-            })
-            .catch(error => {
-                console.error('Error fetching users:', error);
-            });
-    }, []);
+        } catch (error) {
+            if (error instanceof z.ZodError) {
+                setErrors(error.flatten().fieldErrors);
+            } else {
+                console.error('Unexpected error:', error);
+            }
+        }
+    };
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });

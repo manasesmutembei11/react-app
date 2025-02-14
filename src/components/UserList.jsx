@@ -1,8 +1,11 @@
 // src/components/UserList.jsx
 import React from 'react';
 import { format } from 'date-fns';
+import { useContext } from 'react';
+import AppContext from '../context/AppContext';
 
-const UserList = ({ users }) => {
+const UserList = () => {
+    const { state } = useContext(AppContext);
     return (
         <div className="UserList">
             <div className="container mt-4">
@@ -18,7 +21,7 @@ const UserList = ({ users }) => {
                         </tr>
                     </thead>
                     <tbody>
-                        {users.map((user, index) => (
+                        {state.users.map((user, index) => (
                             <tr key={index}>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>

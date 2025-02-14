@@ -17,7 +17,7 @@ const appReducer = (state, action) => {
         case 'SAVE_DEPARTMENT':
             return {
                 ...state,
-                departments: [...state.departments, action.payload],
+                departments: Array.isArray(action.payload) ? action.payload : [],
             };
         default:
             return state;
