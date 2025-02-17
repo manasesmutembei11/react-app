@@ -9,10 +9,10 @@ import { useContext } from 'react';
 
 const userSchema = z.object({
     name: z.string().min(1, 'Name is required'),
-    email: z.string().email('Invalid email address'),
-    dateOfBirth: z.date().nullable(),
-    gender: z.string(),
-    phone: z.string().max(15, 'Invalid phone number'),
+    email: z.string().email('Email is required'),
+    dateOfBirth: z.date(),
+    gender: z.string().min(3, 'Gender is required'),
+    phone: z.string().min(12, 'Invalid phone number'),
 });
 
 const UserForm = () => {
@@ -23,11 +23,10 @@ const UserForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form Submitted!", formData);
-
         try {
             const validatedData = userSchema.parse(formData);
             dispatch({ type: 'SAVE_USER', payload: validatedData });
+            console.log("Form Submitted!", validatedData);
             navigate("/users");
         } catch (err) {
             if (err instanceof z.ZodError) {
@@ -49,10 +48,10 @@ const UserForm = () => {
         });
     };
 
-    const handlePhoneChange = (value) => {
+    const handlePhoneChange = (phone) => {
         setFormData({
             ...formData,
-            phone: value,
+            phone: phone,
         });
     };
 
@@ -100,7 +99,7 @@ const UserForm = () => {
                             />
 
                         </div>
-                        {errors.dateOfBirth && <div className="text-danger">{errors.dateOfBirth}</div>}
+                        {errors.dateOfBirth && <div className="text-danger">{errors.dateOfBirth[0]}</div>}
                     </div>
                     <div className="col-md-6 mb-2">
                         <label>Gender</label>
@@ -128,6 +127,7 @@ const UserForm = () => {
                             />
                             <label className="form-check-label" htmlFor="female">Female</label>
                         </div>
+                        {errors.gender && <div className="text-danger">{errors.gender[0]}</div>}
                     </div>
 
                     <div className="col-md-6 mb-2">
@@ -141,7 +141,7 @@ const UserForm = () => {
                                 autoFocus: true,
                             }}
                         />
-                        {errors.phone && <div className="text-danger">{errors.phone}</div>}
+                        {errors.phone && <div className="text-danger">{errors.phone[0]}</div>}
                     </div>
 
                     <button className="btn btn-info" type="submit">Save User</button>

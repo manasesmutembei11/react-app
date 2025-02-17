@@ -39894,10 +39894,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var import_jsx_runtime5 = __toESM(require_jsx_runtime());
   var userSchema = z.object({
     name: z.string().min(1, "Name is required"),
-    email: z.string().email("Invalid email address"),
-    dateOfBirth: z.date().nullable(),
-    gender: z.string(),
-    phone: z.string().max(15, "Invalid phone number")
+    email: z.string().email("Email is required"),
+    dateOfBirth: z.date(),
+    gender: z.string().min(3, "Gender is required"),
+    phone: z.string().min(12, "Invalid phone number")
   });
   var UserForm = () => {
     const [formData, setFormData] = (0, import_react11.useState)({ name: "", email: "", dateOfBirth: null, gender: "", phone: "" });
@@ -39906,10 +39906,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const { dispatch } = (0, import_react12.useContext)(AppContext_default);
     const handleSubmit = (e) => __async(void 0, null, function* () {
       e.preventDefault();
-      console.log("Form Submitted!", formData);
       try {
         const validatedData = userSchema.parse(formData);
         dispatch({ type: "SAVE_USER", payload: validatedData });
+        console.log("Form Submitted!", validatedData);
         navigate("/users");
       } catch (err) {
         if (err instanceof z.ZodError) {
@@ -39926,9 +39926,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         dateOfBirth
       }));
     };
-    const handlePhoneChange = (value) => {
+    const handlePhoneChange = (phone) => {
       setFormData(__spreadProps(__spreadValues({}, formData), {
-        phone: value
+        phone
       }));
     };
     return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "UserForm", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "container mt-5", children: [
@@ -39979,7 +39979,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholderText: "Please select date of birth"
             }
           ) }),
-          errors.dateOfBirth && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.dateOfBirth })
+          errors.dateOfBirth && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.dateOfBirth[0] })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-md-6 mb-2", children: [
           /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { children: "Gender" }),
@@ -40012,7 +40012,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               }
             ),
             /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { className: "form-check-label", htmlFor: "female", children: "Female" })
-          ] })
+          ] }),
+          errors.gender && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.gender[0] })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-md-6 mb-2", children: [
           /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
@@ -40028,7 +40029,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               }
             }
           ),
-          errors.phone && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.phone })
+          errors.phone && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.phone[0] })
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save User" })
       ] })
