@@ -52,7 +52,7 @@ const DepartmentForm = ({ onSave }) => {
             <div className="container mt-5">
                 <h2 className="text-center mb-4">Create Department</h2>
                 <form onSubmit={handleSubmit}>
-                    <div class="col-md-6 mb-2">
+                    <div className="col-md-6 mb-2">
                         <label htmlFor='code'>Code:</label>
                         <input
                             type="text"
@@ -65,7 +65,7 @@ const DepartmentForm = ({ onSave }) => {
                         />
                         {errors.code && <div className="text-danger">{errors.code[0]}</div>}
                     </div>
-                    <div class="col-md-6 mb-2">
+                    <div className="col-md-6 mb-2">
                         <label htmlFor='name'>Name:</label>
                         <input
                             type="text"
@@ -78,7 +78,7 @@ const DepartmentForm = ({ onSave }) => {
                         />
                         {errors.name && <div className="text-danger">{errors.name[0]}</div>}
                     </div>
-                    <div class="col-md-6 mb-2">
+                    <div className="col-md-6 mb-2">
                         <label htmlFor='description'>Description:</label>
                         <input
                             type="text"
@@ -93,7 +93,7 @@ const DepartmentForm = ({ onSave }) => {
                     </div>
 
 
-                    <button class="btn btn-info" type="submit">Save Department</button>
+                    <button className="btn btn-info" type="submit">Save Department</button>
                 </form>
 
             </div>

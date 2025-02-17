@@ -6,7 +6,7 @@ import { FaUsers, FaBuilding, FaPlusSquare, FaList } from 'react-icons/fa';
 const Navbar = () => {
     return (
         <div className="container mt-5">
-            <nav className="navbar" style={{ backgroundColor: '#bfc9ca' }}>
+            <nav className="navbar" style={{ backgroundColor: '#85c1e9' }}>
                 <h1 className="navbar-brand">User Management App</h1>
 
                 <div className="ml-auto d-flex">

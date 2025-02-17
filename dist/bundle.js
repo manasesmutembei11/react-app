@@ -25762,7 +25762,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   // src/components/Navbar.jsx
   var import_jsx_runtime = __toESM(require_jsx_runtime());
   var Navbar = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "container mt-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", { className: "navbar", style: { backgroundColor: "#bfc9ca" }, children: [
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "container mt-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", { className: "navbar", style: { backgroundColor: "#85c1e9" }, children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { className: "navbar-brand", children: "User Management App" }),
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ml-auto d-flex", children: [
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dropdown mr-3", children: [
@@ -39911,8 +39911,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         const validatedData = userSchema.parse(formData);
         dispatch({ type: "SAVE_USER", payload: validatedData });
         navigate("/users");
-        setFormData({ name: "", email: "", dateOfBirth: null, gender: "", phone: "" });
-        setErrors({});
       } catch (err) {
         if (err instanceof z.ZodError) {
           setErrors(err.flatten().fieldErrors);
@@ -40032,7 +40030,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           ),
           errors.phone && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.phone })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { class: "btn btn-info", type: "submit", children: "Save User" })
+        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save User" })
       ] })
     ] }) });
   };
@@ -42648,7 +42646,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "DepartmentForm", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "container mt-5", children: [
       /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("h2", { className: "text-center mb-4", children: "Create Department" }),
       /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("form", { onSubmit: handleSubmit, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { class: "col-md-6 mb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
           /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "code", children: "Code:" }),
           /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             "input",
@@ -42664,7 +42662,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           ),
           errors.code && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.code[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { class: "col-md-6 mb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
           /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "name", children: "Name:" }),
           /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             "input",
@@ -42680,7 +42678,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           ),
           errors.name && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.name[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { class: "col-md-6 mb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
           /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "description", children: "Description:" }),
           /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             "input",
@@ -42696,7 +42694,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           ),
           errors.description && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.description[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { class: "btn btn-info", type: "submit", children: "Save Department" })
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save Department" })
       ] })
     ] }) });
   };

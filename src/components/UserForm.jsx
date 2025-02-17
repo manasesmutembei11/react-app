@@ -23,14 +23,12 @@ const UserForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form Submitted!", formData);  // Debug log
+        console.log("Form Submitted!", formData);
 
         try {
             const validatedData = userSchema.parse(formData);
             dispatch({ type: 'SAVE_USER', payload: validatedData });
             navigate("/users");
-            setFormData({ name: '', email: '', dateOfBirth: null, gender: '', phone: '' });
-            setErrors({});
         } catch (err) {
             if (err instanceof z.ZodError) {
                 setErrors(err.flatten().fieldErrors);
@@ -47,7 +45,7 @@ const UserForm = () => {
     const handleDateChange = (dateOfBirth) => {
         setFormData({
             ...formData,
-            dateOfBirth,
+            dateOfBirth: dateOfBirth,
         });
     };
 
@@ -146,7 +144,7 @@ const UserForm = () => {
                         {errors.phone && <div className="text-danger">{errors.phone}</div>}
                     </div>
 
-                    <button class="btn btn-info" type="submit">Save User</button>
+                    <button className="btn btn-info" type="submit">Save User</button>
                 </form>
 
             </div>
