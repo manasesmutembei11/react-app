@@ -1,13 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaUsers, FaBuilding, FaPlusSquare, FaList } from 'react-icons/fa';
+
 
 const Navbar = () => {
     return (
         <div className="container mt-5">
-            <nav>
-                <h1>User Management App</h1>
-                <Link to="/add-user" className="btn btn-primary mr-2">Add New User</Link>
-                <Link to="/add-department" className="btn btn-secondary">Add New Department</Link>
+            <nav className="navbar" style={{ backgroundColor: '#bfc9ca' }}>
+                <h1 className="navbar-brand">User Management App</h1>
+
+                <div className="ml-auto d-flex">
+                    <div className="dropdown mr-3">
+                        <button
+                            className="btn btn-primary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                        >
+                            <FaUsers className="me-2" /> Users
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li><Link className="dropdown-item" to="/add-user"><FaPlusSquare /> Add</Link></li>
+                            <li><Link className="dropdown-item" to="/users"> <FaList /> List</Link></li>
+                        </ul>
+                    </div>
+                    <div className="dropdown">
+                        <button
+                            className="btn btn-primary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                        >
+                            <FaBuilding className="me-2" /> Departments
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li><Link className="dropdown-item" to="/add-department"><FaPlusSquare /> Add</Link></li>
+                            <li><Link className="dropdown-item" to="/departments"> <FaList /> List</Link></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
 
