@@ -1,11 +1,10 @@
-// src/App.jsx
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import UserList from './components/UserList';
 import UserForm from './components/UserForm';
 import DepartmentForm from './components/departmentForm';
 import DepartmentList from './components/departmentList';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (

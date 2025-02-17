@@ -1,11 +1,10 @@
 // src/components/UserForm.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { z } from 'zod';
 import 'react-phone-input-2/lib/style.css'
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
-import App from '../App';
 
 const schema = z.object({
     code: z.string().min(3, 'Code is required'),

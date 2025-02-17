@@ -1,11 +1,9 @@
-// src/components/UserForm.jsx
 import React, { useState } from 'react';
-import { date, z } from 'zod';
+import { z } from 'zod';
 import DatePicker from 'react-datepicker';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css'
 import { useNavigate } from 'react-router-dom';
-import { format } from 'date-fns';
 import AppContext from '../context/AppContext';
 import { useContext } from 'react';
 
@@ -17,7 +15,7 @@ const userSchema = z.object({
     phone: z.string().max(15, 'Invalid phone number'),
 });
 
-const UserForm = ({ onSave }) => {
+const UserForm = () => {
     const [formData, setFormData] = useState({ name: '', email: '', dateOfBirth: null, gender: '', phone: '' });
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
