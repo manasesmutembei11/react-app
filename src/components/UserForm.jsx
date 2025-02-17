@@ -32,6 +32,8 @@ const UserForm = () => {
             if (err instanceof z.ZodError) {
                 setErrors(err.flatten().fieldErrors);
                 console.error("Validation Errors:", err.flatten().fieldErrors);
+            } else {
+                console.error("Unexpected error:", err);
             }
         }
     };

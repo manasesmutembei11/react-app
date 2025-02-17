@@ -1,4 +1,3 @@
-// src/components/UserList.jsx
 import React from 'react';
 import { format } from 'date-fns';
 import { useContext } from 'react';

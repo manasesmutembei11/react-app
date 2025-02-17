@@ -39915,6 +39915,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         if (err instanceof z.ZodError) {
           setErrors(err.flatten().fieldErrors);
           console.error("Validation Errors:", err.flatten().fieldErrors);
+        } else {
+          console.error("Unexpected error:", err);
         }
       }
     });
@@ -42636,6 +42638,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       } catch (error2) {
         if (error2 instanceof z.ZodError) {
           setErrors(error2.flatten().fieldErrors);
+          console.error("Validation Errors:", error2.flatten().fieldErrors);
         } else {
           console.error("Unexpected error:", error2);
         }

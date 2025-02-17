@@ -1,4 +1,3 @@
-// src/components/UserForm.jsx
 import React, { useState } from 'react';
 import { z } from 'zod';
 import 'react-phone-input-2/lib/style.css'
@@ -37,6 +36,7 @@ const DepartmentForm = ({ onSave }) => {
         } catch (error) {
             if (error instanceof z.ZodError) {
                 setErrors(error.flatten().fieldErrors);
+                console.error("Validation Errors:", error.flatten().fieldErrors);
             } else {
                 console.error('Unexpected error:', error);
             }

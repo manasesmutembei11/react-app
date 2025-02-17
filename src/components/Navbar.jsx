@@ -2,13 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaUsers, FaBuilding, FaPlusSquare, FaList } from 'react-icons/fa';
 
-
 const Navbar = () => {
     return (
         <div className="container mt-5">
             <nav className="navbar" style={{ backgroundColor: '#85c1e9' }}>
                 <h1 className="navbar-brand">User Management App</h1>
-
                 <div className="ml-auto d-flex">
                     <div className="dropdown mr-3">
                         <button
