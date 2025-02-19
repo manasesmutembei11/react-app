@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { z } from 'zod';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import 'react-phone-number-input/style.css'
 import PhoneInput from "react-phone-number-input";
 import { useNavigate } from 'react-router-dom';
@@ -94,7 +93,6 @@ const UserForm = () => {
                         <label htmlFor="dateOfBirth" className="form-label">Select a Date</label>
                         <div className="input-group">
                             <DatePicker
-                                toggleCalendarOnIconClick
                                 key={formData.dateOfBirth}
                                 selected={formData.dateOfBirth}
                                 onChange={handleDateChange}
@@ -140,7 +138,6 @@ const UserForm = () => {
                             Phone Number
                         </label>
                         <PhoneInput
-                            country="KE"
                             placeholder="Enter phone number"
                             value={formData.phone}
                             onChange={handlePhoneChange} />

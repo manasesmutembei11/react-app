@@ -46897,7 +46897,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "input-group", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
             DatePicker,
             {
-              toggleCalendarOnIconClick: true,
               selected: formData.dateOfBirth,
               onChange: handleDateChange,
               className: "form-control",
@@ -46948,7 +46947,6 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
             min_default,
             {
-              country: "KE",
               placeholder: "Enter phone number",
               value: formData.phone,
               onChange: handlePhoneChange
