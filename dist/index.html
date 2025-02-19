@@ -8,7 +8,8 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/4.2.1/react-datepicker.min.css" rel="stylesheet">
   <!-- Include React Phone Input CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/react-phone-input-2/2.14.0/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/react-phone-number-input/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/react-phone-number-input@3.x/bundle/style.css" />
   <!-- Include React Datepicker CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/4.8.0/react-datepicker.min.css" rel="stylesheet">
 </head>
@@ -16,6 +17,10 @@
 <body>
   <div id="root"></div>
   <script src="bundle.js"></script>
+  <script>
+    var PhoneInput = window.PhoneInput.default
+  </script>
+
 </body>
 
 </html>

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { z } from 'zod';
 import DatePicker from 'react-datepicker';
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css'
+import "react-datepicker/dist/react-datepicker.css";
+import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+import 'react-phone-number-input/style.css'
+import PhoneInput from "react-phone-number-input";
 import { useNavigate } from 'react-router-dom';
 import AppContext from '../context/AppContext';
 import { useContext } from 'react';
@@ -92,6 +94,8 @@ const UserForm = () => {
                         <label htmlFor="dateOfBirth" className="form-label">Select a Date</label>
                         <div className="input-group">
                             <DatePicker
+                                toggleCalendarOnIconClick
+                                key={formData.dateOfBirth}
                                 selected={formData.dateOfBirth}
                                 onChange={handleDateChange}
                                 className="form-control"
@@ -99,7 +103,6 @@ const UserForm = () => {
                                 dateFormat="dd-MM-yyyy"
                                 placeholderText="Please select date of birth"
                             />
-
                         </div>
                         {errors.dateOfBirth && <div className="text-danger">{errors.dateOfBirth[0]}</div>}
                     </div>
@@ -133,16 +136,14 @@ const UserForm = () => {
                     </div>
 
                     <div className="col-md-6 mb-2">
+                        <label htmlFor="phone" className="form-label">
+                            Phone Number
+                        </label>
                         <PhoneInput
-                            country={'ke'}
+                            country="KE"
+                            placeholder="Enter phone number"
                             value={formData.phone}
-                            onChange={handlePhoneChange}
-                            inputProps={{
-                                name: 'phone',
-                                required: true,
-                                autoFocus: true,
-                            }}
-                        />
+                            onChange={handlePhoneChange} />
                         {errors.phone && <div className="text-danger">{errors.phone[0]}</div>}
                     </div>
 
