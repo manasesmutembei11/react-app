@@ -1575,7 +1575,7 @@
           return dispatcher;
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var React35 = require_react(), Internals = {
+        var React37 = require_react(), Internals = {
           d: {
             f: noop2,
             r: function() {
@@ -1593,7 +1593,7 @@
           },
           p: 0,
           findDOMNode: null
-        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React35.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React37.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
           "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
         );
@@ -3049,7 +3049,7 @@
           "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
         }
         function validateOptionProps(element, props) {
-          null == props.value && ("object" === typeof props.children && null !== props.children ? React35.Children.forEach(props.children, function(child) {
+          null == props.value && ("object" === typeof props.children && null !== props.children ? React37.Children.forEach(props.children, function(child) {
             null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
               "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
             ));
@@ -16519,13 +16519,13 @@
           ));
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var Scheduler = require_scheduler(), React35 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var Scheduler = require_scheduler(), React37 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
         Symbol.for("react.scope");
         Symbol.for("react.debug_trace_mode");
         var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
         Symbol.for("react.legacy_hidden");
         Symbol.for("react.tracing_marker");
-        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React35.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React37.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19245,7 +19245,7 @@
           }
         };
         (function() {
-          var isomorphicReactPackageVersion = React35.version;
+          var isomorphicReactPackageVersion = React37.version;
           if ("19.0.0" !== isomorphicReactPackageVersion)
             throw Error(
               'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -19966,9 +19966,9 @@
           info || (parentType = getComponentNameFromType(parentType)) && (info = "\n\nCheck the top-level render call using <" + parentType + ">.");
           return info;
         }
-        var React35 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        var React37 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
         Symbol.for("react.provider");
-        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React35.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React37.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -22837,7 +22837,7 @@
   var import_client = __toESM(require_client());
 
   // src/App.js
-  var import_react30 = __toESM(require_react());
+  var import_react32 = __toESM(require_react());
 
   // src/components/Navbar.jsx
   var import_react3 = __toESM(require_react());
@@ -23550,6 +23550,11 @@
     return navigate;
   }
   var OutletContext = React2.createContext(null);
+  function useParams() {
+    let { matches } = React2.useContext(RouteContext);
+    let routeMatch = matches[matches.length - 1];
+    return routeMatch ? routeMatch.params : {};
+  }
   function useResolvedPath(to, { relative } = {}) {
     let { matches } = React2.useContext(RouteContext);
     let { pathname: locationPathname } = useLocation();
@@ -49626,13 +49631,200 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var departmentForm_default = DepartmentForm;
 
   // src/components/departmentList.jsx
-  var import_react27 = __toESM(require_react());
-  var import_react28 = __toESM(require_react());
   var import_react29 = __toESM(require_react());
+  var import_react30 = __toESM(require_react());
+  var import_react31 = __toESM(require_react());
+
+  // src/components/assetList.jsx
+  var import_react27 = __toESM(require_react());
   var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+  var AssetList = ({ departmentId }) => {
+    const [assets, setAssets] = (0, import_react27.useState)([]);
+    (0, import_react27.useEffect)(() => {
+      axios_default.get(`https://localhost:7117/api/Asset/pagedlist?departmentId=${departmentId}`).then((response) => {
+        setAssets(response.data.data || []);
+      }).catch((error2) => {
+        console.error("Error fetching assets:", error2);
+      });
+    }, [departmentId]);
+    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { children: assets.map((asset, index3) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("li", { children: [
+      asset.name,
+      " - ",
+      asset.code,
+      " - ",
+      asset.quantity,
+      " - ",
+      asset.amount,
+      " - ",
+      asset.total,
+      " - ",
+      asset.description
+    ] }, asset.id || index3)) });
+  };
+  var assetList_default = AssetList;
+
+  // src/components/assetForm.jsx
+  var import_react28 = __toESM(require_react());
+  var import_jsx_runtime8 = __toESM(require_jsx_runtime());
+  var assetSchema = z.object({
+    code: z.string().min(3, "Code is required"),
+    name: z.string().min(3, "Name is required"),
+    quantity: z.number().min(0, "Quantity must be at least 0"),
+    amount: z.number().min(0, "Amount must be at least 0"),
+    total: z.number().min(0, "Total must be at least 0"),
+    description: z.string().min(3, "Description is required"),
+    departmentId: z.string().uuid()
+  });
+  var AssetForm = ({ onAssetAdded }) => {
+    const { departmentId } = useParams();
+    const [formData, setFormData] = (0, import_react28.useState)({
+      id: v4_default(),
+      code: "",
+      name: "",
+      quantity: 0,
+      amount: 0,
+      total: 0,
+      description: "",
+      departmentId
+    });
+    const [errors, setErrors] = (0, import_react28.useState)({});
+    const navigate = useNavigate();
+    const handleSubmit = (e) => __async(void 0, null, function* () {
+      e.preventDefault();
+      try {
+        const validatedData = assetSchema.parse(__spreadProps(__spreadValues({}, formData), {
+          quantity: Number(formData.quantity),
+          amount: Number(formData.amount),
+          total: Number(formData.total)
+        }));
+        const response = yield axios_default.post("https://localhost:7117/api/Asset/Save", validatedData);
+        console.log("Asset saved:", response.data);
+        if (onAssetAdded) {
+          onAssetAdded(response.data);
+        }
+        navigate(`/departments/${departmentId}/assets`);
+      } catch (error2) {
+        if (error2 instanceof z.ZodError) {
+          setErrors(error2.flatten().fieldErrors);
+          console.error("Validation Errors:", error2.flatten().fieldErrors);
+        } else {
+          console.error("Unexpected error:", error2);
+        }
+      }
+    });
+    const handleChange = (e) => {
+      setFormData(__spreadProps(__spreadValues({}, formData), { [e.target.name]: e.target.value }));
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "AddAsset", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "container mt-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-center mb-4", children: "Add Asset" }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "code", children: "Code:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "code",
+              className: "form-control",
+              id: "code",
+              value: formData.code,
+              onChange: handleChange,
+              placeholder: "Enter asset code"
+            }
+          ),
+          errors.code && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.code[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "name", children: "Name:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "name",
+              className: "form-control",
+              id: "name",
+              value: formData.name,
+              onChange: handleChange,
+              placeholder: "Enter asset name"
+            }
+          ),
+          errors.name && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.name[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "quantity", children: "Quantity:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            "input",
+            {
+              type: "number",
+              name: "quantity",
+              className: "form-control",
+              id: "quantity",
+              value: formData.quantity,
+              onChange: handleChange,
+              placeholder: "Enter quantity"
+            }
+          ),
+          errors.quantity && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.quantity[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "amount", children: "Amount:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            "input",
+            {
+              type: "number",
+              name: "amount",
+              className: "form-control",
+              id: "amount",
+              value: formData.amount,
+              onChange: handleChange,
+              placeholder: "Enter amount"
+            }
+          ),
+          errors.amount && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.amount[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "total", children: "Total:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            "input",
+            {
+              type: "number",
+              name: "total",
+              className: "form-control",
+              id: "total",
+              value: formData.total,
+              onChange: handleChange,
+              placeholder: "Enter total"
+            }
+          ),
+          errors.total && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.total[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "description", children: "Description:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "description",
+              className: "form-control",
+              id: "description",
+              value: formData.description,
+              onChange: handleChange,
+              placeholder: "Enter asset description"
+            }
+          ),
+          errors.description && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.description[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save Asset" })
+      ] })
+    ] }) });
+  };
+  var assetForm_default = AssetForm;
+
+  // src/components/departmentList.jsx
+  var import_jsx_runtime9 = __toESM(require_jsx_runtime());
   var DepartmentList = () => {
-    const { state, dispatch } = (0, import_react28.useContext)(AppContext_default);
-    (0, import_react29.useEffect)(() => {
+    const { state, dispatch } = (0, import_react30.useContext)(AppContext_default);
+    (0, import_react31.useEffect)(() => {
       axios_default.get("https://localhost:7117/api/Department/pagedlist").then((response) => {
         dispatch({ type: "SAVE_DEPARTMENT", payload: response.data.data || [] });
         console.log(response.data);
@@ -49640,35 +49832,46 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         console.error("Error fetching departments:", error2);
       });
     }, [dispatch]);
-    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "DepartmentList", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "container mt-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-center mb-4", children: "Department Data" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("table", { className: "table table-striped", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Code" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Name" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Description" })
+    const handleAssetAdded = (departmentId, newAsset) => {
+      dispatch({
+        type: "UPDATE_DEPARTMENT_ASSETS",
+        payload: { departmentId, newAsset }
+      });
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "DepartmentList", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h1", { className: "text-center mb-4", children: "Department Data" }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Code" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Description" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Assets" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Add Asset" })
         ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("tbody", { children: Array.isArray(state.departments) && state.departments.length > 0 ? state.departments.map((department, index3) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: department.code }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: department.name }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: department.description })
-        ] }, department.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { colSpan: "3", children: "No departments available" }) }) })
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tbody", { children: Array.isArray(state.departments) && state.departments.length > 0 ? state.departments.map((department, index3) => /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.code }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.name }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.description }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(assetList_default, { departmentId: department.id }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { to: `/departments/${department.id}/add-asset`, children: "Add Asset" }) })
+        ] }, department.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { colSpan: "3", children: "No departments available" }) }) })
       ] })
     ] }) });
   };
   var departmentList_default = DepartmentList;
 
   // src/App.js
-  var import_jsx_runtime8 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime10 = __toESM(require_jsx_runtime());
   var App = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Navbar_default, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(Routes, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(UserForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(departmentForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(UserList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(departmentList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(departmentList_default, {}) })
+    return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Navbar_default, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Routes, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(UserForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(UserList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(assetForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentList_default, {}) })
       ] })
     ] });
   };
@@ -49676,10 +49879,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
 
   // src/index.js
   var import_bootstrap_bundle = __toESM(require_bootstrap_bundle_min());
-  var import_jsx_runtime9 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime11 = __toESM(require_jsx_runtime());
   var root = (0, import_client.createRoot)(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(App_default, {}) }) })
+    /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(App_default, {}) }) })
   );
 })();
 /*! Bundled license information:

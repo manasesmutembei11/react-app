@@ -3,6 +3,10 @@ import { useContext } from 'react';
 import AppContext from '../context/AppContext';
 import { useEffect } from 'react';
 import axios from 'axios';
+import AssetList from './assetList';
+import AssetForm from './assetForm';
+import { Link } from 'react-router-dom';
+
 
 const DepartmentList = () => {
     const { state, dispatch } = useContext(AppContext);
@@ -17,6 +21,13 @@ const DepartmentList = () => {
                 console.error('Error fetching departments:', error);
             });
     }, [dispatch]);
+
+    const handleAssetAdded = (departmentId, newAsset) => {
+        dispatch({
+            type: 'UPDATE_DEPARTMENT_ASSETS',
+            payload: { departmentId, newAsset }
+        });
+    };
     return (
         <div className="DepartmentList">
             <div className="container mt-4">
@@ -27,6 +38,8 @@ const DepartmentList = () => {
                             <th>Code</th>
                             <th>Name</th>
                             <th>Description</th>
+                            <th>Assets</th>
+                            <th>Add Asset</th>
 
                         </tr>
                     </thead>
@@ -37,6 +50,12 @@ const DepartmentList = () => {
                                     <td>{department.code}</td>
                                     <td>{department.name}</td>
                                     <td>{department.description}</td>
+                                    <td>
+                                        <AssetList departmentId={department.id} />
+                                    </td>
+                                    <td>
+                                        <Link to={`/departments/${department.id}/add-asset`}>Add Asset</Link>
+                                    </td>
                                 </tr>
                             ))
                         ) : (
