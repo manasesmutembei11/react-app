@@ -49638,7 +49638,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   // src/components/assetList.jsx
   var import_react27 = __toESM(require_react());
   var import_jsx_runtime7 = __toESM(require_jsx_runtime());
-  var AssetList = ({ departmentId }) => {
+  var AssetList = () => {
+    const { departmentId } = useParams();
     const [assets, setAssets] = (0, import_react27.useState)([]);
     (0, import_react27.useEffect)(() => {
       axios_default.get(`https://localhost:7117/api/Asset/pagedlist?departmentId=${departmentId}`).then((response) => {

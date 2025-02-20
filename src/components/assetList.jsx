@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
-const AssetList = ({ departmentId }) => {
+const AssetList = () => {
+    const { departmentId } = useParams();
     const [assets, setAssets] = useState([]);
 
     useEffect(() => {
