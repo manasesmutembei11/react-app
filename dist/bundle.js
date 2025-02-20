@@ -49846,15 +49846,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Code" }),
           /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Name" }),
           /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Description" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Assets" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Add Asset" })
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Assets" })
         ] }) }),
         /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tbody", { children: Array.isArray(state.departments) && state.departments.length > 0 ? state.departments.map((department, index3) => /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("tr", { children: [
           /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.code }),
           /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.name }),
           /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.description }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(assetList_default, { departmentId: department.id }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { to: `/departments/${department.id}/add-asset`, children: "Add Asset" }) })
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Link, { to: `/departments/${department.id}/asset-list`, children: "Assets" }) })
         ] }, department.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { colSpan: "3", children: "No departments available" }) }) })
       ] })
     ] }) });
@@ -49872,6 +49870,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(UserList_default, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentList_default, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(assetForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments/:departmentId/asset-list", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(assetList_default, {}) }),
         /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentList_default, {}) })
       ] })
     ] });

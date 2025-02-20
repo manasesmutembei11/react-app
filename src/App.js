@@ -6,6 +6,7 @@ import DepartmentForm from './components/departmentForm';
 import DepartmentList from './components/departmentList';
 import { Routes, Route } from 'react-router-dom';
 import AssetForm from './components/assetForm';
+import AssetList from './components/assetList';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/users" element={<UserList />} />
         <Route path="/departments" element={<DepartmentList />} />
         <Route path="/departments/:departmentId/add-asset" element={<AssetForm />} />
+        <Route path="/departments/:departmentId/asset-list" element={<AssetList />} />
         <Route path="/" element={<DepartmentList />} />
 
       </Routes>

@@ -39,7 +39,6 @@ const DepartmentList = () => {
                             <th>Name</th>
                             <th>Description</th>
                             <th>Assets</th>
-                            <th>Add Asset</th>
 
                         </tr>
                     </thead>
@@ -51,10 +50,7 @@ const DepartmentList = () => {
                                     <td>{department.name}</td>
                                     <td>{department.description}</td>
                                     <td>
-                                        <AssetList departmentId={department.id} />
-                                    </td>
-                                    <td>
-                                        <Link to={`/departments/${department.id}/add-asset`}>Add Asset</Link>
+                                        <Link to={`/departments/${department.id}/asset-list`}>Assets</Link>
                                     </td>
                                 </tr>
                             ))
