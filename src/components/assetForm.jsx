@@ -25,7 +25,7 @@ const AssetForm = ({ onAssetAdded }) => {
         amount: 0,
         total: 0,
         description: '',
-        departmentId: departmentId
+        departmentId: departmentId || ''
     });
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
@@ -44,7 +44,7 @@ const AssetForm = ({ onAssetAdded }) => {
             if (onAssetAdded) {
                 onAssetAdded(response.data);
             }
-            navigate(`/departments/${departmentId}/assets`);
+            navigate(`/departments/${departmentId}/asset-list`);
         } catch (error) {
             if (error instanceof z.ZodError) {
                 setErrors(error.flatten().fieldErrors);
@@ -56,7 +56,16 @@ const AssetForm = ({ onAssetAdded }) => {
     };
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        const newValue = name === "quantity" || name === "amount" ? Number(value) : value;
+
+        setFormData((prevState) => ({
+            ...prevState,
+            [name]: newValue,
+            total: name === "quantity" || name === "amount"
+                ? (name === "quantity" ? newValue * prevState.amount : prevState.quantity * newValue)
+                : prevState.total
+        }));
     };
 
     return (

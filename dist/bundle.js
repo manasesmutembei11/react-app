@@ -6113,7 +6113,7 @@
               "Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)"
             );
           queue.lastRenderedReducer = reducer;
-          var dispatch = queue.dispatch, lastRenderPhaseUpdate = queue.pending, newState = hook.memoizedState;
+          var dispatch2 = queue.dispatch, lastRenderPhaseUpdate = queue.pending, newState = hook.memoizedState;
           if (null !== lastRenderPhaseUpdate) {
             queue.pending = null;
             var update = lastRenderPhaseUpdate = lastRenderPhaseUpdate.next;
@@ -6125,7 +6125,7 @@
             null === hook.baseQueue && (hook.baseState = newState);
             queue.lastRenderedState = newState;
           }
-          return [newState, dispatch];
+          return [newState, dispatch2];
         }
         function mountSyncExternalStore(subscribe, getSnapshot, getServerSnapshot) {
           var fiber = currentlyRenderingFiber$1, hook = mountWorkInProgressHook();
@@ -6271,13 +6271,13 @@
         }
         function mountState(initialState2) {
           initialState2 = mountStateImpl(initialState2);
-          var queue = initialState2.queue, dispatch = dispatchSetState.bind(
+          var queue = initialState2.queue, dispatch2 = dispatchSetState.bind(
             null,
             currentlyRenderingFiber$1,
             queue
           );
-          queue.dispatch = dispatch;
-          return [initialState2.memoizedState, dispatch];
+          queue.dispatch = dispatch2;
+          return [initialState2.memoizedState, dispatch2];
         }
         function mountOptimistic(passthrough) {
           var hook = mountWorkInProgressHook();
@@ -6499,14 +6499,14 @@
           )[0];
           stateHook = updateReducer(basicStateReducer)[0];
           currentStateHook = "object" === typeof currentStateHook && null !== currentStateHook && "function" === typeof currentStateHook.then ? useThenable(currentStateHook) : currentStateHook;
-          var actionQueueHook = updateWorkInProgressHook(), actionQueue = actionQueueHook.queue, dispatch = actionQueue.dispatch;
+          var actionQueueHook = updateWorkInProgressHook(), actionQueue = actionQueueHook.queue, dispatch2 = actionQueue.dispatch;
           action !== actionQueueHook.memoizedState && (currentlyRenderingFiber$1.flags |= 2048, pushEffect(
             HasEffect | Passive,
             actionStateActionEffect.bind(null, actionQueue, action),
             { destroy: void 0 },
             null
           ));
-          return [currentStateHook, dispatch, stateHook];
+          return [currentStateHook, dispatch2, stateHook];
         }
         function actionStateActionEffect(actionQueue, action) {
           actionQueue.action = action;
@@ -6518,9 +6518,9 @@
           updateWorkInProgressHook();
           stateHook = stateHook.memoizedState;
           currentStateHook = updateWorkInProgressHook();
-          var dispatch = currentStateHook.queue.dispatch;
+          var dispatch2 = currentStateHook.queue.dispatch;
           currentStateHook.memoizedState = action;
-          return [stateHook, dispatch, false];
+          return [stateHook, dispatch2, false];
         }
         function pushEffect(tag, create, inst, deps) {
           tag = { tag, create, inst, deps, next: null };
@@ -29425,8 +29425,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     }
   };
   var AppProvider = ({ children }) => {
-    const [state, dispatch] = (0, import_react4.useReducer)(appReducer, initialState);
-    return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(AppContext.Provider, { value: { state, dispatch }, children });
+    const [state, dispatch2] = (0, import_react4.useReducer)(appReducer, initialState);
+    return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(AppContext.Provider, { value: { state, dispatch: dispatch2 }, children });
   };
   var AppContext_default = AppContext;
 
@@ -46832,12 +46832,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const [formData, setFormData] = (0, import_react24.useState)({ name: "", email: "", dateOfBirth: null, gender: "", phone: "" });
     const [errors, setErrors] = (0, import_react24.useState)({});
     const navigate = useNavigate();
-    const { dispatch } = (0, import_react25.useContext)(AppContext_default);
+    const { dispatch: dispatch2 } = (0, import_react25.useContext)(AppContext_default);
     const handleSubmit = (e) => __async(void 0, null, function* () {
       e.preventDefault();
       try {
         const validatedData = userSchema.parse(formData);
-        dispatch({ type: "SAVE_USER", payload: validatedData });
+        dispatch2({ type: "SAVE_USER", payload: validatedData });
         console.log("Form Submitted!", validatedData);
         navigate("/users");
       } catch (err) {
@@ -49642,25 +49642,43 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const { departmentId } = useParams();
     const [assets, setAssets] = (0, import_react27.useState)([]);
     (0, import_react27.useEffect)(() => {
-      axios_default.get(`https://localhost:7117/api/Asset/pagedlist?departmentId=${departmentId}`).then((response) => {
+      axios_default.get(`https://localhost:7117/api/Asset/pagedlist/${departmentId}`, {
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        }
+      }).then((response) => {
         setAssets(response.data.data || []);
       }).catch((error2) => {
         console.error("Error fetching assets:", error2);
       });
     }, [departmentId]);
-    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("ul", { children: assets.map((asset, index3) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("li", { children: [
-      asset.name,
-      " - ",
-      asset.code,
-      " - ",
-      asset.quantity,
-      " - ",
-      asset.amount,
-      " - ",
-      asset.total,
-      " - ",
-      asset.description
-    ] }, asset.id || index3)) });
+    const handleAssetAdded = (departmentId2, newAsset) => {
+      dispatch({
+        type: "UPDATE_DEPARTMENT_ASSETS",
+        payload: { departmentId: departmentId2, newAsset }
+      });
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "DepartmentList", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-center mb-4", children: "List" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { to: `/departments/${departmentId}/add-asset`, className: "btn btn-primary", children: "Add Asset " }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Code" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Quantity" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Amount" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Total" })
+        ] }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("tbody", { children: assets.map((asset, index3) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.code }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.name }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.quantity }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.amount }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.total })
+        ] }, asset.id || index3)) })
+      ] })
+    ] }) });
   };
   var assetList_default = AssetList;
 
@@ -49686,7 +49704,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       amount: 0,
       total: 0,
       description: "",
-      departmentId
+      departmentId: departmentId || ""
     });
     const [errors, setErrors] = (0, import_react28.useState)({});
     const navigate = useNavigate();
@@ -49703,7 +49721,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         if (onAssetAdded) {
           onAssetAdded(response.data);
         }
-        navigate(`/departments/${departmentId}/assets`);
+        navigate(`/departments/${departmentId}/asset-list`);
       } catch (error2) {
         if (error2 instanceof z.ZodError) {
           setErrors(error2.flatten().fieldErrors);
@@ -49714,7 +49732,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }
     });
     const handleChange = (e) => {
-      setFormData(__spreadProps(__spreadValues({}, formData), { [e.target.name]: e.target.value }));
+      const { name, value } = e.target;
+      const newValue = name === "quantity" || name === "amount" ? Number(value) : value;
+      setFormData((prevState) => __spreadProps(__spreadValues({}, prevState), {
+        [name]: newValue,
+        total: name === "quantity" || name === "amount" ? name === "quantity" ? newValue * prevState.amount : prevState.quantity * newValue : prevState.total
+      }));
     };
     return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "AddAsset", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "container mt-5", children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-center mb-4", children: "Add Asset" }),
@@ -49824,21 +49847,15 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   // src/components/departmentList.jsx
   var import_jsx_runtime9 = __toESM(require_jsx_runtime());
   var DepartmentList = () => {
-    const { state, dispatch } = (0, import_react30.useContext)(AppContext_default);
+    const { state, dispatch: dispatch2 } = (0, import_react30.useContext)(AppContext_default);
     (0, import_react31.useEffect)(() => {
       axios_default.get("https://localhost:7117/api/Department/pagedlist").then((response) => {
-        dispatch({ type: "SAVE_DEPARTMENT", payload: response.data.data || [] });
+        dispatch2({ type: "SAVE_DEPARTMENT", payload: response.data.data || [] });
         console.log(response.data);
       }).catch((error2) => {
         console.error("Error fetching departments:", error2);
       });
-    }, [dispatch]);
-    const handleAssetAdded = (departmentId, newAsset) => {
-      dispatch({
-        type: "UPDATE_DEPARTMENT_ASSETS",
-        payload: { departmentId, newAsset }
-      });
-    };
+    }, [dispatch2]);
     return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "DepartmentList", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "container mt-4", children: [
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h1", { className: "text-center mb-4", children: "Department Data" }),
       /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("table", { className: "table table-striped", children: [

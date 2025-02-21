@@ -22,12 +22,7 @@ const DepartmentList = () => {
             });
     }, [dispatch]);
 
-    const handleAssetAdded = (departmentId, newAsset) => {
-        dispatch({
-            type: 'UPDATE_DEPARTMENT_ASSETS',
-            payload: { departmentId, newAsset }
-        });
-    };
+
     return (
         <div className="DepartmentList">
             <div className="container mt-4">

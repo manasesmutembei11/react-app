@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const AssetList = () => {
     const { departmentId } = useParams();
     const [assets, setAssets] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://localhost:7117/api/Asset/pagedlist?departmentId=${departmentId}`)
+        axios.get(`https://localhost:7117/api/Asset/pagedlist/${departmentId}`, {
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            }
+        })
             .then(response => {
                 setAssets(response.data.data || []);
             })
@@ -16,14 +22,47 @@ const AssetList = () => {
             });
     }, [departmentId]);
 
+    const handleAssetAdded = (departmentId, newAsset) => {
+        dispatch({
+            type: 'UPDATE_DEPARTMENT_ASSETS',
+            payload: { departmentId, newAsset }
+        });
+    };
+
     return (
-        <ul>
-            {assets.map((asset, index) => (
-                <li key={asset.id || index}>
-                    {asset.name} - {asset.code} - {asset.quantity} - {asset.amount} - {asset.total} - {asset.description}
-                </li>
-            ))}
-        </ul>
+        <div className="DepartmentList">
+            <div className="container mt-4">
+                <h1 className="text-center mb-4">List</h1>
+                <div>
+                    <Link to={`/departments/${departmentId}/add-asset`} className="btn btn-primary">Add Asset </Link>
+                </div>
+                <table className="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                            <th>Total</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {assets.map((asset, index) => (
+                            <tr key={asset.id || index}>
+                                <td>{asset.code}</td>
+                                <td>{asset.name}</td>
+                                <td>{asset.quantity}</td>
+                                <td>{asset.amount}</td>
+                                <td>{asset.total}</td>
+                            </tr>
+                        ))}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
     );
 };
 
