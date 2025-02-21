@@ -1575,7 +1575,7 @@
           return dispatcher;
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var React40 = require_react(), Internals = {
+        var React42 = require_react(), Internals = {
           d: {
             f: noop2,
             r: function() {
@@ -1593,7 +1593,7 @@
           },
           p: 0,
           findDOMNode: null
-        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React40.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React42.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
           "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
         );
@@ -3049,7 +3049,7 @@
           "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
         }
         function validateOptionProps(element, props) {
-          null == props.value && ("object" === typeof props.children && null !== props.children ? React40.Children.forEach(props.children, function(child) {
+          null == props.value && ("object" === typeof props.children && null !== props.children ? React42.Children.forEach(props.children, function(child) {
             null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
               "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
             ));
@@ -16519,13 +16519,13 @@
           ));
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var Scheduler = require_scheduler(), React40 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var Scheduler = require_scheduler(), React42 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
         Symbol.for("react.scope");
         Symbol.for("react.debug_trace_mode");
         var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
         Symbol.for("react.legacy_hidden");
         Symbol.for("react.tracing_marker");
-        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React40.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React42.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19245,7 +19245,7 @@
           }
         };
         (function() {
-          var isomorphicReactPackageVersion = React40.version;
+          var isomorphicReactPackageVersion = React42.version;
           if ("19.0.0" !== isomorphicReactPackageVersion)
             throw Error(
               'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -21964,9 +21964,9 @@
           info || (parentType = getComponentNameFromType(parentType)) && (info = "\n\nCheck the top-level render call using <" + parentType + ">.");
           return info;
         }
-        var React40 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        var React42 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
         Symbol.for("react.provider");
-        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React40.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React42.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -22837,7 +22837,7 @@
   var import_client = __toESM(require_client());
 
   // src/App.js
-  var import_react37 = __toESM(require_react());
+  var import_react41 = __toESM(require_react());
 
   // src/components/Navbar.jsx
   var import_react4 = __toESM(require_react());
@@ -25460,6 +25460,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             " ",
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaBuilding, {}),
             " Subjects"
+          ] }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/counties", children: [
+            " ",
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaBuilding, {}),
+            " Counties"
           ] }) })
         ] })
       ] }),
@@ -29531,7 +29536,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var initialState = {
     users: [],
     departments: [],
-    subjects: []
+    subjects: [],
+    counties: []
   };
   var AppContext = (0, import_react5.createContext)(initialState);
   var appReducer = (state, action) => {
@@ -29547,6 +29553,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       case "SAVE_SUBJECT":
         return __spreadProps(__spreadValues({}, state), {
           subjects: Array.isArray(action.payload) ? action.payload : []
+        });
+      case "SAVE_COUNTY":
+        return __spreadProps(__spreadValues({}, state), {
+          counties: Array.isArray(action.payload) ? action.payload : []
         });
       default:
         return state;
@@ -31762,37 +31772,37 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       return this.min(1, message2);
     }
   };
-  ZodArray.create = (schema3, params) => {
+  ZodArray.create = (schema4, params) => {
     return new ZodArray(__spreadValues({
-      type: schema3,
+      type: schema4,
       minLength: null,
       maxLength: null,
       exactLength: null,
       typeName: ZodFirstPartyTypeKind.ZodArray
     }, processCreateParams(params)));
   };
-  function deepPartialify(schema3) {
-    if (schema3 instanceof ZodObject) {
+  function deepPartialify(schema4) {
+    if (schema4 instanceof ZodObject) {
       const newShape = {};
-      for (const key in schema3.shape) {
-        const fieldSchema = schema3.shape[key];
+      for (const key in schema4.shape) {
+        const fieldSchema = schema4.shape[key];
         newShape[key] = ZodOptional.create(deepPartialify(fieldSchema));
       }
-      return new ZodObject(__spreadProps(__spreadValues({}, schema3._def), {
+      return new ZodObject(__spreadProps(__spreadValues({}, schema4._def), {
         shape: () => newShape
       }));
-    } else if (schema3 instanceof ZodArray) {
-      return new ZodArray(__spreadProps(__spreadValues({}, schema3._def), {
-        type: deepPartialify(schema3.element)
+    } else if (schema4 instanceof ZodArray) {
+      return new ZodArray(__spreadProps(__spreadValues({}, schema4._def), {
+        type: deepPartialify(schema4.element)
       }));
-    } else if (schema3 instanceof ZodOptional) {
-      return ZodOptional.create(deepPartialify(schema3.unwrap()));
-    } else if (schema3 instanceof ZodNullable) {
-      return ZodNullable.create(deepPartialify(schema3.unwrap()));
-    } else if (schema3 instanceof ZodTuple) {
-      return ZodTuple.create(schema3.items.map((item) => deepPartialify(item)));
+    } else if (schema4 instanceof ZodOptional) {
+      return ZodOptional.create(deepPartialify(schema4.unwrap()));
+    } else if (schema4 instanceof ZodNullable) {
+      return ZodNullable.create(deepPartialify(schema4.unwrap()));
+    } else if (schema4 instanceof ZodTuple) {
+      return ZodTuple.create(schema4.items.map((item) => deepPartialify(item)));
     } else {
-      return schema3;
+      return schema4;
     }
   }
   var ZodObject = class _ZodObject extends ZodType {
@@ -31997,8 +32007,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     //   }) as any;
     //   return merged;
     // }
-    setKey(key, schema3) {
-      return this.augment({ [key]: schema3 });
+    setKey(key, schema4) {
+      return this.augment({ [key]: schema4 });
     }
     // merge<Incoming extends AnyZodObject>(
     //   merging: Incoming
@@ -32429,10 +32439,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         status.dirty();
       }
       const items = [...ctx.data].map((item, itemIndex) => {
-        const schema3 = this._def.items[itemIndex] || this._def.rest;
-        if (!schema3)
+        const schema4 = this._def.items[itemIndex] || this._def.rest;
+        if (!schema4)
           return null;
-        return schema3._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
+        return schema4._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
       }).filter((x) => !!x);
       if (ctx.common.async) {
         return Promise.all(items).then((results) => {
@@ -32947,9 +32957,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }));
     }
   };
-  ZodPromise.create = (schema3, params) => {
+  ZodPromise.create = (schema4, params) => {
     return new ZodPromise(__spreadValues({
-      type: schema3,
+      type: schema4,
       typeName: ZodFirstPartyTypeKind.ZodPromise
     }, processCreateParams(params)));
   };
@@ -33073,16 +33083,16 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       util.assertNever(effect);
     }
   };
-  ZodEffects.create = (schema3, effect, params) => {
+  ZodEffects.create = (schema4, effect, params) => {
     return new ZodEffects(__spreadValues({
-      schema: schema3,
+      schema: schema4,
       typeName: ZodFirstPartyTypeKind.ZodEffects,
       effect
     }, processCreateParams(params)));
   };
-  ZodEffects.createWithPreprocess = (preprocess, schema3, params) => {
+  ZodEffects.createWithPreprocess = (preprocess, schema4, params) => {
     return new ZodEffects(__spreadValues({
-      schema: schema3,
+      schema: schema4,
       effect: { type: "preprocess", transform: preprocess },
       typeName: ZodFirstPartyTypeKind.ZodEffects
     }, processCreateParams(params)));
@@ -49180,7 +49190,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       return true;
     };
   };
-  function assertOptions(options, schema3, allowUnknown) {
+  function assertOptions(options, schema4, allowUnknown) {
     if (typeof options !== "object") {
       throw new AxiosError_default("options must be an object", AxiosError_default.ERR_BAD_OPTION_VALUE);
     }
@@ -49188,7 +49198,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     let i = keys.length;
     while (i-- > 0) {
       const opt = keys[i];
-      const validator = schema3[opt];
+      const validator = schema4[opt];
       if (validator) {
         const value = options[opt];
         const result2 = value === void 0 || validator(value, opt, options);
@@ -50132,23 +50142,135 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   };
   var subjectForm_default = SubjectForm;
 
-  // src/App.js
+  // src/components/countyList.jsx
+  var import_react37 = __toESM(require_react());
+  var import_react38 = __toESM(require_react());
+  var import_react39 = __toESM(require_react());
   var import_jsx_runtime13 = __toESM(require_jsx_runtime());
+  var CountyList = () => {
+    const { state, dispatch } = (0, import_react38.useContext)(AppContext_default);
+    (0, import_react39.useEffect)(() => {
+      axios_default.get("https://localhost:7117/api/County/pagedlist").then((response) => {
+        dispatch({ type: "SAVE_COUNTY", payload: response.data.data || [] });
+        console.log(response.data);
+      }).catch((error2) => {
+        console.error("Error fetching counties:", error2);
+      });
+    }, [dispatch]);
+    return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "CountyList", children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("h1", { className: "text-center mb-4", children: "County List" }),
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "col-md-6 mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Link, { to: "/add-county", className: "btn btn-info", children: "Add County " }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("th", { children: "Code" }),
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("th", { children: "Name" })
+        ] }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("tbody", { children: Array.isArray(state.departments) && state.counties.length > 0 ? state.counties.map((county, index3) => /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("td", { children: county.code }),
+          /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("td", { children: county.name })
+        ] }, county.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("td", { colSpan: "3", children: "No counties available" }) }) })
+      ] })
+    ] }) });
+  };
+  var countyList_default = CountyList;
+
+  // src/components/countyForm.jsx
+  var import_react40 = __toESM(require_react());
+  var import_jsx_runtime14 = __toESM(require_jsx_runtime());
+  var schema3 = z.object({
+    code: z.string().min(3, "Code is required"),
+    name: z.string().min(3, "Name is required")
+  });
+  var CountyForm = ({ onSave }) => {
+    const [formData, setFormData] = (0, import_react40.useState)({
+      id: v4_default(),
+      code: "",
+      name: ""
+    });
+    const [errors, setErrors] = (0, import_react40.useState)({});
+    const navigate = useNavigate();
+    const handleSubmit = (e) => __async(void 0, null, function* () {
+      e.preventDefault();
+      try {
+        const validatedData = schema3.parse(formData);
+        const response = yield axios_default.post("https://localhost:7117/api/County/Save", validatedData);
+        console.log("County saved:", response.data);
+        if (onSave) {
+          onSave(response.data);
+        }
+        navigate("/departments");
+      } catch (error2) {
+        if (error2 instanceof z.ZodError) {
+          setErrors(error2.flatten().fieldErrors);
+          console.error("Validation Errors:", error2.flatten().fieldErrors);
+        } else {
+          console.error("Unexpected error:", error2);
+        }
+      }
+    });
+    const handleChange = (e) => {
+      setFormData(__spreadProps(__spreadValues({}, formData), { [e.target.name]: e.target.value }));
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "CountyForm", children: /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "container mt-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("h2", { className: "text-center mb-4", children: "Create County" }),
+      /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("label", { htmlFor: "code", children: "Code:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "code",
+              className: "form-control",
+              id: "code",
+              value: formData.code,
+              onChange: handleChange,
+              placeholder: "Enter department code"
+            }
+          ),
+          errors.code && /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "text-danger", children: errors.code[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime14.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("label", { htmlFor: "name", children: "Name:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "name",
+              className: "form-control",
+              id: "name",
+              value: formData.name,
+              onChange: handleChange,
+              placeholder: "Enter your name"
+            }
+          ),
+          errors.name && /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("div", { className: "text-danger", children: errors.name[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime14.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save County" })
+      ] })
+    ] }) });
+  };
+  var countyForm_default = CountyForm;
+
+  // src/App.js
+  var import_jsx_runtime15 = __toESM(require_jsx_runtime());
   var App = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Navbar_default, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(Routes, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/offcanvas", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(offCanvas_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(UserForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(departmentForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(UserList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(departmentList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(assetForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/departments/:departmentId/asset-list", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(assetList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/subjects", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(subjectList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/add-subject", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(subjectForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(departmentList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "*", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("h1", { children: "Not Found" }) })
+    return /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Navbar_default, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime15.jsxs)(Routes, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/offcanvas", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(offCanvas_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(UserForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(departmentForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(UserList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(departmentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(assetForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/departments/:departmentId/asset-list", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(assetList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/subjects", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(subjectList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/add-subject", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(subjectForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/counties", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(countyList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/add-county", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(countyForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(departmentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime15.jsx)(Route, { path: "*", element: /* @__PURE__ */ (0, import_jsx_runtime15.jsx)("h1", { children: "Not Found" }) })
       ] })
     ] });
   };
@@ -50156,10 +50278,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
 
   // src/index.js
   var import_bootstrap_bundle2 = __toESM(require_bootstrap_bundle_min());
-  var import_jsx_runtime14 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime16 = __toESM(require_jsx_runtime());
   var root = (0, import_client.createRoot)(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(App_default, {}) }) })
+    /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime16.jsx)(App_default, {}) }) })
   );
 })();
 /*! Bundled license information:

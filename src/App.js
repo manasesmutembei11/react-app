@@ -10,6 +10,8 @@ import AssetList from './components/assetList';
 import Offcanvas from './components/offCanvas';
 import SubjectList from './components/subjectList';
 import SubjectForm from './components/subjectForm';
+import CountyList from './components/countyList';
+import CountyForm from './components/countyForm';
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
         <Route path="/departments/:departmentId/asset-list" element={<AssetList />} />
         <Route path="/subjects" element={<SubjectList />} />
         <Route path="/add-subject" element={<SubjectForm />} />
+        <Route path="/counties" element={<CountyList />} />
+        <Route path="/add-county" element={<CountyForm />} />
         <Route path="/" element={<DepartmentList />} />
         <Route path="*" element={<h1>Not Found</h1>} />
 

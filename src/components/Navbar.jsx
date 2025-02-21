@@ -21,6 +21,7 @@ const Navbar = () => {
                         <li><Link className="dropdown-item" to="/users"><FaUsers /> Users</Link></li>
                         <li><Link className="dropdown-item" to="/departments"> <FaBuilding /> Departments</Link></li>
                         <li><Link className="dropdown-item" to="/subjects"> <FaBuilding /> Subjects</Link></li>
+                        <li><Link className="dropdown-item" to="/counties"> <FaBuilding /> Counties</Link></li>
                     </ul>
                 </div>
 
