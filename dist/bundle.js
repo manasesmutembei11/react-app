@@ -1575,7 +1575,7 @@
           return dispatcher;
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var React37 = require_react(), Internals = {
+        var React40 = require_react(), Internals = {
           d: {
             f: noop2,
             r: function() {
@@ -1593,7 +1593,7 @@
           },
           p: 0,
           findDOMNode: null
-        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React37.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React40.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
           "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
         );
@@ -3049,7 +3049,7 @@
           "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
         }
         function validateOptionProps(element, props) {
-          null == props.value && ("object" === typeof props.children && null !== props.children ? React37.Children.forEach(props.children, function(child) {
+          null == props.value && ("object" === typeof props.children && null !== props.children ? React40.Children.forEach(props.children, function(child) {
             null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
               "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
             ));
@@ -16519,13 +16519,13 @@
           ));
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var Scheduler = require_scheduler(), React37 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var Scheduler = require_scheduler(), React40 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
         Symbol.for("react.scope");
         Symbol.for("react.debug_trace_mode");
         var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
         Symbol.for("react.legacy_hidden");
         Symbol.for("react.tracing_marker");
-        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React37.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React40.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19245,7 +19245,7 @@
           }
         };
         (function() {
-          var isomorphicReactPackageVersion = React37.version;
+          var isomorphicReactPackageVersion = React40.version;
           if ("19.0.0" !== isomorphicReactPackageVersion)
             throw Error(
               'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -21964,9 +21964,9 @@
           info || (parentType = getComponentNameFromType(parentType)) && (info = "\n\nCheck the top-level render call using <" + parentType + ">.");
           return info;
         }
-        var React37 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        var React40 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
         Symbol.for("react.provider");
-        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React37.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React40.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -22837,10 +22837,10 @@
   var import_client = __toESM(require_client());
 
   // src/App.js
-  var import_react32 = __toESM(require_react());
+  var import_react37 = __toESM(require_react());
 
   // src/components/Navbar.jsx
-  var import_react3 = __toESM(require_react());
+  var import_react4 = __toESM(require_react());
 
   // node_modules/react-router/dist/development/chunk-IR6S3I6Y.mjs
   var React3 = __toESM(require_react(), 1);
@@ -25323,6 +25323,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/react-icons/fa/index.mjs
+  function FaBars(props) {
+    return GenIcon({ "tag": "svg", "attr": { "viewBox": "0 0 448 512" }, "child": [{ "tag": "path", "attr": { "d": "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" }, "child": [] }] })(props);
+  }
   function FaBuilding(props) {
     return GenIcon({ "tag": "svg", "attr": { "viewBox": "0 0 448 512" }, "child": [{ "tag": "path", "attr": { "d": "M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z" }, "child": [] }] })(props);
   }
@@ -25338,57 +25341,176 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
 
   // src/components/Navbar.jsx
   var import_bootstrap_bundle = __toESM(require_bootstrap_bundle_min());
+
+  // src/components/offCanvas.jsx
+  var import_react3 = __toESM(require_react());
   var import_jsx_runtime = __toESM(require_jsx_runtime());
+  var Offcanvas = () => {
+    const handleNavClick = () => {
+      const offcanvasElement = document.getElementById("offcanvasNavbar");
+      const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+      if (offcanvasInstance) {
+        offcanvasInstance.hide();
+      }
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+      "div",
+      {
+        className: "offcanvas offcanvas-start",
+        tabIndex: "-1",
+        id: "offcanvasNavbar",
+        "aria-labelledby": "offcanvasNavbarLabel",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "offcanvas-header", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h5", { className: "offcanvas-title", id: "offcanvasNavbarLabel", children: "Menu" }),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+              "button",
+              {
+                type: "button",
+                className: "btn-close text-reset",
+                "data-bs-dismiss": "offcanvas",
+                "aria-label": "Close"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "offcanvas-body", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "list-group", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+              Link,
+              {
+                to: "/add-user",
+                className: "list-group-item list-group-item-action",
+                onClick: handleNavClick,
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaPlusSquare, { className: "me-2" }),
+                  " Add User"
+                ]
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+              Link,
+              {
+                to: "/users",
+                className: "list-group-item list-group-item-action",
+                onClick: handleNavClick,
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaList, { className: "me-2" }),
+                  " List Users"
+                ]
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+              Link,
+              {
+                to: "/add-department",
+                className: "list-group-item list-group-item-action",
+                onClick: handleNavClick,
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaPlusSquare, { className: "me-2" }),
+                  " Add Department"
+                ]
+              }
+            ),
+            /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+              Link,
+              {
+                to: "/departments",
+                className: "list-group-item list-group-item-action",
+                onClick: handleNavClick,
+                children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaList, { className: "me-2" }),
+                  " List Departments"
+                ]
+              }
+            )
+          ] }) })
+        ]
+      }
+    );
+  };
+  var offCanvas_default = Offcanvas;
+
+  // src/components/Navbar.jsx
+  var import_jsx_runtime2 = __toESM(require_jsx_runtime());
   var Navbar = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "container mt-5", children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", { className: "navbar", style: { backgroundColor: "#85c1e9" }, children: [
-      /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", { className: "navbar-brand", children: "User Management App" }),
-      /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "ml-auto d-flex", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dropdown mr-3", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+    return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "container mt-5", children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("nav", { className: "navbar", style: { backgroundColor: "#85c1e9" }, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "dropdown mr-3", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
+          "button",
+          {
+            className: "btn btn-primary dropdown-toggle",
+            type: "button",
+            "data-bs-toggle": "dropdown",
+            children: [
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaBars, { className: "me-2" }),
+              " Menu"
+            ]
+          }
+        ),
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", { className: "dropdown-menu", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/users", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaUsers, {}),
+            " Users"
+          ] }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/departments", children: [
+            " ",
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaBuilding, {}),
+            " Departments"
+          ] }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/subjects", children: [
+            " ",
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaBuilding, {}),
+            " Subjects"
+          ] }) })
+        ] })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("h1", { className: "navbar-brand", children: "User Management App" }),
+      /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "ml-auto d-flex", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "dropdown mr-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
             "button",
             {
               className: "btn btn-primary dropdown-toggle",
               type: "button",
               "data-bs-toggle": "dropdown",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaUsers, { className: "me-2" }),
+                /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaUsers, { className: "me-2" }),
                 " Users"
               ]
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", { className: "dropdown-menu", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/add-user", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaPlusSquare, {}),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", { className: "dropdown-menu", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/add-user", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaPlusSquare, {}),
               " Add"
             ] }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/users", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/users", children: [
               " ",
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaList, {}),
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaList, {}),
               " List"
             ] }) })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "dropdown", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: "dropdown", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(
             "button",
             {
               className: "btn btn-primary dropdown-toggle",
               type: "button",
               "data-bs-toggle": "dropdown",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaBuilding, { className: "me-2" }),
+                /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaBuilding, { className: "me-2" }),
                 " Departments"
               ]
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", { className: "dropdown-menu", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/add-department", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaPlusSquare, {}),
+          /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("ul", { className: "dropdown-menu", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/add-department", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaPlusSquare, {}),
               " Add"
             ] }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { className: "dropdown-item", to: "/departments", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(Link, { className: "dropdown-item", to: "/departments", children: [
               " ",
-              /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaList, {}),
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(FaList, {}),
               " List"
             ] }) })
           ] })
@@ -25399,7 +25521,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var Navbar_default = Navbar;
 
   // src/components/UserList.jsx
-  var import_react5 = __toESM(require_react());
+  var import_react6 = __toESM(require_react());
 
   // node_modules/date-fns/constants.js
   var daysInYear = 365.2425;
@@ -29401,16 +29523,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // src/components/UserList.jsx
-  var import_react6 = __toESM(require_react());
+  var import_react7 = __toESM(require_react());
 
   // src/context/AppContext.js
-  var import_react4 = __toESM(require_react());
-  var import_jsx_runtime2 = __toESM(require_jsx_runtime());
+  var import_react5 = __toESM(require_react());
+  var import_jsx_runtime3 = __toESM(require_jsx_runtime());
   var initialState = {
     users: [],
-    departments: []
+    departments: [],
+    subjects: []
   };
-  var AppContext = (0, import_react4.createContext)(initialState);
+  var AppContext = (0, import_react5.createContext)(initialState);
   var appReducer = (state, action) => {
     switch (action.type) {
       case "SAVE_USER":
@@ -29421,37 +29544,41 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         return __spreadProps(__spreadValues({}, state), {
           departments: Array.isArray(action.payload) ? action.payload : []
         });
+      case "SAVE_SUBJECT":
+        return __spreadProps(__spreadValues({}, state), {
+          subjects: Array.isArray(action.payload) ? action.payload : []
+        });
       default:
         return state;
     }
   };
   var AppProvider = ({ children }) => {
-    const [state, dispatch] = (0, import_react4.useReducer)(appReducer, initialState);
-    return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(AppContext.Provider, { value: { state, dispatch }, children });
+    const [state, dispatch] = (0, import_react5.useReducer)(appReducer, initialState);
+    return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(AppContext.Provider, { value: { state, dispatch }, children });
   };
   var AppContext_default = AppContext;
 
   // src/components/UserList.jsx
-  var import_jsx_runtime3 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime4 = __toESM(require_jsx_runtime());
   var UserList = () => {
-    const { state } = (0, import_react6.useContext)(AppContext_default);
+    const { state } = (0, import_react7.useContext)(AppContext_default);
     const { users } = state;
-    return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("div", { className: "UserList", children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("div", { className: "container mt-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("h1", { className: "text-center mb-4", children: "User Data" }),
-      /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("table", { className: "table table-striped", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("th", { children: "Name" }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("th", { children: "Email" }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("th", { children: "Date of birth" }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("th", { children: "Gender" }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("th", { children: "Phone" })
+    return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("div", { className: "UserList", children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("h1", { className: "text-center mb-4", children: "User Data" }),
+      /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("th", { children: "Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("th", { children: "Email" }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("th", { children: "Date of birth" }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("th", { children: "Gender" }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("th", { children: "Phone" })
         ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("tbody", { children: users.map((user, index3) => /* @__PURE__ */ (0, import_jsx_runtime3.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: user.name }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: user.email }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: user.dateOfBirth ? format(new Date(user.dateOfBirth), "dd-MM-yyyy") : "N/A" }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: user.gender }),
-          /* @__PURE__ */ (0, import_jsx_runtime3.jsx)("td", { children: user.phone })
+        /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("tbody", { children: users.map((user, index3) => /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("td", { children: user.name }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("td", { children: user.email }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("td", { children: user.dateOfBirth ? format(new Date(user.dateOfBirth), "dd-MM-yyyy") : "N/A" }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("td", { children: user.gender }),
+          /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("td", { children: user.phone })
         ] }, index3)) })
       ] })
     ] }) });
@@ -29459,7 +29586,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var UserList_default = UserList;
 
   // src/components/UserForm.jsx
-  var import_react24 = __toESM(require_react());
+  var import_react25 = __toESM(require_react());
 
   // node_modules/zod/lib/index.mjs
   var util;
@@ -31635,37 +31762,37 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       return this.min(1, message2);
     }
   };
-  ZodArray.create = (schema2, params) => {
+  ZodArray.create = (schema3, params) => {
     return new ZodArray(__spreadValues({
-      type: schema2,
+      type: schema3,
       minLength: null,
       maxLength: null,
       exactLength: null,
       typeName: ZodFirstPartyTypeKind.ZodArray
     }, processCreateParams(params)));
   };
-  function deepPartialify(schema2) {
-    if (schema2 instanceof ZodObject) {
+  function deepPartialify(schema3) {
+    if (schema3 instanceof ZodObject) {
       const newShape = {};
-      for (const key in schema2.shape) {
-        const fieldSchema = schema2.shape[key];
+      for (const key in schema3.shape) {
+        const fieldSchema = schema3.shape[key];
         newShape[key] = ZodOptional.create(deepPartialify(fieldSchema));
       }
-      return new ZodObject(__spreadProps(__spreadValues({}, schema2._def), {
+      return new ZodObject(__spreadProps(__spreadValues({}, schema3._def), {
         shape: () => newShape
       }));
-    } else if (schema2 instanceof ZodArray) {
-      return new ZodArray(__spreadProps(__spreadValues({}, schema2._def), {
-        type: deepPartialify(schema2.element)
+    } else if (schema3 instanceof ZodArray) {
+      return new ZodArray(__spreadProps(__spreadValues({}, schema3._def), {
+        type: deepPartialify(schema3.element)
       }));
-    } else if (schema2 instanceof ZodOptional) {
-      return ZodOptional.create(deepPartialify(schema2.unwrap()));
-    } else if (schema2 instanceof ZodNullable) {
-      return ZodNullable.create(deepPartialify(schema2.unwrap()));
-    } else if (schema2 instanceof ZodTuple) {
-      return ZodTuple.create(schema2.items.map((item) => deepPartialify(item)));
+    } else if (schema3 instanceof ZodOptional) {
+      return ZodOptional.create(deepPartialify(schema3.unwrap()));
+    } else if (schema3 instanceof ZodNullable) {
+      return ZodNullable.create(deepPartialify(schema3.unwrap()));
+    } else if (schema3 instanceof ZodTuple) {
+      return ZodTuple.create(schema3.items.map((item) => deepPartialify(item)));
     } else {
-      return schema2;
+      return schema3;
     }
   }
   var ZodObject = class _ZodObject extends ZodType {
@@ -31870,8 +31997,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     //   }) as any;
     //   return merged;
     // }
-    setKey(key, schema2) {
-      return this.augment({ [key]: schema2 });
+    setKey(key, schema3) {
+      return this.augment({ [key]: schema3 });
     }
     // merge<Incoming extends AnyZodObject>(
     //   merging: Incoming
@@ -32302,10 +32429,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         status.dirty();
       }
       const items = [...ctx.data].map((item, itemIndex) => {
-        const schema2 = this._def.items[itemIndex] || this._def.rest;
-        if (!schema2)
+        const schema3 = this._def.items[itemIndex] || this._def.rest;
+        if (!schema3)
           return null;
-        return schema2._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
+        return schema3._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
       }).filter((x) => !!x);
       if (ctx.common.async) {
         return Promise.all(items).then((results) => {
@@ -32820,9 +32947,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }));
     }
   };
-  ZodPromise.create = (schema2, params) => {
+  ZodPromise.create = (schema3, params) => {
     return new ZodPromise(__spreadValues({
-      type: schema2,
+      type: schema3,
       typeName: ZodFirstPartyTypeKind.ZodPromise
     }, processCreateParams(params)));
   };
@@ -32946,16 +33073,16 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       util.assertNever(effect);
     }
   };
-  ZodEffects.create = (schema2, effect, params) => {
+  ZodEffects.create = (schema3, effect, params) => {
     return new ZodEffects(__spreadValues({
-      schema: schema2,
+      schema: schema3,
       typeName: ZodFirstPartyTypeKind.ZodEffects,
       effect
     }, processCreateParams(params)));
   };
-  ZodEffects.createWithPreprocess = (preprocess, schema2, params) => {
+  ZodEffects.createWithPreprocess = (preprocess, schema3, params) => {
     return new ZodEffects(__spreadValues({
-      schema: schema2,
+      schema: schema3,
       effect: { type: "preprocess", transform: preprocess },
       typeName: ZodFirstPartyTypeKind.ZodEffects
     }, processCreateParams(params)));
@@ -33433,11 +33560,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/react-datepicker/dist/index.es.js
-  var import_react9 = __toESM(require_react());
+  var import_react10 = __toESM(require_react());
 
   // node_modules/@floating-ui/react/dist/floating-ui.react.mjs
-  var React20 = __toESM(require_react(), 1);
-  var import_react8 = __toESM(require_react(), 1);
+  var React21 = __toESM(require_react(), 1);
+  var import_react9 = __toESM(require_react(), 1);
 
   // node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs
   function hasWindow() {
@@ -33715,7 +33842,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/@floating-ui/react/dist/floating-ui.react.mjs
-  var import_jsx_runtime4 = __toESM(require_jsx_runtime(), 1);
+  var import_jsx_runtime5 = __toESM(require_jsx_runtime(), 1);
   var ReactDOM2 = __toESM(require_react_dom(), 1);
 
   // node_modules/@floating-ui/core/dist/floating-ui.core.mjs
@@ -34748,10 +34875,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   };
 
   // node_modules/@floating-ui/react-dom/dist/floating-ui.react-dom.mjs
-  var React19 = __toESM(require_react(), 1);
-  var import_react7 = __toESM(require_react(), 1);
+  var React20 = __toESM(require_react(), 1);
+  var import_react8 = __toESM(require_react(), 1);
   var ReactDOM = __toESM(require_react_dom(), 1);
-  var index = typeof document !== "undefined" ? import_react7.useLayoutEffect : import_react7.useEffect;
+  var index = typeof document !== "undefined" ? import_react8.useLayoutEffect : import_react8.useEffect;
   function deepEqual(a, b) {
     if (a === b) {
       return true;
@@ -34811,7 +34938,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     return Math.round(value * dpr) / dpr;
   }
   function useLatestRef(value) {
-    const ref = React19.useRef(value);
+    const ref = React20.useRef(value);
     index(() => {
       ref.current = value;
     });
@@ -34834,7 +34961,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       whileElementsMounted,
       open
     } = options;
-    const [data2, setData] = React19.useState({
+    const [data2, setData] = React20.useState({
       x: 0,
       y: 0,
       strategy,
@@ -34842,19 +34969,19 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       middlewareData: {},
       isPositioned: false
     });
-    const [latestMiddleware, setLatestMiddleware] = React19.useState(middleware);
+    const [latestMiddleware, setLatestMiddleware] = React20.useState(middleware);
     if (!deepEqual(latestMiddleware, middleware)) {
       setLatestMiddleware(middleware);
     }
-    const [_reference, _setReference] = React19.useState(null);
-    const [_floating, _setFloating] = React19.useState(null);
-    const setReference = React19.useCallback((node) => {
+    const [_reference, _setReference] = React20.useState(null);
+    const [_floating, _setFloating] = React20.useState(null);
+    const setReference = React20.useCallback((node) => {
       if (node !== referenceRef.current) {
         referenceRef.current = node;
         _setReference(node);
       }
     }, []);
-    const setFloating = React19.useCallback((node) => {
+    const setFloating = React20.useCallback((node) => {
       if (node !== floatingRef.current) {
         floatingRef.current = node;
         _setFloating(node);
@@ -34862,14 +34989,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     }, []);
     const referenceEl = externalReference || _reference;
     const floatingEl = externalFloating || _floating;
-    const referenceRef = React19.useRef(null);
-    const floatingRef = React19.useRef(null);
-    const dataRef = React19.useRef(data2);
+    const referenceRef = React20.useRef(null);
+    const floatingRef = React20.useRef(null);
+    const dataRef = React20.useRef(data2);
     const hasWhileElementsMounted = whileElementsMounted != null;
     const whileElementsMountedRef = useLatestRef(whileElementsMounted);
     const platformRef = useLatestRef(platform2);
     const openRef = useLatestRef(open);
-    const update = React19.useCallback(() => {
+    const update = React20.useCallback(() => {
       if (!referenceRef.current || !floatingRef.current) {
         return;
       }
@@ -34905,7 +35032,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }));
       }
     }, [open]);
-    const isMountedRef = React19.useRef(false);
+    const isMountedRef = React20.useRef(false);
     index(() => {
       isMountedRef.current = true;
       return () => {
@@ -34922,17 +35049,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         update();
       }
     }, [referenceEl, floatingEl, update, whileElementsMountedRef, hasWhileElementsMounted]);
-    const refs = React19.useMemo(() => ({
+    const refs = React20.useMemo(() => ({
       reference: referenceRef,
       floating: floatingRef,
       setReference,
       setFloating
     }), [setReference, setFloating]);
-    const elements = React19.useMemo(() => ({
+    const elements = React20.useMemo(() => ({
       reference: referenceEl,
       floating: floatingEl
     }), [referenceEl, floatingEl]);
-    const floatingStyles = React19.useMemo(() => {
+    const floatingStyles = React20.useMemo(() => {
       const initialStyles = {
         position: strategy,
         left: 0,
@@ -34956,7 +35083,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         top: y
       };
     }, [strategy, transform, elements.floating, data2.x, data2.y]);
-    return React19.useMemo(() => __spreadProps(__spreadValues({}, data2), {
+    return React20.useMemo(() => __spreadProps(__spreadValues({}, data2), {
       update,
       refs,
       elements,
@@ -35005,11 +35132,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   });
 
   // node_modules/@floating-ui/react/dist/floating-ui.react.mjs
-  var SafeReact = __spreadValues({}, React20);
+  var SafeReact = __spreadValues({}, React21);
   var useInsertionEffect = SafeReact.useInsertionEffect;
   var useSafeInsertionEffect = useInsertionEffect || ((fn) => fn());
   function useEffectEvent(callback) {
-    const ref = React20.useRef(() => {
+    const ref = React21.useRef(() => {
       if (true) {
         throw new Error("Cannot call an event handler while rendering.");
       }
@@ -35017,7 +35144,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     useSafeInsertionEffect(() => {
       ref.current = callback;
     });
-    return React20.useCallback(function() {
+    return React21.useCallback(function() {
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
@@ -35028,7 +35155,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var ARROW_DOWN = "ArrowDown";
   var ARROW_LEFT = "ArrowLeft";
   var ARROW_RIGHT = "ArrowRight";
-  var index2 = typeof document !== "undefined" ? import_react8.useLayoutEffect : import_react8.useEffect;
+  var index2 = typeof document !== "undefined" ? import_react9.useLayoutEffect : import_react9.useEffect;
   var horizontalKeys = [ARROW_LEFT, ARROW_RIGHT];
   var verticalKeys = [ARROW_UP, ARROW_DOWN];
   var allKeys = [...horizontalKeys, ...verticalKeys];
@@ -35040,13 +35167,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     "floating-ui-" + Math.random().toString(36).slice(2, 6) + count++
   );
   function useFloatingId() {
-    const [id, setId] = React20.useState(() => serverHandoffComplete ? genId() : void 0);
+    const [id, setId] = React21.useState(() => serverHandoffComplete ? genId() : void 0);
     index2(() => {
       if (id == null) {
         setId(genId());
       }
     }, []);
-    React20.useEffect(() => {
+    React21.useEffect(() => {
       serverHandoffComplete = true;
     }, []);
     return id;
@@ -35081,7 +35208,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       console.error(message2);
     }
   }
-  var FloatingArrow = /* @__PURE__ */ React20.forwardRef(function FloatingArrow2(props, ref) {
+  var FloatingArrow = /* @__PURE__ */ React21.forwardRef(function FloatingArrow2(props, ref) {
     const _a2 = props, {
       context: {
         placement,
@@ -35122,7 +35249,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }
     }
     const clipPathId = useId2();
-    const [isRTL2, setIsRTL] = React20.useState(false);
+    const [isRTL2, setIsRTL] = React21.useState(false);
     index2(() => {
       if (!floating) return;
       const isRTL3 = getComputedStyle2(floating).direction === "rtl";
@@ -35158,7 +35285,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       bottom: isCustomShape ? "" : "rotate(180deg)",
       right: isCustomShape ? "rotate(-90deg)" : "rotate(90deg)"
     }[side];
-    return /* @__PURE__ */ (0, import_jsx_runtime4.jsxs)("svg", __spreadProps(__spreadValues({}, rest), {
+    return /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("svg", __spreadProps(__spreadValues({}, rest), {
       "aria-hidden": true,
       ref,
       width: isCustomShape ? width : width + computedStrokeWidth,
@@ -35172,18 +35299,18 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         [side]: isVerticalSide || isCustomShape ? "100%" : "calc(100% - " + computedStrokeWidth / 2 + "px)",
         transform: [rotation, transform].filter((t) => !!t).join(" ")
       }, restStyle),
-      children: [computedStrokeWidth > 0 && /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", {
+      children: [computedStrokeWidth > 0 && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
         clipPath: "url(#" + clipPathId + ")",
         fill: "none",
         stroke,
         strokeWidth: computedStrokeWidth + (d ? 0 : 1),
         d: dValue
-      }), /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("path", {
+      }), /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("path", {
         stroke: computedStrokeWidth && !d ? rest.fill : "none",
         d: dValue
-      }), /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("clipPath", {
+      }), /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("clipPath", {
         id: clipPathId,
-        children: /* @__PURE__ */ (0, import_jsx_runtime4.jsx)("rect", {
+        children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("rect", {
           x: -halfStrokeWidth,
           y: halfStrokeWidth * (isCustomShape ? -1 : 1),
           width: width + computedStrokeWidth,
@@ -35208,13 +35335,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }
     };
   }
-  var FloatingNodeContext = /* @__PURE__ */ React20.createContext(null);
-  var FloatingTreeContext = /* @__PURE__ */ React20.createContext(null);
+  var FloatingNodeContext = /* @__PURE__ */ React21.createContext(null);
+  var FloatingTreeContext = /* @__PURE__ */ React21.createContext(null);
   var useFloatingParentNodeId = () => {
     var _React$useContext;
-    return ((_React$useContext = React20.useContext(FloatingNodeContext)) == null ? void 0 : _React$useContext.id) || null;
+    return ((_React$useContext = React21.useContext(FloatingNodeContext)) == null ? void 0 : _React$useContext.id) || null;
   };
-  var useFloatingTree = () => React20.useContext(FloatingTreeContext);
+  var useFloatingTree = () => React21.useContext(FloatingTreeContext);
   function useFloatingRootContext(options) {
     const {
       open = false,
@@ -35222,8 +35349,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       elements: elementsProp
     } = options;
     const floatingId = useId2();
-    const dataRef = React20.useRef({});
-    const [events] = React20.useState(() => createPubSub());
+    const dataRef = React21.useRef({});
+    const [events] = React21.useState(() => createPubSub());
     const nested = useFloatingParentNodeId() != null;
     if (true) {
       const optionDomReference = elementsProp.reference;
@@ -35231,7 +35358,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         error("Cannot pass a virtual element to the `elements.reference` option,", "as it must be a real DOM element. Use `refs.setPositionReference()`", "instead.");
       }
     }
-    const [positionReference, setPositionReference] = React20.useState(elementsProp.reference);
+    const [positionReference, setPositionReference] = React21.useState(elementsProp.reference);
     const onOpenChange = useEffectEvent((open2, event, reason) => {
       dataRef.current.openEvent = open2 ? event : void 0;
       events.emit("openchange", {
@@ -35242,15 +35369,15 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       });
       onOpenChangeProp == null || onOpenChangeProp(open2, event, reason);
     });
-    const refs = React20.useMemo(() => ({
+    const refs = React21.useMemo(() => ({
       setPositionReference
     }), []);
-    const elements = React20.useMemo(() => ({
+    const elements = React21.useMemo(() => ({
       reference: positionReference || elementsProp.reference || null,
       floating: elementsProp.floating || null,
       domReference: elementsProp.reference
     }), [positionReference, elementsProp.reference, elementsProp.floating]);
-    return React20.useMemo(() => ({
+    return React21.useMemo(() => ({
       dataRef,
       open,
       onOpenChange,
@@ -35275,11 +35402,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     }));
     const rootContext = options.rootContext || internalRootContext;
     const computedElements = rootContext.elements;
-    const [_domReference, setDomReference] = React20.useState(null);
-    const [positionReference, _setPositionReference] = React20.useState(null);
+    const [_domReference, setDomReference] = React21.useState(null);
+    const [positionReference, _setPositionReference] = React21.useState(null);
     const optionDomReference = computedElements == null ? void 0 : computedElements.domReference;
     const domReference = optionDomReference || _domReference;
-    const domReferenceRef = React20.useRef(null);
+    const domReferenceRef = React21.useRef(null);
     const tree = useFloatingTree();
     index2(() => {
       if (domReference) {
@@ -35291,7 +35418,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         reference: positionReference
       })
     }));
-    const setPositionReference = React20.useCallback((node) => {
+    const setPositionReference = React21.useCallback((node) => {
       const computedPositionReference = isElement(node) ? {
         getBoundingClientRect: () => node.getBoundingClientRect(),
         contextElement: node
@@ -35299,7 +35426,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       _setPositionReference(computedPositionReference);
       position.refs.setReference(computedPositionReference);
     }, [position.refs]);
-    const setReference = React20.useCallback((node) => {
+    const setReference = React21.useCallback((node) => {
       if (isElement(node) || node === null) {
         domReferenceRef.current = node;
         setDomReference(node);
@@ -35311,15 +35438,15 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         position.refs.setReference(node);
       }
     }, [position.refs]);
-    const refs = React20.useMemo(() => __spreadProps(__spreadValues({}, position.refs), {
+    const refs = React21.useMemo(() => __spreadProps(__spreadValues({}, position.refs), {
       setReference,
       setPositionReference,
       domReference: domReferenceRef
     }), [position.refs, setReference, setPositionReference]);
-    const elements = React20.useMemo(() => __spreadProps(__spreadValues({}, position.elements), {
+    const elements = React21.useMemo(() => __spreadProps(__spreadValues({}, position.elements), {
       domReference
     }), [position.elements, domReference]);
-    const context = React20.useMemo(() => __spreadProps(__spreadValues(__spreadValues({}, position), rootContext), {
+    const context = React21.useMemo(() => __spreadProps(__spreadValues(__spreadValues({}, position), rootContext), {
       refs,
       elements,
       nodeId
@@ -35331,7 +35458,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         node.context = context;
       }
     });
-    return React20.useMemo(() => __spreadProps(__spreadValues({}, position), {
+    return React21.useMemo(() => __spreadProps(__spreadValues({}, position), {
       context,
       refs,
       elements
@@ -35380,13 +35507,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var CalendarContainer = function(_a2) {
     var _b = _a2.showTimeSelectOnly, showTimeSelectOnly = _b === void 0 ? false : _b, _c = _a2.showTime, showTime = _c === void 0 ? false : _c, className = _a2.className, children = _a2.children;
     var ariaLabel = showTimeSelectOnly ? "Choose Time" : "Choose Date".concat(showTime ? " and Time" : "");
-    return import_react9.default.createElement("div", { className, role: "dialog", "aria-label": ariaLabel, "aria-modal": "true" }, children);
+    return import_react10.default.createElement("div", { className, role: "dialog", "aria-label": ariaLabel, "aria-modal": "true" }, children);
   };
   var useDetectClickOutside = function(onClickOutside, ignoreClass) {
-    var ref = (0, import_react9.useRef)(null);
-    var onClickOutsideRef = (0, import_react9.useRef)(onClickOutside);
+    var ref = (0, import_react10.useRef)(null);
+    var onClickOutsideRef = (0, import_react10.useRef)(onClickOutside);
     onClickOutsideRef.current = onClickOutside;
-    var handleClickOutside = (0, import_react9.useCallback)(function(event) {
+    var handleClickOutside = (0, import_react10.useCallback)(function(event) {
       var _a2;
       var target = event.composed && event.composedPath && event.composedPath().find(function(eventTarget) {
         return eventTarget instanceof Node;
@@ -35397,7 +35524,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }
       }
     }, [ignoreClass]);
-    (0, import_react9.useEffect)(function() {
+    (0, import_react10.useEffect)(function() {
       document.addEventListener("mousedown", handleClickOutside);
       return function() {
         document.removeEventListener("mousedown", handleClickOutside);
@@ -35408,7 +35535,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var ClickOutsideWrapper = function(_a2) {
     var children = _a2.children, onClickOutside = _a2.onClickOutside, className = _a2.className, containerRef = _a2.containerRef, style = _a2.style, ignoreClass = _a2.ignoreClass;
     var detectRef = useDetectClickOutside(onClickOutside, ignoreClass);
-    return import_react9.default.createElement("div", { className, style, ref: function(node) {
+    return import_react10.default.createElement("div", { className, style, ref: function(node) {
       detectRef.current = node;
       if (containerRef) {
         containerRef.current = node;
@@ -36003,7 +36130,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       __extends(InputTime2, _super);
       function InputTime2(props) {
         var _this = _super.call(this, props) || this;
-        _this.inputRef = import_react9.default.createRef();
+        _this.inputRef = import_react10.default.createRef();
         _this.onTimeChange = function(time) {
           var _a2, _b;
           _this.setState({ time });
@@ -36021,13 +36148,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var time = _this.state.time;
           var _a2 = _this.props, date = _a2.date, timeString = _a2.timeString, customTimeInput = _a2.customTimeInput;
           if (customTimeInput) {
-            return (0, import_react9.cloneElement)(customTimeInput, {
+            return (0, import_react10.cloneElement)(customTimeInput, {
               date,
               value: time,
               onChange: _this.onTimeChange
             });
           }
-          return import_react9.default.createElement("input", { type: "time", className: "react-datepicker-time__input", placeholder: "Time", name: "time-input", ref: _this.inputRef, onClick: function() {
+          return import_react10.default.createElement("input", { type: "time", className: "react-datepicker-time__input", placeholder: "Time", name: "time-input", ref: _this.inputRef, onClick: function() {
             var _a3;
             (_a3 = _this.inputRef.current) === null || _a3 === void 0 ? void 0 : _a3.focus();
           }, required: true, value: time, onChange: function(event) {
@@ -36048,19 +36175,19 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         return null;
       };
       InputTime2.prototype.render = function() {
-        return import_react9.default.createElement(
+        return import_react10.default.createElement(
           "div",
           { className: "react-datepicker__input-time-container" },
-          import_react9.default.createElement("div", { className: "react-datepicker-time__caption" }, this.props.timeInputLabel),
-          import_react9.default.createElement(
+          import_react10.default.createElement("div", { className: "react-datepicker-time__caption" }, this.props.timeInputLabel),
+          import_react10.default.createElement(
             "div",
             { className: "react-datepicker-time__input-container" },
-            import_react9.default.createElement("div", { className: "react-datepicker-time__input" }, this.renderTimeInput())
+            import_react10.default.createElement("div", { className: "react-datepicker-time__input" }, this.renderTimeInput())
           )
         );
       };
       return InputTime2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var Day = (
     /** @class */
@@ -36068,7 +36195,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       __extends(Day2, _super);
       function Day2() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.dayEl = (0, import_react9.createRef)();
+        _this.dayEl = (0, import_react10.createRef)();
         _this.handleClick = function(event) {
           if (!_this.isDisabled() && _this.props.onClick) {
             _this.props.onClick(event);
@@ -36303,11 +36430,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         _this.render = function() {
           return (
             // TODO: Use <option> instead of the "option" role to ensure accessibility across all devices.
-            import_react9.default.createElement(
+            import_react10.default.createElement(
               "div",
               { ref: _this.dayEl, className: _this.getClassNames(_this.props.day), onKeyDown: _this.handleOnKeyDown, onClick: _this.handleClick, onMouseEnter: !_this.props.usePointerEvent ? _this.handleMouseEnter : void 0, onPointerEnter: _this.props.usePointerEvent ? _this.handleMouseEnter : void 0, tabIndex: _this.getTabIndex(), "aria-label": _this.getAriaLabel(), role: "option", title: _this.getTitle(), "aria-disabled": _this.isDisabled(), "aria-current": _this.isCurrentDay() ? "date" : void 0, "aria-selected": _this.isSelected() || _this.isInRange() },
               _this.renderDayContents(),
-              _this.getTitle() !== "" && import_react9.default.createElement("span", { className: "overlay" }, _this.getTitle())
+              _this.getTitle() !== "" && import_react10.default.createElement("span", { className: "overlay" }, _this.getTitle())
             )
           );
         };
@@ -36348,7 +36475,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         );
       };
       return Day2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var WeekNumber = (
     /** @class */
@@ -36356,7 +36483,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       __extends(WeekNumber2, _super);
       function WeekNumber2() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.weekNumberEl = (0, import_react9.createRef)();
+        _this.weekNumberEl = (0, import_react10.createRef)();
         _this.handleClick = function(event) {
           if (_this.props.onClick) {
             _this.props.onClick(event);
@@ -36416,10 +36543,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           "react-datepicker__week-number--clickable": !!onClick && !isWeekDisabled,
           "react-datepicker__week-number--selected": !!onClick && isSameDay2(this.props.date, this.props.selected)
         };
-        return import_react9.default.createElement("div", { ref: this.weekNumberEl, className: clsx(weekNumberClasses), "aria-label": "".concat(ariaLabelPrefix, " ").concat(this.props.weekNumber), onClick: this.handleClick, onKeyDown: this.handleOnKeyDown, tabIndex: this.getTabIndex() }, weekNumber);
+        return import_react10.default.createElement("div", { ref: this.weekNumberEl, className: clsx(weekNumberClasses), "aria-label": "".concat(ariaLabelPrefix, " ").concat(this.props.weekNumber), onClick: this.handleClick, onKeyDown: this.handleOnKeyDown, tabIndex: this.getTabIndex() }, weekNumber);
       };
       return WeekNumber2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var Week = (
     /** @class */
@@ -36493,11 +36620,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var weekNumber = _this.formatWeekNumber(startOfWeek2);
           if (_this.props.showWeekNumber) {
             var onClickAction = _this.props.onWeekSelect || _this.props.showWeekPicker ? _this.handleWeekClick.bind(_this, startOfWeek2, weekNumber) : void 0;
-            days.push(import_react9.default.createElement(WeekNumber, _assign({ key: "W" }, Week2.defaultProps, _this.props, { weekNumber, isWeekDisabled: _this.isWeekDisabled(), date: startOfWeek2, onClick: onClickAction })));
+            days.push(import_react10.default.createElement(WeekNumber, _assign({ key: "W" }, Week2.defaultProps, _this.props, { weekNumber, isWeekDisabled: _this.isWeekDisabled(), date: startOfWeek2, onClick: onClickAction })));
           }
           return days.concat([0, 1, 2, 3, 4, 5, 6].map(function(offset4) {
             var day = addDays(startOfWeek2, offset4);
-            return import_react9.default.createElement(Day, _assign({}, Week2.defaultProps, _this.props, { ariaLabelPrefixWhenEnabled: _this.props.chooseDayAriaLabelPrefix, ariaLabelPrefixWhenDisabled: _this.props.disabledDayAriaLabelPrefix, key: day.valueOf(), day, onClick: _this.handleDayClick.bind(_this, day), onMouseEnter: _this.handleDayMouseEnter.bind(_this, day) }));
+            return import_react10.default.createElement(Day, _assign({}, Week2.defaultProps, _this.props, { ariaLabelPrefixWhenEnabled: _this.props.chooseDayAriaLabelPrefix, ariaLabelPrefixWhenDisabled: _this.props.disabledDayAriaLabelPrefix, key: day.valueOf(), day, onClick: _this.handleDayClick.bind(_this, day), onMouseEnter: _this.handleDayMouseEnter.bind(_this, day) }));
           }));
         };
         _this.startOfWeek = function() {
@@ -36523,10 +36650,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           "react-datepicker__week--selected": isSameDay2(this.startOfWeek(), this.props.selected),
           "react-datepicker__week--keyboard-selected": this.isKeyboardSelected()
         };
-        return import_react9.default.createElement("div", { className: clsx(weekNumberClasses) }, this.renderDays());
+        return import_react10.default.createElement("div", { className: clsx(weekNumberClasses) }, this.renderDays());
       };
       return Week2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var _a;
   var FIXED_HEIGHT_STANDARD_WEEK_COUNT = 6;
@@ -36578,10 +36705,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       function Month2() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.MONTH_REFS = __spreadArray([], Array(12), true).map(function() {
-          return (0, import_react9.createRef)();
+          return (0, import_react10.createRef)();
         });
         _this.QUARTER_REFS = __spreadArray([], Array(4), true).map(function() {
-          return (0, import_react9.createRef)();
+          return (0, import_react10.createRef)();
         });
         _this.isDisabled = function(day) {
           return isDayDisabled(day, {
@@ -36741,7 +36868,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var selected = _this.props.selected ? isSelected(_this.props.selected) : void 0;
           var preSelection = _this.props.preSelection ? isPreSelected(_this.props.preSelection) : void 0;
           while (true) {
-            weeks.push(import_react9.default.createElement(Week, _assign({}, _this.props, { ariaLabelPrefix: _this.props.weekAriaLabelPrefix, key: i, day: currentWeekStart, month: getMonth(_this.props.day), onDayClick: _this.handleDayClick, onDayMouseEnter: _this.handleDayMouseEnter, selected, preSelection, showWeekNumber: _this.props.showWeekNumbers })));
+            weeks.push(import_react10.default.createElement(Week, _assign({}, _this.props, { ariaLabelPrefix: _this.props.weekAriaLabelPrefix, key: i, day: currentWeekStart, month: getMonth(_this.props.day), onDayClick: _this.handleDayClick, onDayMouseEnter: _this.handleDayMouseEnter, selected, preSelection, showWeekNumber: _this.props.showWeekNumbers })));
             if (breakAfterNextPush)
               break;
             i++;
@@ -37009,8 +37136,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var _b = _this.props, showTwoColumnMonthYearPicker = _b.showTwoColumnMonthYearPicker, showFourColumnMonthYearPicker = _b.showFourColumnMonthYearPicker, day = _b.day, selected = _b.selected;
           var monthColumns = (_a2 = MONTH_COLUMNS[getMonthColumnsLayout(showFourColumnMonthYearPicker, showTwoColumnMonthYearPicker)]) === null || _a2 === void 0 ? void 0 : _a2.grid;
           return monthColumns === null || monthColumns === void 0 ? void 0 : monthColumns.map(function(month, i) {
-            return import_react9.default.createElement("div", { className: "react-datepicker__month-wrapper", key: i }, month.map(function(m, j) {
-              return import_react9.default.createElement("div", { ref: _this.MONTH_REFS[m], key: j, onClick: function(event) {
+            return import_react10.default.createElement("div", { className: "react-datepicker__month-wrapper", key: i }, month.map(function(m, j) {
+              return import_react10.default.createElement("div", { ref: _this.MONTH_REFS[m], key: j, onClick: function(event) {
                 _this.onMonthClick(event, m);
               }, onKeyDown: function(event) {
                 if (isSpaceKeyDown(event)) {
@@ -37029,8 +37156,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         _this.renderQuarters = function() {
           var _a2 = _this.props, day = _a2.day, selected = _a2.selected;
           var quarters = [1, 2, 3, 4];
-          return import_react9.default.createElement("div", { className: "react-datepicker__quarter-wrapper" }, quarters.map(function(q, j) {
-            return import_react9.default.createElement("div", { key: j, ref: _this.QUARTER_REFS[j], role: "option", onClick: function(event) {
+          return import_react10.default.createElement("div", { className: "react-datepicker__quarter-wrapper" }, quarters.map(function(q, j) {
+            return import_react10.default.createElement("div", { key: j, ref: _this.QUARTER_REFS[j], role: "option", onClick: function(event) {
               _this.onQuarterClick(event, q);
             }, onKeyDown: function(event) {
               _this.onQuarterKeyDown(event, q);
@@ -37062,10 +37189,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       Month2.prototype.render = function() {
         var _a2 = this.props, showMonthYearPicker = _a2.showMonthYearPicker, showQuarterYearPicker = _a2.showQuarterYearPicker, day = _a2.day, _b = _a2.ariaLabelPrefix, ariaLabelPrefix = _b === void 0 ? "Month " : _b;
         var formattedAriaLabelPrefix = ariaLabelPrefix ? ariaLabelPrefix.trim() + " " : "";
-        return import_react9.default.createElement("div", { className: this.getClassNames(), onMouseLeave: !this.props.usePointerEvent ? this.handleMouseLeave : void 0, onPointerLeave: this.props.usePointerEvent ? this.handleMouseLeave : void 0, "aria-label": "".concat(formattedAriaLabelPrefix).concat(formatDate(day, "MMMM, yyyy", this.props.locale)), role: "listbox" }, showMonthYearPicker ? this.renderMonths() : showQuarterYearPicker ? this.renderQuarters() : this.renderWeeks());
+        return import_react10.default.createElement("div", { className: this.getClassNames(), onMouseLeave: !this.props.usePointerEvent ? this.handleMouseLeave : void 0, onPointerLeave: this.props.usePointerEvent ? this.handleMouseLeave : void 0, "aria-label": "".concat(formattedAriaLabelPrefix).concat(formatDate(day, "MMMM, yyyy", this.props.locale)), role: "listbox" }, showMonthYearPicker ? this.renderMonths() : showQuarterYearPicker ? this.renderQuarters() : this.renderWeeks());
       };
       return Month2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var MonthDropdownOptions = (
     /** @class */
@@ -37078,10 +37205,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         };
         _this.renderOptions = function() {
           return _this.props.monthNames.map(function(month, i) {
-            return import_react9.default.createElement(
+            return import_react10.default.createElement(
               "div",
               { className: _this.isSelectedMonth(i) ? "react-datepicker__month-option react-datepicker__month-option--selected_month" : "react-datepicker__month-option", key: month, onClick: _this.onChange.bind(_this, i), "aria-selected": _this.isSelectedMonth(i) ? "true" : void 0 },
-              _this.isSelectedMonth(i) ? import_react9.default.createElement("span", { className: "react-datepicker__month-option--selected" }, "\u2713") : "",
+              _this.isSelectedMonth(i) ? import_react10.default.createElement("span", { className: "react-datepicker__month-option--selected" }, "\u2713") : "",
               month
             );
           });
@@ -37095,10 +37222,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         return _this;
       }
       MonthDropdownOptions2.prototype.render = function() {
-        return import_react9.default.createElement(ClickOutsideWrapper, { className: "react-datepicker__month-dropdown", onClickOutside: this.handleClickOutside }, this.renderOptions());
+        return import_react10.default.createElement(ClickOutsideWrapper, { className: "react-datepicker__month-dropdown", onClickOutside: this.handleClickOutside }, this.renderOptions());
       };
       return MonthDropdownOptions2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var MonthDropdown = (
     /** @class */
@@ -37111,24 +37238,24 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         };
         _this.renderSelectOptions = function(monthNames) {
           return monthNames.map(function(m, i) {
-            return import_react9.default.createElement("option", { key: m, value: i }, m);
+            return import_react10.default.createElement("option", { key: m, value: i }, m);
           });
         };
         _this.renderSelectMode = function(monthNames) {
-          return import_react9.default.createElement("select", { value: _this.props.month, className: "react-datepicker__month-select", onChange: function(e) {
+          return import_react10.default.createElement("select", { value: _this.props.month, className: "react-datepicker__month-select", onChange: function(e) {
             return _this.onChange(parseInt(e.target.value));
           } }, _this.renderSelectOptions(monthNames));
         };
         _this.renderReadView = function(visible, monthNames) {
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "div",
             { key: "read", style: { visibility: visible ? "visible" : "hidden" }, className: "react-datepicker__month-read-view", onClick: _this.toggleDropdown },
-            import_react9.default.createElement("span", { className: "react-datepicker__month-read-view--down-arrow" }),
-            import_react9.default.createElement("span", { className: "react-datepicker__month-read-view--selected-month" }, monthNames[_this.props.month])
+            import_react10.default.createElement("span", { className: "react-datepicker__month-read-view--down-arrow" }),
+            import_react10.default.createElement("span", { className: "react-datepicker__month-read-view--selected-month" }, monthNames[_this.props.month])
           );
         };
         _this.renderDropdown = function(monthNames) {
-          return import_react9.default.createElement(MonthDropdownOptions, _assign({ key: "dropdown" }, _this.props, { monthNames, onChange: _this.onChange, onCancel: _this.toggleDropdown }));
+          return import_react10.default.createElement(MonthDropdownOptions, _assign({ key: "dropdown" }, _this.props, { monthNames, onChange: _this.onChange, onCancel: _this.toggleDropdown }));
         };
         _this.renderScrollMode = function(monthNames) {
           var dropdownVisible = _this.state.dropdownVisible;
@@ -37167,10 +37294,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             renderedDropdown = this.renderSelectMode(monthNames);
             break;
         }
-        return import_react9.default.createElement("div", { className: "react-datepicker__month-dropdown-container react-datepicker__month-dropdown-container--".concat(this.props.dropdownMode) }, renderedDropdown);
+        return import_react10.default.createElement("div", { className: "react-datepicker__month-dropdown-container react-datepicker__month-dropdown-container--".concat(this.props.dropdownMode) }, renderedDropdown);
       };
       return MonthDropdown2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   function generateMonthYears(minDate, maxDate) {
     var list = [];
@@ -37192,10 +37319,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           return _this.state.monthYearsList.map(function(monthYear) {
             var monthYearPoint = getTime(monthYear);
             var isSameMonthYear = isSameYear2(_this.props.date, monthYear) && isSameMonth2(_this.props.date, monthYear);
-            return import_react9.default.createElement(
+            return import_react10.default.createElement(
               "div",
               { className: isSameMonthYear ? "react-datepicker__month-year-option--selected_month-year" : "react-datepicker__month-year-option", key: monthYearPoint, onClick: _this.onChange.bind(_this, monthYearPoint), "aria-selected": isSameMonthYear ? "true" : void 0 },
-              isSameMonthYear ? import_react9.default.createElement("span", { className: "react-datepicker__month-year-option--selected" }, "\u2713") : "",
+              isSameMonthYear ? import_react10.default.createElement("span", { className: "react-datepicker__month-year-option--selected" }, "\u2713") : "",
               formatDate(monthYear, _this.props.dateFormat, _this.props.locale)
             );
           });
@@ -37216,10 +37343,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           "react-datepicker__month-year-dropdown": true,
           "react-datepicker__month-year-dropdown--scrollable": this.props.scrollableMonthYearDropdown
         });
-        return import_react9.default.createElement(ClickOutsideWrapper, { className: dropdownClass, onClickOutside: this.handleClickOutside }, this.renderOptions());
+        return import_react10.default.createElement(ClickOutsideWrapper, { className: dropdownClass, onClickOutside: this.handleClickOutside }, this.renderOptions());
       };
       return MonthYearDropdownOptions2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var MonthYearDropdown = (
     /** @class */
@@ -37236,7 +37363,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var options = [];
           while (!isAfter(currDate, lastDate)) {
             var timePoint = getTime(currDate);
-            options.push(import_react9.default.createElement("option", { key: timePoint, value: timePoint }, formatDate(currDate, _this.props.dateFormat, _this.props.locale)));
+            options.push(import_react10.default.createElement("option", { key: timePoint, value: timePoint }, formatDate(currDate, _this.props.dateFormat, _this.props.locale)));
             currDate = addMonths(currDate, 1);
           }
           return options;
@@ -37245,19 +37372,19 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           _this.onChange(parseInt(event.target.value));
         };
         _this.renderSelectMode = function() {
-          return import_react9.default.createElement("select", { value: getTime(getStartOfMonth(_this.props.date)), className: "react-datepicker__month-year-select", onChange: _this.onSelectChange }, _this.renderSelectOptions());
+          return import_react10.default.createElement("select", { value: getTime(getStartOfMonth(_this.props.date)), className: "react-datepicker__month-year-select", onChange: _this.onSelectChange }, _this.renderSelectOptions());
         };
         _this.renderReadView = function(visible) {
           var yearMonth = formatDate(_this.props.date, _this.props.dateFormat, _this.props.locale);
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "div",
             { key: "read", style: { visibility: visible ? "visible" : "hidden" }, className: "react-datepicker__month-year-read-view", onClick: _this.toggleDropdown },
-            import_react9.default.createElement("span", { className: "react-datepicker__month-year-read-view--down-arrow" }),
-            import_react9.default.createElement("span", { className: "react-datepicker__month-year-read-view--selected-month-year" }, yearMonth)
+            import_react10.default.createElement("span", { className: "react-datepicker__month-year-read-view--down-arrow" }),
+            import_react10.default.createElement("span", { className: "react-datepicker__month-year-read-view--selected-month-year" }, yearMonth)
           );
         };
         _this.renderDropdown = function() {
-          return import_react9.default.createElement(MonthYearDropdownOptions, _assign({ key: "dropdown" }, _this.props, { onChange: _this.onChange, onCancel: _this.toggleDropdown }));
+          return import_react10.default.createElement(MonthYearDropdownOptions, _assign({ key: "dropdown" }, _this.props, { onChange: _this.onChange, onCancel: _this.toggleDropdown }));
         };
         _this.renderScrollMode = function() {
           var dropdownVisible = _this.state.dropdownVisible;
@@ -37292,10 +37419,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             renderedDropdown = this.renderSelectMode();
             break;
         }
-        return import_react9.default.createElement("div", { className: "react-datepicker__month-year-dropdown-container react-datepicker__month-year-dropdown-container--".concat(this.props.dropdownMode) }, renderedDropdown);
+        return import_react10.default.createElement("div", { className: "react-datepicker__month-year-dropdown-container react-datepicker__month-year-dropdown-container--".concat(this.props.dropdownMode) }, renderedDropdown);
       };
       return MonthYearDropdown2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var Time = (
     /** @class */
@@ -37390,7 +37517,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             return prev;
           }, times[0]);
           return times.map(function(time) {
-            return import_react9.default.createElement("li", { key: time.valueOf(), onClick: _this.handleClick.bind(_this, time), className: _this.liClasses(time), ref: function(li) {
+            return import_react10.default.createElement("li", { key: time.valueOf(), onClick: _this.handleClick.bind(_this, time), className: _this.liClasses(time), ref: function(li) {
               if (time === timeToFocus) {
                 _this.centerLi = li;
               }
@@ -37401,14 +37528,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         };
         _this.renderTimeCaption = function() {
           if (_this.props.showTimeCaption === false) {
-            return import_react9.default.createElement(import_react9.default.Fragment, null);
+            return import_react10.default.createElement(import_react10.default.Fragment, null);
           }
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "div",
             { className: "react-datepicker__header react-datepicker__header--time ".concat(_this.props.showTimeSelectOnly ? "react-datepicker__header--time--only" : ""), ref: function(header) {
               _this.header = header;
             } },
-            import_react9.default.createElement("div", { className: "react-datepicker-time__header" }, _this.props.timeCaption)
+            import_react10.default.createElement("div", { className: "react-datepicker-time__header" }, _this.props.timeCaption)
           );
         };
         return _this;
@@ -37437,17 +37564,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         var _this = this;
         var _a2;
         var height = this.state.height;
-        return import_react9.default.createElement(
+        return import_react10.default.createElement(
           "div",
           { className: "react-datepicker__time-container ".concat(((_a2 = this.props.todayButton) !== null && _a2 !== void 0 ? _a2 : Time2.defaultProps.todayButton) ? "react-datepicker__time-container--with-today-button" : "") },
           this.renderTimeCaption(),
-          import_react9.default.createElement(
+          import_react10.default.createElement(
             "div",
             { className: "react-datepicker__time" },
-            import_react9.default.createElement(
+            import_react10.default.createElement(
               "div",
               { className: "react-datepicker__time-box" },
-              import_react9.default.createElement("ul", { className: "react-datepicker__time-list", ref: function(list) {
+              import_react10.default.createElement("ul", { className: "react-datepicker__time-list", ref: function(list) {
                 _this.list = list;
               }, style: height ? { height } : {}, role: "listbox", "aria-label": this.props.timeCaption }, this.renderTimes())
             )
@@ -37458,7 +37585,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         return centerLiRef.offsetTop - (listHeight / 2 - centerLiRef.clientHeight / 2);
       };
       return Time2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var VERTICAL_NAVIGATION_OFFSET = 3;
   var Year = (
@@ -37468,7 +37595,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       function Year2(props) {
         var _this = _super.call(this, props) || this;
         _this.YEAR_REFS = __spreadArray([], Array(_this.props.yearItemNumber), true).map(function() {
-          return (0, import_react9.createRef)();
+          return (0, import_react10.createRef)();
         });
         _this.isDisabled = function(date) {
           return isDayDisabled(date, {
@@ -37696,7 +37823,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }
         var _b = getYearsPeriod(date, yearItemNumber), startPeriod = _b.startPeriod, endPeriod = _b.endPeriod;
         var _loop_1 = function(y2) {
-          yearsList.push(import_react9.default.createElement("div", { ref: this_1.YEAR_REFS[y2 - startPeriod], onClick: function(event) {
+          yearsList.push(import_react10.default.createElement("div", { ref: this_1.YEAR_REFS[y2 - startPeriod], onClick: function(event) {
             _this.onYearClick(event, y2);
           }, onKeyDown: function(event) {
             if (isSpaceKeyDown(event)) {
@@ -37718,14 +37845,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         for (var y = startPeriod; y <= endPeriod; y++) {
           _loop_1(y);
         }
-        return import_react9.default.createElement(
+        return import_react10.default.createElement(
           "div",
           { className: "react-datepicker__year" },
-          import_react9.default.createElement("div", { className: "react-datepicker__year-wrapper", onMouseLeave: !this.props.usePointerEvent ? this.props.clearSelectingDate : void 0, onPointerLeave: this.props.usePointerEvent ? this.props.clearSelectingDate : void 0 }, yearsList)
+          import_react10.default.createElement("div", { className: "react-datepicker__year-wrapper", onMouseLeave: !this.props.usePointerEvent ? this.props.clearSelectingDate : void 0, onPointerLeave: this.props.usePointerEvent ? this.props.clearSelectingDate : void 0 }, yearsList)
         );
       };
       return Year2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   function generateYears(year, noOfYear, minDate, maxDate) {
     var list = [];
@@ -37753,10 +37880,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         _this.renderOptions = function() {
           var selectedYear = _this.props.year;
           var options = _this.state.yearsList.map(function(year) {
-            return import_react9.default.createElement(
+            return import_react10.default.createElement(
               "div",
               { className: selectedYear === year ? "react-datepicker__year-option react-datepicker__year-option--selected_year" : "react-datepicker__year-option", key: year, onClick: _this.onChange.bind(_this, year), "aria-selected": selectedYear === year ? "true" : void 0 },
-              selectedYear === year ? import_react9.default.createElement("span", { className: "react-datepicker__year-option--selected" }, "\u2713") : "",
+              selectedYear === year ? import_react10.default.createElement("span", { className: "react-datepicker__year-option--selected" }, "\u2713") : "",
               year
             );
           });
@@ -37765,19 +37892,19 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           if (!maxYear || !_this.state.yearsList.find(function(year) {
             return year === maxYear;
           })) {
-            options.unshift(import_react9.default.createElement(
+            options.unshift(import_react10.default.createElement(
               "div",
               { className: "react-datepicker__year-option", key: "upcoming", onClick: _this.incrementYears },
-              import_react9.default.createElement("a", { className: "react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation--years-upcoming" })
+              import_react10.default.createElement("a", { className: "react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation--years-upcoming" })
             ));
           }
           if (!minYear || !_this.state.yearsList.find(function(year) {
             return year === minYear;
           })) {
-            options.push(import_react9.default.createElement(
+            options.push(import_react10.default.createElement(
               "div",
               { className: "react-datepicker__year-option", key: "previous", onClick: _this.decrementYears },
-              import_react9.default.createElement("a", { className: "react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation--years-previous" })
+              import_react10.default.createElement("a", { className: "react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation--years-previous" })
             ));
           }
           return options;
@@ -37807,7 +37934,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         _this.state = {
           yearsList: generateYears(_this.props.year, noOfYear, _this.props.minDate, _this.props.maxDate)
         };
-        _this.dropdownRef = (0, import_react9.createRef)();
+        _this.dropdownRef = (0, import_react10.createRef)();
         return _this;
       }
       YearDropdownOptions2.prototype.componentDidMount = function() {
@@ -37825,10 +37952,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           "react-datepicker__year-dropdown": true,
           "react-datepicker__year-dropdown--scrollable": this.props.scrollableYearDropdown
         });
-        return import_react9.default.createElement(ClickOutsideWrapper, { className: dropdownClass, containerRef: this.dropdownRef, onClickOutside: this.handleClickOutside }, this.renderOptions());
+        return import_react10.default.createElement(ClickOutsideWrapper, { className: dropdownClass, containerRef: this.dropdownRef, onClickOutside: this.handleClickOutside }, this.renderOptions());
       };
       return YearDropdownOptions2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var YearDropdown = (
     /** @class */
@@ -37844,7 +37971,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var maxYear = _this.props.maxDate ? getYear(_this.props.maxDate) : 2100;
           var options = [];
           for (var i = minYear; i <= maxYear; i++) {
-            options.push(import_react9.default.createElement("option", { key: i, value: i }, i));
+            options.push(import_react10.default.createElement("option", { key: i, value: i }, i));
           }
           return options;
         };
@@ -37852,20 +37979,20 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           _this.onChange(parseInt(event.target.value));
         };
         _this.renderSelectMode = function() {
-          return import_react9.default.createElement("select", { value: _this.props.year, className: "react-datepicker__year-select", onChange: _this.onSelectChange }, _this.renderSelectOptions());
+          return import_react10.default.createElement("select", { value: _this.props.year, className: "react-datepicker__year-select", onChange: _this.onSelectChange }, _this.renderSelectOptions());
         };
         _this.renderReadView = function(visible) {
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "div",
             { key: "read", style: { visibility: visible ? "visible" : "hidden" }, className: "react-datepicker__year-read-view", onClick: function(event) {
               return _this.toggleDropdown(event);
             } },
-            import_react9.default.createElement("span", { className: "react-datepicker__year-read-view--down-arrow" }),
-            import_react9.default.createElement("span", { className: "react-datepicker__year-read-view--selected-year" }, _this.props.year)
+            import_react10.default.createElement("span", { className: "react-datepicker__year-read-view--down-arrow" }),
+            import_react10.default.createElement("span", { className: "react-datepicker__year-read-view--selected-year" }, _this.props.year)
           );
         };
         _this.renderDropdown = function() {
-          return import_react9.default.createElement(YearDropdownOptions, _assign({ key: "dropdown" }, _this.props, { onChange: _this.onChange, onCancel: _this.toggleDropdown }));
+          return import_react10.default.createElement(YearDropdownOptions, _assign({ key: "dropdown" }, _this.props, { onChange: _this.onChange, onCancel: _this.toggleDropdown }));
         };
         _this.renderScrollMode = function() {
           var dropdownVisible = _this.state.dropdownVisible;
@@ -37915,10 +38042,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             renderedDropdown = this.renderSelectMode();
             break;
         }
-        return import_react9.default.createElement("div", { className: "react-datepicker__year-dropdown-container react-datepicker__year-dropdown-container--".concat(this.props.dropdownMode) }, renderedDropdown);
+        return import_react10.default.createElement("div", { className: "react-datepicker__year-dropdown-container react-datepicker__year-dropdown-container--".concat(this.props.dropdownMode) }, renderedDropdown);
       };
       return YearDropdown2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var DROPDOWN_FOCUS_CLASSNAMES = [
     "react-datepicker__year-select",
@@ -38089,13 +38216,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var startOfWeek2 = getStartOfWeek(date, _this.props.locale, _this.props.calendarStartDay);
           var dayNames = [];
           if (_this.props.showWeekNumbers) {
-            dayNames.push(import_react9.default.createElement("div", { key: "W", className: "react-datepicker__day-name" }, _this.props.weekLabel || "#"));
+            dayNames.push(import_react10.default.createElement("div", { key: "W", className: "react-datepicker__day-name" }, _this.props.weekLabel || "#"));
           }
           return dayNames.concat([0, 1, 2, 3, 4, 5, 6].map(function(offset4) {
             var day = addDays(startOfWeek2, offset4);
             var weekDayName = _this.formatWeekday(day, _this.props.locale);
             var weekDayClassName = _this.props.weekDayClassName ? _this.props.weekDayClassName(day) : void 0;
-            return import_react9.default.createElement("div", { key: offset4, "aria-label": formatDate(day, "EEEE", _this.props.locale), className: clsx("react-datepicker__day-name", weekDayClassName) }, weekDayName);
+            return import_react10.default.createElement("div", { key: offset4, "aria-label": formatDate(day, "EEEE", _this.props.locale), className: clsx("react-datepicker__day-name", weekDayClassName) }, weekDayName);
           }));
         };
         _this.formatWeekday = function(day, locale) {
@@ -38164,10 +38291,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var isForYear = _this.props.showMonthYearPicker || _this.props.showQuarterYearPicker || _this.props.showYearPicker;
           var _d = _this.props, _e = _d.previousMonthButtonLabel, previousMonthButtonLabel = _e === void 0 ? Calendar2.defaultProps.previousMonthButtonLabel : _e, _f = _d.previousYearButtonLabel, previousYearButtonLabel = _f === void 0 ? Calendar2.defaultProps.previousYearButtonLabel : _f;
           var _g = _this.props, _h = _g.previousMonthAriaLabel, previousMonthAriaLabel = _h === void 0 ? typeof previousMonthButtonLabel === "string" ? previousMonthButtonLabel : "Previous Month" : _h, _j = _g.previousYearAriaLabel, previousYearAriaLabel = _j === void 0 ? typeof previousYearButtonLabel === "string" ? previousYearButtonLabel : "Previous Year" : _j;
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "button",
             { type: "button", className: classes.join(" "), onClick: clickHandler, onKeyDown: _this.props.handleOnKeyDown, "aria-label": isForYear ? previousYearAriaLabel : previousMonthAriaLabel },
-            import_react9.default.createElement("span", { className: iconClasses.join(" ") }, isForYear ? previousYearButtonLabel : previousMonthButtonLabel)
+            import_react10.default.createElement("span", { className: iconClasses.join(" ") }, isForYear ? previousYearButtonLabel : previousMonthButtonLabel)
           );
         };
         _this.increaseYear = function() {
@@ -38229,10 +38356,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var isForYear = _this.props.showMonthYearPicker || _this.props.showQuarterYearPicker || _this.props.showYearPicker;
           var _b = _this.props, _c = _b.nextMonthButtonLabel, nextMonthButtonLabel = _c === void 0 ? Calendar2.defaultProps.nextMonthButtonLabel : _c, _d = _b.nextYearButtonLabel, nextYearButtonLabel = _d === void 0 ? Calendar2.defaultProps.nextYearButtonLabel : _d;
           var _e = _this.props, _f = _e.nextMonthAriaLabel, nextMonthAriaLabel = _f === void 0 ? typeof nextMonthButtonLabel === "string" ? nextMonthButtonLabel : "Next Month" : _f, _g = _e.nextYearAriaLabel, nextYearAriaLabel = _g === void 0 ? typeof nextYearButtonLabel === "string" ? nextYearButtonLabel : "Next Year" : _g;
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "button",
             { type: "button", className: classes.join(" "), onClick: clickHandler, onKeyDown: _this.props.handleOnKeyDown, "aria-label": isForYear ? nextYearAriaLabel : nextMonthAriaLabel },
-            import_react9.default.createElement("span", { className: iconClasses.join(" ") }, isForYear ? nextYearButtonLabel : nextMonthButtonLabel)
+            import_react10.default.createElement("span", { className: iconClasses.join(" ") }, isForYear ? nextYearButtonLabel : nextMonthButtonLabel)
           );
         };
         _this.renderCurrentMonth = function(date) {
@@ -38249,7 +38376,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           if (_this.props.showMonthYearDropdown) {
             classes.push("react-datepicker__current-month--hasMonthYearDropdown");
           }
-          return import_react9.default.createElement("h2", { className: classes.join(" ") }, formatDate(date, _this.props.dateFormat, _this.props.locale));
+          return import_react10.default.createElement("h2", { className: classes.join(" ") }, formatDate(date, _this.props.dateFormat, _this.props.locale));
         };
         _this.renderYearDropdown = function(overrideHide) {
           if (overrideHide === void 0) {
@@ -38258,7 +38385,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           if (!_this.props.showYearDropdown || overrideHide) {
             return;
           }
-          return import_react9.default.createElement(YearDropdown, _assign({}, Calendar2.defaultProps, _this.props, { date: _this.state.date, onChange: _this.changeYear, year: getYear(_this.state.date) }));
+          return import_react10.default.createElement(YearDropdown, _assign({}, Calendar2.defaultProps, _this.props, { date: _this.state.date, onChange: _this.changeYear, year: getYear(_this.state.date) }));
         };
         _this.renderMonthDropdown = function(overrideHide) {
           if (overrideHide === void 0) {
@@ -38267,7 +38394,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           if (!_this.props.showMonthDropdown || overrideHide) {
             return;
           }
-          return import_react9.default.createElement(MonthDropdown, _assign({}, Calendar2.defaultProps, _this.props, { month: getMonth(_this.state.date), onChange: _this.changeMonth }));
+          return import_react10.default.createElement(MonthDropdown, _assign({}, Calendar2.defaultProps, _this.props, { month: getMonth(_this.state.date), onChange: _this.changeMonth }));
         };
         _this.renderMonthYearDropdown = function(overrideHide) {
           if (overrideHide === void 0) {
@@ -38276,7 +38403,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           if (!_this.props.showMonthYearDropdown || overrideHide) {
             return;
           }
-          return import_react9.default.createElement(MonthYearDropdown, _assign({}, Calendar2.defaultProps, _this.props, { date: _this.state.date, onChange: _this.changeMonthYear }));
+          return import_react10.default.createElement(MonthYearDropdown, _assign({}, Calendar2.defaultProps, _this.props, { date: _this.state.date, onChange: _this.changeMonthYear }));
         };
         _this.handleTodayButtonClick = function(event) {
           _this.props.onSelect(getStartOfToday(), event);
@@ -38286,22 +38413,22 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           if (!_this.props.todayButton || _this.props.showTimeSelectOnly) {
             return;
           }
-          return import_react9.default.createElement("div", { className: "react-datepicker__today-button", onClick: _this.handleTodayButtonClick }, _this.props.todayButton);
+          return import_react10.default.createElement("div", { className: "react-datepicker__today-button", onClick: _this.handleTodayButtonClick }, _this.props.todayButton);
         };
         _this.renderDefaultHeader = function(_a2) {
           var monthDate = _a2.monthDate, i = _a2.i;
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "div",
             { className: "react-datepicker__header ".concat(_this.props.showTimeSelect ? "react-datepicker__header--has-time-select" : "") },
             _this.renderCurrentMonth(monthDate),
-            import_react9.default.createElement(
+            import_react10.default.createElement(
               "div",
               { className: "react-datepicker__header__dropdown react-datepicker__header__dropdown--".concat(_this.props.dropdownMode), onFocus: _this.handleDropdownFocus },
               _this.renderMonthDropdown(i !== 0),
               _this.renderMonthYearDropdown(i !== 0),
               _this.renderYearDropdown(i !== 0)
             ),
-            import_react9.default.createElement("div", { className: "react-datepicker__day-names" }, _this.header(monthDate))
+            import_react10.default.createElement("div", { className: "react-datepicker__day-names" }, _this.header(monthDate))
           );
         };
         _this.renderCustomHeader = function(headerArgs) {
@@ -38315,18 +38442,18 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var prevYearButtonDisabled = yearDisabledBefore(_this.state.date, _this.props);
           var nextYearButtonDisabled = yearDisabledAfter(_this.state.date, _this.props);
           var showDayNames = !_this.props.showMonthYearPicker && !_this.props.showQuarterYearPicker && !_this.props.showYearPicker;
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "div",
             { className: "react-datepicker__header react-datepicker__header--custom", onFocus: _this.props.onDropdownFocus },
             (_b = (_a2 = _this.props).renderCustomHeader) === null || _b === void 0 ? void 0 : _b.call(_a2, _assign(_assign({}, _this.state), { customHeaderCount: i, monthDate, changeMonth: _this.changeMonth, changeYear: _this.changeYear, decreaseMonth: _this.decreaseMonth, increaseMonth: _this.increaseMonth, decreaseYear: _this.decreaseYear, increaseYear: _this.increaseYear, prevMonthButtonDisabled, nextMonthButtonDisabled, prevYearButtonDisabled, nextYearButtonDisabled })),
-            showDayNames && import_react9.default.createElement("div", { className: "react-datepicker__day-names" }, _this.header(monthDate))
+            showDayNames && import_react10.default.createElement("div", { className: "react-datepicker__day-names" }, _this.header(monthDate))
           );
         };
         _this.renderYearHeader = function(_a2) {
           var monthDate = _a2.monthDate;
           var _b = _this.props, showYearPicker = _b.showYearPicker, _c = _b.yearItemNumber, yearItemNumber = _c === void 0 ? Calendar2.defaultProps.yearItemNumber : _c;
           var _d = getYearsPeriod(monthDate, yearItemNumber), startPeriod = _d.startPeriod, endPeriod = _d.endPeriod;
-          return import_react9.default.createElement("div", { className: "react-datepicker__header react-datepicker-year-header" }, showYearPicker ? "".concat(startPeriod, " - ").concat(endPeriod) : getYear(monthDate));
+          return import_react10.default.createElement("div", { className: "react-datepicker__header react-datepicker-year-header" }, showYearPicker ? "".concat(startPeriod, " - ").concat(endPeriod) : getYear(monthDate));
         };
         _this.renderHeader = function(_a2) {
           var monthDate = _a2.monthDate, _b = _a2.i, i = _b === void 0 ? 0 : _b;
@@ -38356,13 +38483,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             var monthKey = "month-".concat(i);
             var monthShowsDuplicateDaysEnd = i < monthsShown - 1;
             var monthShowsDuplicateDaysStart = i > 0;
-            monthList.push(import_react9.default.createElement(
+            monthList.push(import_react10.default.createElement(
               "div",
               { key: monthKey, ref: function(div) {
                 _this.monthContainer = div !== null && div !== void 0 ? div : void 0;
               }, className: "react-datepicker__month-container" },
               _this.renderHeader({ monthDate, i }),
-              import_react9.default.createElement(Month, _assign({}, Calendar2.defaultProps, _this.props, { ariaLabelPrefix: _this.props.monthAriaLabelPrefix, day: monthDate, onDayClick: _this.handleDayClick, handleOnKeyDown: _this.props.handleOnDayKeyDown, handleOnMonthKeyDown: _this.props.handleOnKeyDown, onDayMouseEnter: _this.handleDayMouseEnter, onMouseLeave: _this.handleMonthMouseLeave, orderInDisplay: i, selectingDate: _this.state.selectingDate, monthShowsDuplicateDaysEnd, monthShowsDuplicateDaysStart }))
+              import_react10.default.createElement(Month, _assign({}, Calendar2.defaultProps, _this.props, { ariaLabelPrefix: _this.props.monthAriaLabelPrefix, day: monthDate, onDayClick: _this.handleDayClick, handleOnKeyDown: _this.props.handleOnDayKeyDown, handleOnMonthKeyDown: _this.props.handleOnKeyDown, onDayMouseEnter: _this.handleDayMouseEnter, onMouseLeave: _this.handleMonthMouseLeave, orderInDisplay: i, selectingDate: _this.state.selectingDate, monthShowsDuplicateDaysEnd, monthShowsDuplicateDaysStart }))
             ));
           }
           return monthList;
@@ -38372,18 +38499,18 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             return;
           }
           if (_this.props.showYearPicker) {
-            return import_react9.default.createElement(
+            return import_react10.default.createElement(
               "div",
               { className: "react-datepicker__year--container" },
               _this.renderHeader({ monthDate: _this.state.date }),
-              import_react9.default.createElement(Year, _assign({}, Calendar2.defaultProps, _this.props, { selectingDate: _this.state.selectingDate, date: _this.state.date, onDayClick: _this.handleDayClick, clearSelectingDate: _this.clearSelectingDate, onYearMouseEnter: _this.handleYearMouseEnter, onYearMouseLeave: _this.handleYearMouseLeave }))
+              import_react10.default.createElement(Year, _assign({}, Calendar2.defaultProps, _this.props, { selectingDate: _this.state.selectingDate, date: _this.state.date, onDayClick: _this.handleDayClick, clearSelectingDate: _this.clearSelectingDate, onYearMouseEnter: _this.handleYearMouseEnter, onYearMouseLeave: _this.handleYearMouseLeave }))
             );
           }
           return;
         };
         _this.renderTimeSection = function() {
           if (_this.props.showTimeSelect && (_this.state.monthContainer || _this.props.showTimeSelectOnly)) {
-            return import_react9.default.createElement(Time, _assign({}, Calendar2.defaultProps, _this.props, { onChange: _this.props.onTimeChange, format: _this.props.timeFormat, intervals: _this.props.timeIntervals, monthRef: _this.state.monthContainer }));
+            return import_react10.default.createElement(Time, _assign({}, Calendar2.defaultProps, _this.props, { onChange: _this.props.onTimeChange, format: _this.props.timeFormat, intervals: _this.props.timeIntervals, monthRef: _this.state.monthContainer }));
           }
           return;
         };
@@ -38392,7 +38519,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var timeValid = time && isValid3(time) && Boolean(_this.props.selected);
           var timeString = timeValid ? "".concat(addZero(time.getHours()), ":").concat(addZero(time.getMinutes())) : "";
           if (_this.props.showTimeInput) {
-            return import_react9.default.createElement(InputTime, _assign({}, Calendar2.defaultProps, _this.props, { date: time, timeString, onChange: _this.props.onTimeChange }));
+            return import_react10.default.createElement(InputTime, _assign({}, Calendar2.defaultProps, _this.props, { date: time, timeString, onChange: _this.props.onTimeChange }));
           }
           return;
         };
@@ -38407,15 +38534,15 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           } else {
             ariaLiveMessage = "".concat(getMonthInLocale(getMonth(_this.state.date), _this.props.locale), " ").concat(getYear(_this.state.date));
           }
-          return import_react9.default.createElement("span", { role: "alert", "aria-live": "polite", className: "react-datepicker__aria-live" }, _this.state.isRenderAriaLiveMessage && ariaLiveMessage);
+          return import_react10.default.createElement("span", { role: "alert", "aria-live": "polite", className: "react-datepicker__aria-live" }, _this.state.isRenderAriaLiveMessage && ariaLiveMessage);
         };
         _this.renderChildren = function() {
           if (_this.props.children) {
-            return import_react9.default.createElement("div", { className: "react-datepicker__children-container" }, _this.props.children);
+            return import_react10.default.createElement("div", { className: "react-datepicker__children-container" }, _this.props.children);
           }
           return;
         };
-        _this.containerRef = (0, import_react9.createRef)();
+        _this.containerRef = (0, import_react10.createRef)();
         _this.state = {
           date: _this.getDateInView(),
           selectingDate: void 0,
@@ -38465,10 +38592,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       };
       Calendar2.prototype.render = function() {
         var Container = this.props.container || CalendarContainer;
-        return import_react9.default.createElement(
+        return import_react10.default.createElement(
           ClickOutsideWrapper,
           { onClickOutside: this.handleClickOutside, style: { display: "contents" }, containerRef: this.containerRef, ignoreClass: this.props.outsideClickIgnoreClass },
-          import_react9.default.createElement(
+          import_react10.default.createElement(
             Container,
             { className: clsx("react-datepicker", this.props.className, {
               "react-datepicker--time-only": this.props.showTimeSelectOnly
@@ -38486,17 +38613,17 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         );
       };
       return Calendar2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var CalendarIcon = function(_a2) {
     var icon = _a2.icon, _b = _a2.className, className = _b === void 0 ? "" : _b, onClick = _a2.onClick;
     var defaultClass = "react-datepicker__calendar-icon";
     if (typeof icon === "string") {
-      return import_react9.default.createElement("i", { className: "".concat(defaultClass, " ").concat(icon, " ").concat(className), "aria-hidden": "true", onClick });
+      return import_react10.default.createElement("i", { className: "".concat(defaultClass, " ").concat(icon, " ").concat(className), "aria-hidden": "true", onClick });
     }
-    if (import_react9.default.isValidElement(icon)) {
+    if (import_react10.default.isValidElement(icon)) {
       var iconElement_1 = icon;
-      return import_react9.default.cloneElement(iconElement_1, {
+      return import_react10.default.cloneElement(iconElement_1, {
         className: "".concat(iconElement_1.props.className || "", " ").concat(defaultClass, " ").concat(className),
         onClick: function(event) {
           if (typeof iconElement_1.props.onClick === "function") {
@@ -38508,10 +38635,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }
       });
     }
-    return import_react9.default.createElement(
+    return import_react10.default.createElement(
       "svg",
       { className: "".concat(defaultClass, " ").concat(className), xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 448 512", onClick },
-      import_react9.default.createElement("path", { d: "M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z" })
+      import_react10.default.createElement("path", { d: "M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z" })
     );
   };
   var Portal = (
@@ -38542,7 +38669,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         return import_react_dom3.default.createPortal(this.props.children, this.el);
       };
       return Portal2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var focusableElementsSelector = "[tabindex], a, button, input, select, textarea";
   var focusableFilter = function(node) {
@@ -38569,7 +38696,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           var tabChildren = _this.getTabChildren();
           tabChildren && tabChildren.length > 1 && tabChildren[0].focus();
         };
-        _this.tabLoopRef = (0, import_react9.createRef)();
+        _this.tabLoopRef = (0, import_react10.createRef)();
         return _this;
       }
       TabLoop2.prototype.render = function() {
@@ -38577,32 +38704,32 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         if (!((_a2 = this.props.enableTabLoop) !== null && _a2 !== void 0 ? _a2 : TabLoop2.defaultProps.enableTabLoop)) {
           return this.props.children;
         }
-        return import_react9.default.createElement(
+        return import_react10.default.createElement(
           "div",
           { className: "react-datepicker__tab-loop", ref: this.tabLoopRef },
-          import_react9.default.createElement("div", { className: "react-datepicker__tab-loop__start", tabIndex: 0, onFocus: this.handleFocusStart }),
+          import_react10.default.createElement("div", { className: "react-datepicker__tab-loop__start", tabIndex: 0, onFocus: this.handleFocusStart }),
           this.props.children,
-          import_react9.default.createElement("div", { className: "react-datepicker__tab-loop__end", tabIndex: 0, onFocus: this.handleFocusEnd })
+          import_react10.default.createElement("div", { className: "react-datepicker__tab-loop__end", tabIndex: 0, onFocus: this.handleFocusEnd })
         );
       };
       TabLoop2.defaultProps = {
         enableTabLoop: true
       };
       return TabLoop2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   function withFloating(Component5) {
     var WithFloating = function(props) {
       var _a2;
       var hidePopper = typeof props.hidePopper === "boolean" ? props.hidePopper : true;
-      var arrowRef = (0, import_react9.useRef)(null);
+      var arrowRef = (0, import_react10.useRef)(null);
       var floatingProps = useFloating2(_assign({ open: !hidePopper, whileElementsMounted: autoUpdate, placement: props.popperPlacement, middleware: __spreadArray([
         flip3({ padding: 15 }),
         offset3(10),
         arrow3({ element: arrowRef })
       ], (_a2 = props.popperModifiers) !== null && _a2 !== void 0 ? _a2 : [], true) }, props.popperProps));
       var componentProps = _assign(_assign({}, props), { hidePopper, popperProps: _assign(_assign({}, floatingProps), { arrowRef }) });
-      return import_react9.default.createElement(Component5, _assign({}, componentProps));
+      return import_react10.default.createElement(Component5, _assign({}, componentProps));
     };
     return WithFloating;
   }
@@ -38627,33 +38754,33 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         var popper = void 0;
         if (!hidePopper) {
           var classes = clsx("react-datepicker-popper", className);
-          popper = import_react9.default.createElement(
+          popper = import_react10.default.createElement(
             TabLoop,
             { enableTabLoop },
-            import_react9.default.createElement(
+            import_react10.default.createElement(
               "div",
               { ref: popperProps.refs.setFloating, style: popperProps.floatingStyles, className: classes, "data-placement": popperProps.placement, onKeyDown: popperOnKeyDown },
               popperComponent,
-              showArrow && import_react9.default.createElement(FloatingArrow, { ref: popperProps.arrowRef, context: popperProps.context, fill: "currentColor", strokeWidth: 1, height: 8, width: 16, style: { transform: "translateY(-1px)" }, className: "react-datepicker__triangle" })
+              showArrow && import_react10.default.createElement(FloatingArrow, { ref: popperProps.arrowRef, context: popperProps.context, fill: "currentColor", strokeWidth: 1, height: 8, width: 16, style: { transform: "translateY(-1px)" }, className: "react-datepicker__triangle" })
             )
           );
         }
         if (this.props.popperContainer) {
-          popper = (0, import_react9.createElement)(this.props.popperContainer, {}, popper);
+          popper = (0, import_react10.createElement)(this.props.popperContainer, {}, popper);
         }
         if (portalId && !hidePopper) {
-          popper = import_react9.default.createElement(Portal, { portalId, portalHost }, popper);
+          popper = import_react10.default.createElement(Portal, { portalId, portalHost }, popper);
         }
         var wrapperClasses = clsx("react-datepicker-wrapper", wrapperClassName);
-        return import_react9.default.createElement(
-          import_react9.default.Fragment,
+        return import_react10.default.createElement(
+          import_react10.default.Fragment,
           null,
-          import_react9.default.createElement("div", { ref: popperProps.refs.setReference, className: wrapperClasses }, targetComponent),
+          import_react10.default.createElement("div", { ref: popperProps.refs.setReference, className: wrapperClasses }, targetComponent),
           popper
         );
       };
       return PopperComponent2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var PopperComponent$1 = withFloating(PopperComponent);
   var outsideClickIgnoreClass = "react-datepicker-ignore-onclickoutside";
@@ -39264,7 +39391,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           if (!_this.props.inline && !_this.isCalendarOpen()) {
             return null;
           }
-          return import_react9.default.createElement(Calendar, _assign({ showMonthYearDropdown: void 0, ref: function(elem) {
+          return import_react10.default.createElement(Calendar, _assign({ showMonthYearDropdown: void 0, ref: function(elem) {
             _this.calendar = elem;
           } }, _this.props, _this.state, { setOpen: _this.setOpen, dateFormat: (_a2 = _this.props.dateFormatCalendar) !== null && _a2 !== void 0 ? _a2 : DatePicker2.defaultProps.dateFormatCalendar, onSelect: _this.handleSelect, onClickOutside: _this.handleCalendarClickOutside, holidays: getHolidaysMap(_this.modifyHolidays()), outsideClickIgnoreClass, onDropdownFocus: _this.handleDropdownFocus, onTimeChange: _this.handleTimeChange, className: _this.props.calendarClassName, container: _this.props.calendarContainer, handleOnKeyDown: _this.props.onKeyDown, handleOnDayKeyDown: _this.onDayKeyDown, setPreSelection: _this.setPreSelection, dropdownMode: (_b = _this.props.dropdownMode) !== null && _b !== void 0 ? _b : DatePicker2.defaultProps.dropdownMode }), _this.props.children);
         };
@@ -39300,13 +39427,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               }));
             }
           }
-          return import_react9.default.createElement("span", { role: "alert", "aria-live": "polite", className: "react-datepicker__aria-live" }, ariaLiveMessage);
+          return import_react10.default.createElement("span", { role: "alert", "aria-live": "polite", className: "react-datepicker__aria-live" }, ariaLiveMessage);
         };
         _this.renderDateInput = function() {
           var _a2, _b;
           var _c;
           var className = clsx(_this.props.className, (_a2 = {}, _a2[outsideClickIgnoreClass] = _this.state.open, _a2));
-          var customInput = _this.props.customInput || import_react9.default.createElement("input", { type: "text" });
+          var customInput = _this.props.customInput || import_react10.default.createElement("input", { type: "text" });
           var customInputRef = _this.props.customInputRef || "ref";
           var _d = _this.props, _e = _d.dateFormat, dateFormat = _e === void 0 ? DatePicker2.defaultProps.dateFormat : _e, locale = _d.locale;
           var inputValue = typeof _this.props.value === "string" ? _this.props.value : typeof _this.state.inputValue === "string" ? _this.state.inputValue : _this.props.selectsRange ? safeDateRangeFormat(_this.props.startDate, _this.props.endDate, {
@@ -39319,14 +39446,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             dateFormat,
             locale
           });
-          return (0, import_react9.cloneElement)(customInput, (_b = {}, _b[customInputRef] = function(input) {
+          return (0, import_react10.cloneElement)(customInput, (_b = {}, _b[customInputRef] = function(input) {
             _this.input = input;
           }, _b.value = inputValue, _b.onBlur = _this.handleBlur, _b.onChange = _this.handleChange, _b.onClick = _this.onInputClick, _b.onFocus = _this.handleFocus, _b.onKeyDown = _this.onInputKeyDown, _b.id = _this.props.id, _b.name = _this.props.name, _b.form = _this.props.form, _b.autoFocus = _this.props.autoFocus, _b.placeholder = _this.props.placeholderText, _b.disabled = _this.props.disabled, _b.autoComplete = _this.props.autoComplete, _b.className = clsx(customInput.props.className, className), _b.title = _this.props.title, _b.readOnly = _this.props.readOnly, _b.required = _this.props.required, _b.tabIndex = _this.props.tabIndex, _b["aria-describedby"] = _this.props.ariaDescribedBy, _b["aria-invalid"] = _this.props.ariaInvalid, _b["aria-labelledby"] = _this.props.ariaLabelledBy, _b["aria-required"] = _this.props.ariaRequired, _b));
         };
         _this.renderClearButton = function() {
           var _a2 = _this.props, isClearable = _a2.isClearable, disabled = _a2.disabled, selected = _a2.selected, startDate = _a2.startDate, endDate = _a2.endDate, clearButtonTitle = _a2.clearButtonTitle, _b = _a2.clearButtonClassName, clearButtonClassName = _b === void 0 ? "" : _b, _c = _a2.ariaLabelClose, ariaLabelClose = _c === void 0 ? "Close" : _c, selectedDates = _a2.selectedDates;
           if (isClearable && (selected != null || startDate != null || endDate != null || (selectedDates === null || selectedDates === void 0 ? void 0 : selectedDates.length))) {
-            return import_react9.default.createElement("button", { type: "button", className: clsx("react-datepicker__close-icon", clearButtonClassName, { "react-datepicker__close-icon--disabled": disabled }), disabled, "aria-label": ariaLabelClose, onClick: _this.onClearClick, title: clearButtonTitle, tabIndex: -1 });
+            return import_react10.default.createElement("button", { type: "button", className: clsx("react-datepicker__close-icon", clearButtonClassName, { "react-datepicker__close-icon--disabled": disabled }), disabled, "aria-label": ariaLabelClose, onClick: _this.onClearClick, title: clearButtonTitle, tabIndex: -1 });
           } else {
             return null;
           }
@@ -39427,10 +39554,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         if (calendarIconClassname) {
           console.warn("calendarIconClassname props is deprecated. should use calendarIconClassName props.");
         }
-        return import_react9.default.createElement(
+        return import_react10.default.createElement(
           "div",
           { className: "react-datepicker__input-container".concat(showIcon ? " react-datepicker__view-calendar-icon" : "") },
-          showIcon && import_react9.default.createElement(CalendarIcon, _assign({ icon, className: clsx(calendarIconClassName, !calendarIconClassName && calendarIconClassname, open && "react-datepicker-ignore-onclickoutside") }, toggleCalendarOnIconClick ? {
+          showIcon && import_react10.default.createElement(CalendarIcon, _assign({ icon, className: clsx(calendarIconClassName, !calendarIconClassName && calendarIconClassname, open && "react-datepicker-ignore-onclickoutside") }, toggleCalendarOnIconClick ? {
             onClick: this.toggleCalendar
           } : null)),
           this.state.isRenderAriaLiveMessage && this.renderAriaLiveRegion(),
@@ -39443,25 +39570,25 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         if (this.props.inline)
           return calendar;
         if (this.props.withPortal) {
-          var portalContainer = this.state.open ? import_react9.default.createElement(
+          var portalContainer = this.state.open ? import_react10.default.createElement(
             TabLoop,
             { enableTabLoop: this.props.enableTabLoop },
-            import_react9.default.createElement("div", { className: "react-datepicker__portal", tabIndex: -1, onKeyDown: this.onPortalKeyDown }, calendar)
+            import_react10.default.createElement("div", { className: "react-datepicker__portal", tabIndex: -1, onKeyDown: this.onPortalKeyDown }, calendar)
           ) : null;
           if (this.state.open && this.props.portalId) {
-            portalContainer = import_react9.default.createElement(Portal, _assign({ portalId: this.props.portalId }, this.props), portalContainer);
+            portalContainer = import_react10.default.createElement(Portal, _assign({ portalId: this.props.portalId }, this.props), portalContainer);
           }
-          return import_react9.default.createElement(
+          return import_react10.default.createElement(
             "div",
             null,
             this.renderInputContainer(),
             portalContainer
           );
         }
-        return import_react9.default.createElement(PopperComponent$1, _assign({}, this.props, { className: this.props.popperClassName, hidePopper: !this.isCalendarOpen(), targetComponent: this.renderInputContainer(), popperComponent: calendar, popperOnKeyDown: this.onPopperKeyDown, showArrow: this.props.showPopperArrow }));
+        return import_react10.default.createElement(PopperComponent$1, _assign({}, this.props, { className: this.props.popperClassName, hidePopper: !this.isCalendarOpen(), targetComponent: this.renderInputContainer(), popperComponent: calendar, popperOnKeyDown: this.onPopperKeyDown, showArrow: this.props.showPopperArrow }));
       };
       return DatePicker2;
-    }(import_react9.Component)
+    }(import_react10.Component)
   );
   var PRESELECT_CHANGE_VIA_INPUT = "input";
   var PRESELECT_CHANGE_VIA_NAVIGATE = "navigate";
@@ -39470,20 +39597,20 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var metadata_min_json_default = { "version": 4, "country_calling_codes": { "1": ["US", "AG", "AI", "AS", "BB", "BM", "BS", "CA", "DM", "DO", "GD", "GU", "JM", "KN", "KY", "LC", "MP", "MS", "PR", "SX", "TC", "TT", "VC", "VG", "VI"], "7": ["RU", "KZ"], "20": ["EG"], "27": ["ZA"], "30": ["GR"], "31": ["NL"], "32": ["BE"], "33": ["FR"], "34": ["ES"], "36": ["HU"], "39": ["IT", "VA"], "40": ["RO"], "41": ["CH"], "43": ["AT"], "44": ["GB", "GG", "IM", "JE"], "45": ["DK"], "46": ["SE"], "47": ["NO", "SJ"], "48": ["PL"], "49": ["DE"], "51": ["PE"], "52": ["MX"], "53": ["CU"], "54": ["AR"], "55": ["BR"], "56": ["CL"], "57": ["CO"], "58": ["VE"], "60": ["MY"], "61": ["AU", "CC", "CX"], "62": ["ID"], "63": ["PH"], "64": ["NZ"], "65": ["SG"], "66": ["TH"], "81": ["JP"], "82": ["KR"], "84": ["VN"], "86": ["CN"], "90": ["TR"], "91": ["IN"], "92": ["PK"], "93": ["AF"], "94": ["LK"], "95": ["MM"], "98": ["IR"], "211": ["SS"], "212": ["MA", "EH"], "213": ["DZ"], "216": ["TN"], "218": ["LY"], "220": ["GM"], "221": ["SN"], "222": ["MR"], "223": ["ML"], "224": ["GN"], "225": ["CI"], "226": ["BF"], "227": ["NE"], "228": ["TG"], "229": ["BJ"], "230": ["MU"], "231": ["LR"], "232": ["SL"], "233": ["GH"], "234": ["NG"], "235": ["TD"], "236": ["CF"], "237": ["CM"], "238": ["CV"], "239": ["ST"], "240": ["GQ"], "241": ["GA"], "242": ["CG"], "243": ["CD"], "244": ["AO"], "245": ["GW"], "246": ["IO"], "247": ["AC"], "248": ["SC"], "249": ["SD"], "250": ["RW"], "251": ["ET"], "252": ["SO"], "253": ["DJ"], "254": ["KE"], "255": ["TZ"], "256": ["UG"], "257": ["BI"], "258": ["MZ"], "260": ["ZM"], "261": ["MG"], "262": ["RE", "YT"], "263": ["ZW"], "264": ["NA"], "265": ["MW"], "266": ["LS"], "267": ["BW"], "268": ["SZ"], "269": ["KM"], "290": ["SH", "TA"], "291": ["ER"], "297": ["AW"], "298": ["FO"], "299": ["GL"], "350": ["GI"], "351": ["PT"], "352": ["LU"], "353": ["IE"], "354": ["IS"], "355": ["AL"], "356": ["MT"], "357": ["CY"], "358": ["FI", "AX"], "359": ["BG"], "370": ["LT"], "371": ["LV"], "372": ["EE"], "373": ["MD"], "374": ["AM"], "375": ["BY"], "376": ["AD"], "377": ["MC"], "378": ["SM"], "380": ["UA"], "381": ["RS"], "382": ["ME"], "383": ["XK"], "385": ["HR"], "386": ["SI"], "387": ["BA"], "389": ["MK"], "420": ["CZ"], "421": ["SK"], "423": ["LI"], "500": ["FK"], "501": ["BZ"], "502": ["GT"], "503": ["SV"], "504": ["HN"], "505": ["NI"], "506": ["CR"], "507": ["PA"], "508": ["PM"], "509": ["HT"], "590": ["GP", "BL", "MF"], "591": ["BO"], "592": ["GY"], "593": ["EC"], "594": ["GF"], "595": ["PY"], "596": ["MQ"], "597": ["SR"], "598": ["UY"], "599": ["CW", "BQ"], "670": ["TL"], "672": ["NF"], "673": ["BN"], "674": ["NR"], "675": ["PG"], "676": ["TO"], "677": ["SB"], "678": ["VU"], "679": ["FJ"], "680": ["PW"], "681": ["WF"], "682": ["CK"], "683": ["NU"], "685": ["WS"], "686": ["KI"], "687": ["NC"], "688": ["TV"], "689": ["PF"], "690": ["TK"], "691": ["FM"], "692": ["MH"], "850": ["KP"], "852": ["HK"], "853": ["MO"], "855": ["KH"], "856": ["LA"], "880": ["BD"], "886": ["TW"], "960": ["MV"], "961": ["LB"], "962": ["JO"], "963": ["SY"], "964": ["IQ"], "965": ["KW"], "966": ["SA"], "967": ["YE"], "968": ["OM"], "970": ["PS"], "971": ["AE"], "972": ["IL"], "973": ["BH"], "974": ["QA"], "975": ["BT"], "976": ["MN"], "977": ["NP"], "992": ["TJ"], "993": ["TM"], "994": ["AZ"], "995": ["GE"], "996": ["KG"], "998": ["UZ"] }, "countries": { "AC": ["247", "00", "(?:[01589]\\d|[46])\\d{4}", [5, 6]], "AD": ["376", "00", "(?:1|6\\d)\\d{7}|[135-9]\\d{5}", [6, 8, 9], [["(\\d{3})(\\d{3})", "$1 $2", ["[135-9]"]], ["(\\d{4})(\\d{4})", "$1 $2", ["1"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["6"]]]], "AE": ["971", "00", "(?:[4-7]\\d|9[0-689])\\d{7}|800\\d{2,9}|[2-4679]\\d{7}", [5, 6, 7, 8, 9, 10, 11, 12], [["(\\d{3})(\\d{2,9})", "$1 $2", ["60|8"]], ["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[236]|[479][2-8]"], "0$1"], ["(\\d{3})(\\d)(\\d{5})", "$1 $2 $3", ["[479]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["5"], "0$1"]], "0"], "AF": ["93", "00", "[2-7]\\d{8}", [9], [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[2-7]"], "0$1"]], "0"], "AG": ["1", "011", "(?:268|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([457]\\d{6})$|1", "268$1", 0, "268"], "AI": ["1", "011", "(?:264|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2457]\\d{6})$|1", "264$1", 0, "264"], "AL": ["355", "00", "(?:700\\d\\d|900)\\d{3}|8\\d{5,7}|(?:[2-5]|6\\d)\\d{7}", [6, 7, 8, 9], [["(\\d{3})(\\d{3,4})", "$1 $2", ["80|9"], "0$1"], ["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["4[2-6]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2358][2-5]|4"], "0$1"], ["(\\d{3})(\\d{5})", "$1 $2", ["[23578]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["6"], "0$1"]], "0"], "AM": ["374", "00", "(?:[1-489]\\d|55|60|77)\\d{6}", [8], [["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["[89]0"], "0 $1"], ["(\\d{3})(\\d{5})", "$1 $2", ["2|3[12]"], "(0$1)"], ["(\\d{2})(\\d{6})", "$1 $2", ["1|47"], "(0$1)"], ["(\\d{2})(\\d{6})", "$1 $2", ["[3-9]"], "0$1"]], "0"], "AO": ["244", "00", "[29]\\d{8}", [9], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[29]"]]]], "AR": ["54", "00", "(?:11|[89]\\d\\d)\\d{8}|[2368]\\d{9}", [10, 11], [["(\\d{4})(\\d{2})(\\d{4})", "$1 $2-$3", ["2(?:2[024-9]|3[0-59]|47|6[245]|9[02-8])|3(?:3[28]|4[03-9]|5[2-46-8]|7[1-578]|8[2-9])", "2(?:[23]02|6(?:[25]|4[6-8])|9(?:[02356]|4[02568]|72|8[23]))|3(?:3[28]|4(?:[04679]|3[5-8]|5[4-68]|8[2379])|5(?:[2467]|3[237]|8[2-5])|7[1-578]|8(?:[2469]|3[2578]|5[4-8]|7[36-8]|8[5-8]))|2(?:2[24-9]|3[1-59]|47)", "2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3[78]|5(?:4[46]|8)|8[2379])|5(?:[2467]|3[237]|8[23])|7[1-578]|8(?:[2469]|3[278]|5[56][46]|86[3-6]))|2(?:2[24-9]|3[1-59]|47)|38(?:[58][78]|7[378])|3(?:4[35][56]|58[45]|8(?:[38]5|54|76))[4-6]", "2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3(?:5(?:4[0-25689]|[56])|[78])|58|8[2379])|5(?:[2467]|3[237]|8(?:[23]|4(?:[45]|60)|5(?:4[0-39]|5|64)))|7[1-578]|8(?:[2469]|3[278]|54(?:4|5[13-7]|6[89])|86[3-6]))|2(?:2[24-9]|3[1-59]|47)|38(?:[58][78]|7[378])|3(?:454|85[56])[46]|3(?:4(?:36|5[56])|8(?:[38]5|76))[4-6]"], "0$1", 1], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2-$3", ["1"], "0$1", 1], ["(\\d{3})(\\d{3})(\\d{4})", "$1-$2-$3", ["[68]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2-$3", ["[23]"], "0$1", 1], ["(\\d)(\\d{4})(\\d{2})(\\d{4})", "$2 15-$3-$4", ["9(?:2[2-469]|3[3-578])", "9(?:2(?:2[024-9]|3[0-59]|47|6[245]|9[02-8])|3(?:3[28]|4[03-9]|5[2-46-8]|7[1-578]|8[2-9]))", "9(?:2(?:[23]02|6(?:[25]|4[6-8])|9(?:[02356]|4[02568]|72|8[23]))|3(?:3[28]|4(?:[04679]|3[5-8]|5[4-68]|8[2379])|5(?:[2467]|3[237]|8[2-5])|7[1-578]|8(?:[2469]|3[2578]|5[4-8]|7[36-8]|8[5-8])))|92(?:2[24-9]|3[1-59]|47)", "9(?:2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3[78]|5(?:4[46]|8)|8[2379])|5(?:[2467]|3[237]|8[23])|7[1-578]|8(?:[2469]|3[278]|5(?:[56][46]|[78])|7[378]|8(?:6[3-6]|[78]))))|92(?:2[24-9]|3[1-59]|47)|93(?:4[35][56]|58[45]|8(?:[38]5|54|76))[4-6]", "9(?:2(?:[23]02|6(?:[25]|4(?:64|[78]))|9(?:[02356]|4(?:[0268]|5[2-6])|72|8[23]))|3(?:3[28]|4(?:[04679]|3(?:5(?:4[0-25689]|[56])|[78])|5(?:4[46]|8)|8[2379])|5(?:[2467]|3[237]|8(?:[23]|4(?:[45]|60)|5(?:4[0-39]|5|64)))|7[1-578]|8(?:[2469]|3[278]|5(?:4(?:4|5[13-7]|6[89])|[56][46]|[78])|7[378]|8(?:6[3-6]|[78]))))|92(?:2[24-9]|3[1-59]|47)|93(?:4(?:36|5[56])|8(?:[38]5|76))[4-6]"], "0$1", 0, "$1 $2 $3-$4"], ["(\\d)(\\d{2})(\\d{4})(\\d{4})", "$2 15-$3-$4", ["91"], "0$1", 0, "$1 $2 $3-$4"], ["(\\d{3})(\\d{3})(\\d{5})", "$1-$2-$3", ["8"], "0$1"], ["(\\d)(\\d{3})(\\d{3})(\\d{4})", "$2 15-$3-$4", ["9"], "0$1", 0, "$1 $2 $3-$4"]], "0", 0, "0?(?:(11|2(?:2(?:02?|[13]|2[13-79]|4[1-6]|5[2457]|6[124-8]|7[1-4]|8[13-6]|9[1267])|3(?:02?|1[467]|2[03-6]|3[13-8]|[49][2-6]|5[2-8]|[67])|4(?:7[3-578]|9)|6(?:[0136]|2[24-6]|4[6-8]?|5[15-8])|80|9(?:0[1-3]|[19]|2\\d|3[1-6]|4[02568]?|5[2-4]|6[2-46]|72?|8[23]?))|3(?:3(?:2[79]|6|8[2578])|4(?:0[0-24-9]|[12]|3[5-8]?|4[24-7]|5[4-68]?|6[02-9]|7[126]|8[2379]?|9[1-36-8])|5(?:1|2[1245]|3[237]?|4[1-46-9]|6[2-4]|7[1-6]|8[2-5]?)|6[24]|7(?:[069]|1[1568]|2[15]|3[145]|4[13]|5[14-8]|7[2-57]|8[126])|8(?:[01]|2[15-7]|3[2578]?|4[13-6]|5[4-8]?|6[1-357-9]|7[36-8]?|8[5-8]?|9[124])))15)?", "9$1"], "AS": ["1", "011", "(?:[58]\\d\\d|684|900)\\d{7}", [10], 0, "1", 0, "([267]\\d{6})$|1", "684$1", 0, "684"], "AT": ["43", "00", "1\\d{3,12}|2\\d{6,12}|43(?:(?:0\\d|5[02-9])\\d{3,9}|2\\d{4,5}|[3467]\\d{4}|8\\d{4,6}|9\\d{4,7})|5\\d{4,12}|8\\d{7,12}|9\\d{8,12}|(?:[367]\\d|4[0-24-9])\\d{4,11}", [4, 5, 6, 7, 8, 9, 10, 11, 12, 13], [["(\\d)(\\d{3,12})", "$1 $2", ["1(?:11|[2-9])"], "0$1"], ["(\\d{3})(\\d{2})", "$1 $2", ["517"], "0$1"], ["(\\d{2})(\\d{3,5})", "$1 $2", ["5[079]"], "0$1"], ["(\\d{3})(\\d{3,10})", "$1 $2", ["(?:31|4)6|51|6(?:5[0-3579]|[6-9])|7(?:20|32|8)|[89]"], "0$1"], ["(\\d{4})(\\d{3,9})", "$1 $2", ["[2-467]|5[2-6]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["5"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4,7})", "$1 $2 $3", ["5"], "0$1"]], "0"], "AU": ["61", "001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011", "1(?:[0-79]\\d{7}(?:\\d(?:\\d{2})?)?|8[0-24-9]\\d{7})|[2-478]\\d{8}|1\\d{4,7}", [5, 6, 7, 8, 9, 10, 12], [["(\\d{2})(\\d{3,4})", "$1 $2", ["16"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2,4})", "$1 $2 $3", ["16"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["14|4"], "0$1"], ["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["[2378]"], "(0$1)"], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1(?:30|[89])"]]], "0", 0, "(183[12])|0", 0, 0, 0, [["(?:(?:(?:2(?:[0-26-9]\\d|3[0-8]|4[02-9]|5[0135-9])|7(?:[013-57-9]\\d|2[0-8]))\\d|3(?:(?:[0-3589]\\d|6[1-9]|7[0-35-9])\\d|4(?:[0-578]\\d|90)))\\d\\d|8(?:51(?:0(?:0[03-9]|[12479]\\d|3[2-9]|5[0-8]|6[1-9]|8[0-7])|1(?:[0235689]\\d|1[0-69]|4[0-589]|7[0-47-9])|2(?:0[0-79]|[18][13579]|2[14-9]|3[0-46-9]|[4-6]\\d|7[89]|9[0-4])|3\\d\\d)|(?:6[0-8]|[78]\\d)\\d{3}|9(?:[02-9]\\d{3}|1(?:(?:[0-58]\\d|6[0135-9])\\d|7(?:0[0-24-9]|[1-9]\\d)|9(?:[0-46-9]\\d|5[0-79])))))\\d{3}", [9]], ["4(?:79[01]|83[0-389]|94[0-4])\\d{5}|4(?:[0-36]\\d|4[047-9]|5[0-25-9]|7[02-8]|8[0-24-9]|9[0-37-9])\\d{6}", [9]], ["180(?:0\\d{3}|2)\\d{3}", [7, 10]], ["190[0-26]\\d{6}", [10]], 0, 0, 0, ["163\\d{2,6}", [5, 6, 7, 8, 9]], ["14(?:5(?:1[0458]|[23][458])|71\\d)\\d{4}", [9]], ["13(?:00\\d{6}(?:\\d{2})?|45[0-4]\\d{3})|13\\d{4}", [6, 8, 10, 12]]], "0011"], "AW": ["297", "00", "(?:[25-79]\\d\\d|800)\\d{4}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[25-9]"]]]], "AX": ["358", "00|99(?:[01469]|5(?:[14]1|3[23]|5[59]|77|88|9[09]))", "2\\d{4,9}|35\\d{4,5}|(?:60\\d\\d|800)\\d{4,6}|7\\d{5,11}|(?:[14]\\d|3[0-46-9]|50)\\d{4,8}", [5, 6, 7, 8, 9, 10, 11, 12], 0, "0", 0, 0, 0, 0, "18", 0, "00"], "AZ": ["994", "00", "365\\d{6}|(?:[124579]\\d|60|88)\\d{7}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["90"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["1[28]|2|365|46", "1[28]|2|365[45]|46", "1[28]|2|365(?:4|5[02])|46"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[13-9]"], "0$1"]], "0"], "BA": ["387", "00", "6\\d{8}|(?:[35689]\\d|49|70)\\d{6}", [8, 9], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["6[1-3]|[7-9]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2-$3", ["[3-5]|6[56]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["6"], "0$1"]], "0"], "BB": ["1", "011", "(?:246|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2-9]\\d{6})$|1", "246$1", 0, "246"], "BD": ["880", "00", "[1-469]\\d{9}|8[0-79]\\d{7,8}|[2-79]\\d{8}|[2-9]\\d{7}|[3-9]\\d{6}|[57-9]\\d{5}", [6, 7, 8, 9, 10], [["(\\d{2})(\\d{4,6})", "$1-$2", ["31[5-8]|[459]1"], "0$1"], ["(\\d{3})(\\d{3,7})", "$1-$2", ["3(?:[67]|8[013-9])|4(?:6[168]|7|[89][18])|5(?:6[128]|9)|6(?:[15]|28|4[14])|7[2-589]|8(?:0[014-9]|[12])|9[358]|(?:3[2-5]|4[235]|5[2-578]|6[0389]|76|8[3-7]|9[24])1|(?:44|66)[01346-9]"], "0$1"], ["(\\d{4})(\\d{3,6})", "$1-$2", ["[13-9]|2[23]"], "0$1"], ["(\\d)(\\d{7,8})", "$1-$2", ["2"], "0$1"]], "0"], "BE": ["32", "00", "4\\d{8}|[1-9]\\d{7}", [8, 9], [["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["(?:80|9)0"], "0$1"], ["(\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[239]|4[23]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[15-8]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["4"], "0$1"]], "0"], "BF": ["226", "00", "[025-7]\\d{7}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[025-7]"]]]], "BG": ["359", "00", "00800\\d{7}|[2-7]\\d{6,7}|[89]\\d{6,8}|2\\d{5}", [6, 7, 8, 9, 12], [["(\\d)(\\d)(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["2"], "0$1"], ["(\\d{3})(\\d{4})", "$1 $2", ["43[1-6]|70[1-9]"], "0$1"], ["(\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["[356]|4[124-7]|7[1-9]|8[1-6]|9[1-7]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["(?:70|8)0"], "0$1"], ["(\\d{3})(\\d{3})(\\d{2})", "$1 $2 $3", ["43[1-7]|7"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[48]|9[08]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"], "0$1"]], "0"], "BH": ["973", "00", "[136-9]\\d{7}", [8], [["(\\d{4})(\\d{4})", "$1 $2", ["[13679]|8[02-4679]"]]]], "BI": ["257", "00", "(?:[267]\\d|31)\\d{6}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2367]"]]]], "BJ": ["229", "00", "(?:01\\d|[24-689])\\d{7}", [8, 10], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[24-689]"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["0"]]]], "BL": ["590", "00", "(?:590\\d|7090)\\d{5}|(?:69|80|9\\d)\\d{7}", [9], 0, "0", 0, 0, 0, 0, 0, [["590(?:2[7-9]|3[3-7]|5[12]|87)\\d{4}"], ["(?:69(?:0\\d\\d|1(?:2[2-9]|3[0-5])|4(?:0[89]|1[2-6]|9\\d)|6(?:1[016-9]|5[0-4]|[67]\\d))|7090[0-4])\\d{4}"], ["80[0-5]\\d{6}"], 0, 0, 0, 0, 0, ["9(?:(?:39[5-7]|76[018])\\d|475[0-5])\\d{4}"]]], "BM": ["1", "011", "(?:441|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2-9]\\d{6})$|1", "441$1", 0, "441"], "BN": ["673", "00", "[2-578]\\d{6}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[2-578]"]]]], "BO": ["591", "00(?:1\\d)?", "8001\\d{5}|(?:[2-467]\\d|50)\\d{6}", [8, 9], [["(\\d)(\\d{7})", "$1 $2", ["[235]|4[46]"]], ["(\\d{8})", "$1", ["[67]"]], ["(\\d{3})(\\d{2})(\\d{4})", "$1 $2 $3", ["8"]]], "0", 0, "0(1\\d)?"], "BQ": ["599", "00", "(?:[34]1|7\\d)\\d{5}", [7], 0, 0, 0, 0, 0, 0, "[347]"], "BR": ["55", "00(?:1[245]|2[1-35]|31|4[13]|[56]5|99)", "(?:[1-46-9]\\d\\d|5(?:[0-46-9]\\d|5[0-46-9]))\\d{8}|[1-9]\\d{9}|[3589]\\d{8}|[34]\\d{7}", [8, 9, 10, 11], [["(\\d{4})(\\d{4})", "$1-$2", ["300|4(?:0[02]|37)", "4(?:02|37)0|[34]00"]], ["(\\d{3})(\\d{2,3})(\\d{4})", "$1 $2 $3", ["(?:[358]|90)0"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2-$3", ["(?:[14689][1-9]|2[12478]|3[1-578]|5[13-5]|7[13-579])[2-57]"], "($1)"], ["(\\d{2})(\\d{5})(\\d{4})", "$1 $2-$3", ["[16][1-9]|[2-57-9]"], "($1)"]], "0", 0, "(?:0|90)(?:(1[245]|2[1-35]|31|4[13]|[56]5|99)(\\d{10,11}))?", "$2"], "BS": ["1", "011", "(?:242|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([3-8]\\d{6})$|1", "242$1", 0, "242"], "BT": ["975", "00", "[17]\\d{7}|[2-8]\\d{6}", [7, 8], [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-68]|7[246]"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["1[67]|7"]]]], "BW": ["267", "00", "(?:0800|(?:[37]|800)\\d)\\d{6}|(?:[2-6]\\d|90)\\d{5}", [7, 8, 10], [["(\\d{2})(\\d{5})", "$1 $2", ["90"]], ["(\\d{3})(\\d{4})", "$1 $2", ["[24-6]|3[15-9]"]], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[37]"]], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["0"]], ["(\\d{3})(\\d{4})(\\d{3})", "$1 $2 $3", ["8"]]]], "BY": ["375", "810", "(?:[12]\\d|33|44|902)\\d{7}|8(?:0[0-79]\\d{5,7}|[1-7]\\d{9})|8(?:1[0-489]|[5-79]\\d)\\d{7}|8[1-79]\\d{6,7}|8[0-79]\\d{5}|8\\d{5}", [6, 7, 8, 9, 10, 11], [["(\\d{3})(\\d{3})", "$1 $2", ["800"], "8 $1"], ["(\\d{3})(\\d{2})(\\d{2,4})", "$1 $2 $3", ["800"], "8 $1"], ["(\\d{4})(\\d{2})(\\d{3})", "$1 $2-$3", ["1(?:5[169]|6[3-5]|7[179])|2(?:1[35]|2[34]|3[3-5])", "1(?:5[169]|6(?:3[1-3]|4|5[125])|7(?:1[3-9]|7[0-24-6]|9[2-7]))|2(?:1[35]|2[34]|3[3-5])"], "8 0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["1(?:[56]|7[467])|2[1-3]"], "8 0$1"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["[1-4]"], "8 0$1"], ["(\\d{3})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["[89]"], "8 $1"]], "8", 0, "0|80?", 0, 0, 0, 0, "8~10"], "BZ": ["501", "00", "(?:0800\\d|[2-8])\\d{6}", [7, 11], [["(\\d{3})(\\d{4})", "$1-$2", ["[2-8]"]], ["(\\d)(\\d{3})(\\d{4})(\\d{3})", "$1-$2-$3-$4", ["0"]]]], "CA": ["1", "011", "[2-9]\\d{9}|3\\d{6}", [7, 10], 0, "1", 0, 0, 0, 0, 0, [["(?:2(?:04|[23]6|[48]9|50|63)|3(?:06|43|54|6[578]|82)|4(?:03|1[68]|[26]8|3[178]|50|74)|5(?:06|1[49]|48|79|8[147])|6(?:04|[18]3|39|47|72)|7(?:0[59]|42|53|78|8[02])|8(?:[06]7|19|25|7[39])|9(?:0[25]|42))[2-9]\\d{6}", [10]], ["", [10]], ["8(?:00|33|44|55|66|77|88)[2-9]\\d{6}", [10]], ["900[2-9]\\d{6}", [10]], ["52(?:3(?:[2-46-9][02-9]\\d|5(?:[02-46-9]\\d|5[0-46-9]))|4(?:[2-478][02-9]\\d|5(?:[034]\\d|2[024-9]|5[0-46-9])|6(?:0[1-9]|[2-9]\\d)|9(?:[05-9]\\d|2[0-5]|49)))\\d{4}|52[34][2-9]1[02-9]\\d{4}|(?:5(?:2[125-9]|33|44|66|77|88)|6(?:22|33))[2-9]\\d{6}", [10]], 0, ["310\\d{4}", [7]], 0, ["600[2-9]\\d{6}", [10]]]], "CC": ["61", "001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011", "1(?:[0-79]\\d{8}(?:\\d{2})?|8[0-24-9]\\d{7})|[148]\\d{8}|1\\d{5,7}", [6, 7, 8, 9, 10, 12], 0, "0", 0, "([59]\\d{7})$|0", "8$1", 0, 0, [["8(?:51(?:0(?:02|31|60|89)|1(?:18|76)|223)|91(?:0(?:1[0-2]|29)|1(?:[28]2|50|79)|2(?:10|64)|3(?:[06]8|22)|4[29]8|62\\d|70[23]|959))\\d{3}", [9]], ["4(?:79[01]|83[0-389]|94[0-4])\\d{5}|4(?:[0-36]\\d|4[047-9]|5[0-25-9]|7[02-8]|8[0-24-9]|9[0-37-9])\\d{6}", [9]], ["180(?:0\\d{3}|2)\\d{3}", [7, 10]], ["190[0-26]\\d{6}", [10]], 0, 0, 0, 0, ["14(?:5(?:1[0458]|[23][458])|71\\d)\\d{4}", [9]], ["13(?:00\\d{6}(?:\\d{2})?|45[0-4]\\d{3})|13\\d{4}", [6, 8, 10, 12]]], "0011"], "CD": ["243", "00", "(?:(?:[189]|5\\d)\\d|2)\\d{7}|[1-68]\\d{6}", [7, 8, 9, 10], [["(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["88"], "0$1"], ["(\\d{2})(\\d{5})", "$1 $2", ["[1-6]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[89]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["5"], "0$1"]], "0"], "CF": ["236", "00", "(?:[27]\\d{3}|8776)\\d{4}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[278]"]]]], "CG": ["242", "00", "222\\d{6}|(?:0\\d|80)\\d{7}", [9], [["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["8"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[02]"]]]], "CH": ["41", "00", "8\\d{11}|[2-9]\\d{8}", [9, 12], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["8[047]|90"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-79]|81"], "0$1"], ["(\\d{3})(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["8"], "0$1"]], "0"], "CI": ["225", "00", "[02]\\d{9}", [10], [["(\\d{2})(\\d{2})(\\d)(\\d{5})", "$1 $2 $3 $4", ["2"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3 $4", ["0"]]]], "CK": ["682", "00", "[2-578]\\d{4}", [5], [["(\\d{2})(\\d{3})", "$1 $2", ["[2-578]"]]]], "CL": ["56", "(?:0|1(?:1[0-69]|2[02-5]|5[13-58]|69|7[0167]|8[018]))0", "12300\\d{6}|6\\d{9,10}|[2-9]\\d{8}", [9, 10, 11], [["(\\d{5})(\\d{4})", "$1 $2", ["219", "2196"], "($1)"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["44"]], ["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2[1-36]"], "($1)"], ["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["9[2-9]"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["3[2-5]|[47]|5[1-3578]|6[13-57]|8(?:0[1-9]|[1-9])"], "($1)"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["60|8"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], ["(\\d{3})(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["60"]]]], "CM": ["237", "00", "[26]\\d{8}|88\\d{6,7}", [8, 9], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["88"]], ["(\\d)(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["[26]|88"]]]], "CN": ["86", "00|1(?:[12]\\d|79)\\d\\d00", "(?:(?:1[03-689]|2\\d)\\d\\d|6)\\d{8}|1\\d{10}|[126]\\d{6}(?:\\d(?:\\d{2})?)?|86\\d{5,6}|(?:[3-579]\\d|8[0-57-9])\\d{5,9}", [7, 8, 9, 10, 11, 12], [["(\\d{2})(\\d{5,6})", "$1 $2", ["(?:10|2[0-57-9])[19]|3(?:[157]|35|49|9[1-68])|4(?:1[124-9]|2[179]|6[47-9]|7|8[23])|5(?:[1357]|2[37]|4[36]|6[1-46]|80)|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:07|1[236-8]|2[5-7]|[37]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3|4[13]|5[1-5]|7[0-79]|9[0-35-9])|(?:4[35]|59|85)[1-9]", "(?:10|2[0-57-9])(?:1[02]|9[56])|8078|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))1", "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|80781|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))12", "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|807812|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123", "10(?:1(?:0|23)|9[56])|2[0-57-9](?:1(?:00|23)|9[56])|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:1[124-9]|2[179]|[35][1-9]|6[47-9]|7\\d|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:078|1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|3\\d|4[13]|5[1-5]|7[0-79]|9[0-35-9]))123"], "0$1"], ["(\\d{3})(\\d{5,6})", "$1 $2", ["3(?:[157]|35|49|9[1-68])|4(?:[17]|2[179]|6[47-9]|8[23])|5(?:[1357]|2[37]|4[36]|6[1-46]|80)|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]|4[13]|5[1-5])|(?:4[35]|59|85)[1-9]", "(?:3(?:[157]\\d|35|49|9[1-68])|4(?:[17]\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[1-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\d|4[13]|5[1-5]))[19]", "85[23](?:10|95)|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:[17]\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[14-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\d|4[13]|5[1-5]))(?:10|9[56])", "85[23](?:100|95)|(?:3(?:[157]\\d|35|49|9[1-68])|4(?:[17]\\d|2[179]|[35][1-9]|6[47-9]|8[23])|5(?:[1357]\\d|2[37]|4[36]|6[1-46]|80|9[1-9])|6(?:3[1-5]|6[0238]|9[12])|7(?:01|[1579]\\d|2[248]|3[014-9]|4[3-6]|6[023689])|8(?:1[236-8]|2[5-7]|[37]\\d|5[14-9]|8[36-8]|9[1-8])|9(?:0[1-3689]|1[1-79]|[379]\\d|4[13]|5[1-5]))(?:100|9[56])"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["(?:4|80)0"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["10|2(?:[02-57-9]|1[1-9])", "10|2(?:[02-57-9]|1[1-9])", "10[0-79]|2(?:[02-57-9]|1[1-79])|(?:10|21)8(?:0[1-9]|[1-9])"], "0$1", 1], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["3(?:[3-59]|7[02-68])|4(?:[26-8]|3[3-9]|5[2-9])|5(?:3[03-9]|[468]|7[028]|9[2-46-9])|6|7(?:[0-247]|3[04-9]|5[0-4689]|6[2368])|8(?:[1-358]|9[1-7])|9(?:[013479]|5[1-5])|(?:[34]1|55|79|87)[02-9]"], "0$1", 1], ["(\\d{3})(\\d{7,8})", "$1 $2", ["9"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["80"], "0$1", 1], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["[3-578]"], "0$1", 1], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["1[3-9]"]], ["(\\d{2})(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["[12]"], "0$1", 1]], "0", 0, "(1(?:[12]\\d|79)\\d\\d)|0", 0, 0, 0, 0, "00"], "CO": ["57", "00(?:4(?:[14]4|56)|[579])", "(?:46|60\\d\\d)\\d{6}|(?:1\\d|[39])\\d{9}", [8, 10, 11], [["(\\d{4})(\\d{4})", "$1 $2", ["46"]], ["(\\d{3})(\\d{7})", "$1 $2", ["6|90"], "($1)"], ["(\\d{3})(\\d{7})", "$1 $2", ["3[0-357]|91"]], ["(\\d)(\\d{3})(\\d{7})", "$1-$2-$3", ["1"], "0$1", 0, "$1 $2 $3"]], "0", 0, "0([3579]|4(?:[14]4|56))?"], "CR": ["506", "00", "(?:8\\d|90)\\d{8}|(?:[24-8]\\d{3}|3005)\\d{4}", [8, 10], [["(\\d{4})(\\d{4})", "$1 $2", ["[2-7]|8[3-9]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1-$2-$3", ["[89]"]]], 0, 0, "(19(?:0[0-2468]|1[09]|20|66|77|99))"], "CU": ["53", "119", "(?:[2-7]|8\\d\\d)\\d{7}|[2-47]\\d{6}|[34]\\d{5}", [6, 7, 8, 10], [["(\\d{2})(\\d{4,6})", "$1 $2", ["2[1-4]|[34]"], "(0$1)"], ["(\\d)(\\d{6,7})", "$1 $2", ["7"], "(0$1)"], ["(\\d)(\\d{7})", "$1 $2", ["[56]"], "0$1"], ["(\\d{3})(\\d{7})", "$1 $2", ["8"], "0$1"]], "0"], "CV": ["238", "0", "(?:[2-59]\\d\\d|800)\\d{4}", [7], [["(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3", ["[2-589]"]]]], "CW": ["599", "00", "(?:[34]1|60|(?:7|9\\d)\\d)\\d{5}", [7, 8], [["(\\d{3})(\\d{4})", "$1 $2", ["[3467]"]], ["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["9[4-8]"]]], 0, 0, 0, 0, 0, "[69]"], "CX": ["61", "001[14-689]|14(?:1[14]|34|4[17]|[56]6|7[47]|88)0011", "1(?:[0-79]\\d{8}(?:\\d{2})?|8[0-24-9]\\d{7})|[148]\\d{8}|1\\d{5,7}", [6, 7, 8, 9, 10, 12], 0, "0", 0, "([59]\\d{7})$|0", "8$1", 0, 0, [["8(?:51(?:0(?:01|30|59|88)|1(?:17|46|75)|2(?:22|35))|91(?:00[6-9]|1(?:[28]1|49|78)|2(?:09|63)|3(?:12|26|75)|4(?:56|97)|64\\d|7(?:0[01]|1[0-2])|958))\\d{3}", [9]], ["4(?:79[01]|83[0-389]|94[0-4])\\d{5}|4(?:[0-36]\\d|4[047-9]|5[0-25-9]|7[02-8]|8[0-24-9]|9[0-37-9])\\d{6}", [9]], ["180(?:0\\d{3}|2)\\d{3}", [7, 10]], ["190[0-26]\\d{6}", [10]], 0, 0, 0, 0, ["14(?:5(?:1[0458]|[23][458])|71\\d)\\d{4}", [9]], ["13(?:00\\d{6}(?:\\d{2})?|45[0-4]\\d{3})|13\\d{4}", [6, 8, 10, 12]]], "0011"], "CY": ["357", "00", "(?:[279]\\d|[58]0)\\d{6}", [8], [["(\\d{2})(\\d{6})", "$1 $2", ["[257-9]"]]]], "CZ": ["420", "00", "(?:[2-578]\\d|60)\\d{7}|9\\d{8,11}", [9, 10, 11, 12], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-8]|9[015-7]"]], ["(\\d{2})(\\d{3})(\\d{3})(\\d{2})", "$1 $2 $3 $4", ["96"]], ["(\\d{2})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9"]], ["(\\d{3})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9"]]]], "DE": ["49", "00", "[2579]\\d{5,14}|49(?:[34]0|69|8\\d)\\d\\d?|49(?:37|49|60|7[089]|9\\d)\\d{1,3}|49(?:2[024-9]|3[2-689]|7[1-7])\\d{1,8}|(?:1|[368]\\d|4[0-8])\\d{3,13}|49(?:[015]\\d|2[13]|31|[46][1-8])\\d{1,9}", [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], [["(\\d{2})(\\d{3,13})", "$1 $2", ["3[02]|40|[68]9"], "0$1"], ["(\\d{3})(\\d{3,12})", "$1 $2", ["2(?:0[1-389]|1[124]|2[18]|3[14])|3(?:[35-9][15]|4[015])|906|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1", "2(?:0[1-389]|12[0-8])|3(?:[35-9][15]|4[015])|906|2(?:[13][14]|2[18])|(?:2[4-9]|4[2-9]|[579][1-9]|[68][1-8])1"], "0$1"], ["(\\d{4})(\\d{2,11})", "$1 $2", ["[24-6]|3(?:[3569][02-46-9]|4[2-4679]|7[2-467]|8[2-46-8])|70[2-8]|8(?:0[2-9]|[1-8])|90[7-9]|[79][1-9]", "[24-6]|3(?:3(?:0[1-467]|2[127-9]|3[124578]|7[1257-9]|8[1256]|9[145])|4(?:2[135]|4[13578]|9[1346])|5(?:0[14]|2[1-3589]|6[1-4]|7[13468]|8[13568])|6(?:2[1-489]|3[124-6]|6[13]|7[12579]|8[1-356]|9[135])|7(?:2[1-7]|4[145]|6[1-5]|7[1-4])|8(?:21|3[1468]|6|7[1467]|8[136])|9(?:0[12479]|2[1358]|4[134679]|6[1-9]|7[136]|8[147]|9[1468]))|70[2-8]|8(?:0[2-9]|[1-8])|90[7-9]|[79][1-9]|3[68]4[1347]|3(?:47|60)[1356]|3(?:3[46]|46|5[49])[1246]|3[4579]3[1357]"], "0$1"], ["(\\d{3})(\\d{4})", "$1 $2", ["138"], "0$1"], ["(\\d{5})(\\d{2,10})", "$1 $2", ["3"], "0$1"], ["(\\d{3})(\\d{5,11})", "$1 $2", ["181"], "0$1"], ["(\\d{3})(\\d)(\\d{4,10})", "$1 $2 $3", ["1(?:3|80)|9"], "0$1"], ["(\\d{3})(\\d{7,8})", "$1 $2", ["1[67]"], "0$1"], ["(\\d{3})(\\d{7,12})", "$1 $2", ["8"], "0$1"], ["(\\d{5})(\\d{6})", "$1 $2", ["185", "1850", "18500"], "0$1"], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["7"], "0$1"], ["(\\d{4})(\\d{7})", "$1 $2", ["18[68]"], "0$1"], ["(\\d{4})(\\d{7})", "$1 $2", ["15[1279]"], "0$1"], ["(\\d{5})(\\d{6})", "$1 $2", ["15[03568]", "15(?:[0568]|31)"], "0$1"], ["(\\d{3})(\\d{8})", "$1 $2", ["18"], "0$1"], ["(\\d{3})(\\d{2})(\\d{7,8})", "$1 $2 $3", ["1(?:6[023]|7)"], "0$1"], ["(\\d{4})(\\d{2})(\\d{7})", "$1 $2 $3", ["15[279]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{8})", "$1 $2 $3", ["15"], "0$1"]], "0"], "DJ": ["253", "00", "(?:2\\d|77)\\d{6}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[27]"]]]], "DK": ["45", "00", "[2-9]\\d{7}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-9]"]]]], "DM": ["1", "011", "(?:[58]\\d\\d|767|900)\\d{7}", [10], 0, "1", 0, "([2-7]\\d{6})$|1", "767$1", 0, "767"], "DO": ["1", "011", "(?:[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, 0, 0, 0, "8001|8[024]9"], "DZ": ["213", "00", "(?:[1-4]|[5-79]\\d|80)\\d{7}", [8, 9], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[1-4]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["9"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-8]"], "0$1"]], "0"], "EC": ["593", "00", "1\\d{9,10}|(?:[2-7]|9\\d)\\d{7}", [8, 9, 10, 11], [["(\\d)(\\d{3})(\\d{4})", "$1 $2-$3", ["[2-7]"], "(0$1)", 0, "$1-$2-$3"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["9"], "0$1"], ["(\\d{4})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["1"]]], "0"], "EE": ["372", "00", "8\\d{9}|[4578]\\d{7}|(?:[3-8]\\d|90)\\d{5}", [7, 8, 10], [["(\\d{3})(\\d{4})", "$1 $2", ["[369]|4[3-8]|5(?:[0-2]|5[0-478]|6[45])|7[1-9]|88", "[369]|4[3-8]|5(?:[02]|1(?:[0-8]|95)|5[0-478]|6(?:4[0-4]|5[1-589]))|7[1-9]|88"]], ["(\\d{4})(\\d{3,4})", "$1 $2", ["[45]|8(?:00|[1-49])", "[45]|8(?:00[1-9]|[1-49])"]], ["(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["7"]], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["8"]]]], "EG": ["20", "00", "[189]\\d{8,9}|[24-6]\\d{8}|[135]\\d{7}", [8, 9, 10], [["(\\d)(\\d{7,8})", "$1 $2", ["[23]"], "0$1"], ["(\\d{2})(\\d{6,7})", "$1 $2", ["1[35]|[4-6]|8[2468]|9[235-7]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[89]"], "0$1"], ["(\\d{2})(\\d{8})", "$1 $2", ["1"], "0$1"]], "0"], "EH": ["212", "00", "[5-8]\\d{8}", [9], 0, "0", 0, 0, 0, 0, "528[89]"], "ER": ["291", "00", "[178]\\d{6}", [7], [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[178]"], "0$1"]], "0"], "ES": ["34", "00", "[5-9]\\d{8}", [9], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[89]00"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-9]"]]]], "ET": ["251", "00", "(?:11|[2-579]\\d)\\d{7}", [9], [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-579]"], "0$1"]], "0"], "FI": ["358", "00|99(?:[01469]|5(?:[14]1|3[23]|5[59]|77|88|9[09]))", "[1-35689]\\d{4}|7\\d{10,11}|(?:[124-7]\\d|3[0-46-9])\\d{8}|[1-9]\\d{5,8}", [5, 6, 7, 8, 9, 10, 11, 12], [["(\\d{5})", "$1", ["20[2-59]"], "0$1"], ["(\\d{3})(\\d{3,7})", "$1 $2", ["(?:[1-3]0|[68])0|70[07-9]"], "0$1"], ["(\\d{2})(\\d{4,8})", "$1 $2", ["[14]|2[09]|50|7[135]"], "0$1"], ["(\\d{2})(\\d{6,10})", "$1 $2", ["7"], "0$1"], ["(\\d)(\\d{4,9})", "$1 $2", ["(?:19|[2568])[1-8]|3(?:0[1-9]|[1-9])|9"], "0$1"]], "0", 0, 0, 0, 0, "1[03-79]|[2-9]", 0, "00"], "FJ": ["679", "0(?:0|52)", "45\\d{5}|(?:0800\\d|[235-9])\\d{6}", [7, 11], [["(\\d{3})(\\d{4})", "$1 $2", ["[235-9]|45"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["0"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "FK": ["500", "00", "[2-7]\\d{4}", [5]], "FM": ["691", "00", "(?:[39]\\d\\d|820)\\d{4}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[389]"]]]], "FO": ["298", "00", "[2-9]\\d{5}", [6], [["(\\d{6})", "$1", ["[2-9]"]]], 0, 0, "(10(?:01|[12]0|88))"], "FR": ["33", "00", "[1-9]\\d{8}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"], "0 $1"], ["(\\d)(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["[1-79]"], "0$1"]], "0"], "GA": ["241", "00", "(?:[067]\\d|11)\\d{6}|[2-7]\\d{6}", [7, 8], [["(\\d)(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-7]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["0"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["11|[67]"], "0$1"]], 0, 0, "0(11\\d{6}|60\\d{6}|61\\d{6}|6[256]\\d{6}|7[467]\\d{6})", "$1"], "GB": ["44", "00", "[1-357-9]\\d{9}|[18]\\d{8}|8\\d{6}", [7, 9, 10], [["(\\d{3})(\\d{4})", "$1 $2", ["800", "8001", "80011", "800111", "8001111"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3", ["845", "8454", "84546", "845464"], "0$1"], ["(\\d{3})(\\d{6})", "$1 $2", ["800"], "0$1"], ["(\\d{5})(\\d{4,5})", "$1 $2", ["1(?:38|5[23]|69|76|94)", "1(?:(?:38|69)7|5(?:24|39)|768|946)", "1(?:3873|5(?:242|39[4-6])|(?:697|768)[347]|9467)"], "0$1"], ["(\\d{4})(\\d{5,6})", "$1 $2", ["1(?:[2-69][02-9]|[78])"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["[25]|7(?:0|6[02-9])", "[25]|7(?:0|6(?:[03-9]|2[356]))"], "0$1"], ["(\\d{4})(\\d{6})", "$1 $2", ["7"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1389]"], "0$1"]], "0", 0, 0, 0, 0, 0, [["(?:1(?:1(?:3(?:[0-58]\\d\\d|73[0-35])|4(?:(?:[0-5]\\d|70)\\d|69[7-9])|(?:(?:5[0-26-9]|[78][0-49])\\d|6(?:[0-4]\\d|50))\\d)|(?:2(?:(?:0[024-9]|2[3-9]|3[3-79]|4[1-689]|[58][02-9]|6[0-47-9]|7[013-9]|9\\d)\\d|1(?:[0-7]\\d|8[0-3]))|(?:3(?:0\\d|1[0-8]|[25][02-9]|3[02-579]|[468][0-46-9]|7[1-35-79]|9[2-578])|4(?:0[03-9]|[137]\\d|[28][02-57-9]|4[02-69]|5[0-8]|[69][0-79])|5(?:0[1-35-9]|[16]\\d|2[024-9]|3[015689]|4[02-9]|5[03-9]|7[0-35-9]|8[0-468]|9[0-57-9])|6(?:0[034689]|1\\d|2[0-35689]|[38][013-9]|4[1-467]|5[0-69]|6[13-9]|7[0-8]|9[0-24578])|7(?:0[0246-9]|2\\d|3[0236-8]|4[03-9]|5[0-46-9]|6[013-9]|7[0-35-9]|8[024-9]|9[02-9])|8(?:0[35-9]|2[1-57-9]|3[02-578]|4[0-578]|5[124-9]|6[2-69]|7\\d|8[02-9]|9[02569])|9(?:0[02-589]|[18]\\d|2[02-689]|3[1-57-9]|4[2-9]|5[0-579]|6[2-47-9]|7[0-24578]|9[2-57]))\\d)\\d)|2(?:0[013478]|3[0189]|4[017]|8[0-46-9]|9[0-2])\\d{3})\\d{4}|1(?:2(?:0(?:46[1-4]|87[2-9])|545[1-79]|76(?:2\\d|3[1-8]|6[1-6])|9(?:7(?:2[0-4]|3[2-5])|8(?:2[2-8]|7[0-47-9]|8[3-5])))|3(?:6(?:38[2-5]|47[23])|8(?:47[04-9]|64[0157-9]))|4(?:044[1-7]|20(?:2[23]|8\\d)|6(?:0(?:30|5[2-57]|6[1-8]|7[2-8])|140)|8(?:052|87[1-3]))|5(?:2(?:4(?:3[2-79]|6\\d)|76\\d)|6(?:26[06-9]|686))|6(?:06(?:4\\d|7[4-79])|295[5-7]|35[34]\\d|47(?:24|61)|59(?:5[08]|6[67]|74)|9(?:55[0-4]|77[23]))|7(?:26(?:6[13-9]|7[0-7])|(?:442|688)\\d|50(?:2[0-3]|[3-68]2|76))|8(?:27[56]\\d|37(?:5[2-5]|8[239])|843[2-58])|9(?:0(?:0(?:6[1-8]|85)|52\\d)|3583|4(?:66[1-8]|9(?:2[01]|81))|63(?:23|3[1-4])|9561))\\d{3}", [9, 10]], ["7(?:457[0-57-9]|700[01]|911[028])\\d{5}|7(?:[1-3]\\d\\d|4(?:[0-46-9]\\d|5[0-689])|5(?:0[0-8]|[13-9]\\d|2[0-35-9])|7(?:0[1-9]|[1-7]\\d|8[02-9]|9[0-689])|8(?:[014-9]\\d|[23][0-8])|9(?:[024-9]\\d|1[02-9]|3[0-689]))\\d{6}", [10]], ["80[08]\\d{7}|800\\d{6}|8001111"], ["(?:8(?:4[2-5]|7[0-3])|9(?:[01]\\d|8[2-49]))\\d{7}|845464\\d", [7, 10]], ["70\\d{8}", [10]], 0, ["(?:3[0347]|55)\\d{8}", [10]], ["76(?:464|652)\\d{5}|76(?:0[0-28]|2[356]|34|4[01347]|5[49]|6[0-369]|77|8[14]|9[139])\\d{6}", [10]], ["56\\d{8}", [10]]], 0, " x"], "GD": ["1", "011", "(?:473|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2-9]\\d{6})$|1", "473$1", 0, "473"], "GE": ["995", "00", "(?:[3-57]\\d\\d|800)\\d{6}", [9], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["70"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["32"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[57]"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[348]"], "0$1"]], "0"], "GF": ["594", "00", "(?:[56]94\\d|7093)\\d{5}|(?:80|9\\d)\\d{7}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-7]|9[47]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[89]"], "0$1"]], "0"], "GG": ["44", "00", "(?:1481|[357-9]\\d{3})\\d{6}|8\\d{6}(?:\\d{2})?", [7, 9, 10], 0, "0", 0, "([25-9]\\d{5})$|0", "1481$1", 0, 0, [["1481[25-9]\\d{5}", [10]], ["7(?:(?:781|839)\\d|911[17])\\d{5}", [10]], ["80[08]\\d{7}|800\\d{6}|8001111"], ["(?:8(?:4[2-5]|7[0-3])|9(?:[01]\\d|8[0-3]))\\d{7}|845464\\d", [7, 10]], ["70\\d{8}", [10]], 0, ["(?:3[0347]|55)\\d{8}", [10]], ["76(?:464|652)\\d{5}|76(?:0[0-28]|2[356]|34|4[01347]|5[49]|6[0-369]|77|8[14]|9[139])\\d{6}", [10]], ["56\\d{8}", [10]]]], "GH": ["233", "00", "(?:[235]\\d{3}|800)\\d{5}", [8, 9], [["(\\d{3})(\\d{5})", "$1 $2", ["8"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[235]"], "0$1"]], "0"], "GI": ["350", "00", "(?:[25]\\d|60)\\d{6}", [8], [["(\\d{3})(\\d{5})", "$1 $2", ["2"]]]], "GL": ["299", "00", "(?:19|[2-689]\\d|70)\\d{4}", [6], [["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3", ["19|[2-9]"]]]], "GM": ["220", "00", "[2-9]\\d{6}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[2-9]"]]]], "GN": ["224", "00", "722\\d{6}|(?:3|6\\d)\\d{7}", [8, 9], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["3"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[67]"]]]], "GP": ["590", "00", "(?:590\\d|7090)\\d{5}|(?:69|80|9\\d)\\d{7}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-79]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"], "0$1"]], "0", 0, 0, 0, 0, 0, [["590(?:0[1-68]|[14][0-24-9]|2[0-68]|3[1-9]|5[3-579]|[68][0-689]|7[08]|9\\d)\\d{4}"], ["(?:69(?:0\\d\\d|1(?:2[2-9]|3[0-5])|4(?:0[89]|1[2-6]|9\\d)|6(?:1[016-9]|5[0-4]|[67]\\d))|7090[0-4])\\d{4}"], ["80[0-5]\\d{6}"], 0, 0, 0, 0, 0, ["9(?:(?:39[5-7]|76[018])\\d|475[0-5])\\d{4}"]]], "GQ": ["240", "00", "222\\d{6}|(?:3\\d|55|[89]0)\\d{7}", [9], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[235]"]], ["(\\d{3})(\\d{6})", "$1 $2", ["[89]"]]]], "GR": ["30", "00", "5005000\\d{3}|8\\d{9,11}|(?:[269]\\d|70)\\d{8}", [10, 11, 12], [["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["21|7"]], ["(\\d{4})(\\d{6})", "$1 $2", ["2(?:2|3[2-57-9]|4[2-469]|5[2-59]|6[2-9]|7[2-69]|8[2-49])|5"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[2689]"]], ["(\\d{3})(\\d{3,4})(\\d{5})", "$1 $2 $3", ["8"]]]], "GT": ["502", "00", "80\\d{6}|(?:1\\d{3}|[2-7])\\d{7}", [8, 11], [["(\\d{4})(\\d{4})", "$1 $2", ["[2-8]"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]]]], "GU": ["1", "011", "(?:[58]\\d\\d|671|900)\\d{7}", [10], 0, "1", 0, "([2-9]\\d{6})$|1", "671$1", 0, "671"], "GW": ["245", "00", "[49]\\d{8}|4\\d{6}", [7, 9], [["(\\d{3})(\\d{4})", "$1 $2", ["40"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[49]"]]]], "GY": ["592", "001", "(?:[2-8]\\d{3}|9008)\\d{3}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[2-9]"]]]], "HK": ["852", "00(?:30|5[09]|[126-9]?)", "8[0-46-9]\\d{6,7}|9\\d{4,7}|(?:[2-7]|9\\d{3})\\d{7}", [5, 6, 7, 8, 9, 11], [["(\\d{3})(\\d{2,5})", "$1 $2", ["900", "9003"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[2-7]|8[1-4]|9(?:0[1-9]|[1-8])"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["8"]], ["(\\d{3})(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["9"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "HN": ["504", "00", "8\\d{10}|[237-9]\\d{7}", [8, 11], [["(\\d{4})(\\d{4})", "$1-$2", ["[237-9]"]]]], "HR": ["385", "00", "(?:[24-69]\\d|3[0-79])\\d{7}|80\\d{5,7}|[1-79]\\d{7}|6\\d{5,6}", [6, 7, 8, 9], [["(\\d{2})(\\d{2})(\\d{2,3})", "$1 $2 $3", ["6[01]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2,3})", "$1 $2 $3", ["8"], "0$1"], ["(\\d)(\\d{4})(\\d{3})", "$1 $2 $3", ["1"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["6|7[245]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["9"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2-57]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["8"], "0$1"]], "0"], "HT": ["509", "00", "(?:[2-489]\\d|55)\\d{6}", [8], [["(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["[2-589]"]]]], "HU": ["36", "00", "[235-7]\\d{8}|[1-9]\\d{7}", [8, 9], [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["1"], "(06 $1)"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[27][2-9]|3[2-7]|4[24-9]|5[2-79]|6|8[2-57-9]|9[2-69]"], "(06 $1)"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2-9]"], "06 $1"]], "06"], "ID": ["62", "00[89]", "00[1-9]\\d{9,14}|(?:[1-36]|8\\d{5})\\d{6}|00\\d{9}|[1-9]\\d{8,10}|[2-9]\\d{7}", [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["15"]], ["(\\d{2})(\\d{5,9})", "$1 $2", ["2[124]|[36]1"], "(0$1)"], ["(\\d{3})(\\d{5,7})", "$1 $2", ["800"], "0$1"], ["(\\d{3})(\\d{5,8})", "$1 $2", ["[2-79]"], "(0$1)"], ["(\\d{3})(\\d{3,4})(\\d{3})", "$1-$2-$3", ["8[1-35-9]"], "0$1"], ["(\\d{3})(\\d{6,8})", "$1 $2", ["1"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["804"], "0$1"], ["(\\d{3})(\\d)(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["80"], "0$1"], ["(\\d{3})(\\d{4})(\\d{4,5})", "$1-$2-$3", ["8"], "0$1"]], "0"], "IE": ["353", "00", "(?:1\\d|[2569])\\d{6,8}|4\\d{6,9}|7\\d{8}|8\\d{8,9}", [7, 8, 9, 10], [["(\\d{2})(\\d{5})", "$1 $2", ["2[24-9]|47|58|6[237-9]|9[35-9]"], "(0$1)"], ["(\\d{3})(\\d{5})", "$1 $2", ["[45]0"], "(0$1)"], ["(\\d)(\\d{3,4})(\\d{4})", "$1 $2 $3", ["1"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2569]|4[1-69]|7[14]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["70"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["81"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[78]"], "0$1"], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["4"], "(0$1)"], ["(\\d{2})(\\d)(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["8"], "0$1"]], "0"], "IL": ["972", "0(?:0|1[2-9])", "1\\d{6}(?:\\d{3,5})?|[57]\\d{8}|[1-489]\\d{7}", [7, 8, 9, 10, 11, 12], [["(\\d{4})(\\d{3})", "$1-$2", ["125"]], ["(\\d{4})(\\d{2})(\\d{2})", "$1-$2-$3", ["121"]], ["(\\d)(\\d{3})(\\d{4})", "$1-$2-$3", ["[2-489]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["[57]"], "0$1"], ["(\\d{4})(\\d{3})(\\d{3})", "$1-$2-$3", ["12"]], ["(\\d{4})(\\d{6})", "$1-$2", ["159"]], ["(\\d)(\\d{3})(\\d{3})(\\d{3})", "$1-$2-$3-$4", ["1[7-9]"]], ["(\\d{3})(\\d{1,2})(\\d{3})(\\d{4})", "$1-$2 $3-$4", ["15"]]], "0"], "IM": ["44", "00", "1624\\d{6}|(?:[3578]\\d|90)\\d{8}", [10], 0, "0", 0, "([25-8]\\d{5})$|0", "1624$1", 0, "74576|(?:16|7[56])24"], "IN": ["91", "00", "(?:000800|[2-9]\\d\\d)\\d{7}|1\\d{7,12}", [8, 9, 10, 11, 12, 13], [["(\\d{8})", "$1", ["5(?:0|2[23]|3[03]|[67]1|88)", "5(?:0|2(?:21|3)|3(?:0|3[23])|616|717|888)", "5(?:0|2(?:21|3)|3(?:0|3[23])|616|717|8888)"], 0, 1], ["(\\d{4})(\\d{4,5})", "$1 $2", ["180", "1800"], 0, 1], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["140"], 0, 1], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["11|2[02]|33|4[04]|79[1-7]|80[2-46]", "11|2[02]|33|4[04]|79(?:[1-6]|7[19])|80(?:[2-4]|6[0-589])", "11|2[02]|33|4[04]|79(?:[124-6]|3(?:[02-9]|1[0-24-9])|7(?:1|9[1-6]))|80(?:[2-4]|6[0-589])"], "0$1", 1], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1(?:2[0-249]|3[0-25]|4[145]|[68]|7[1257])|2(?:1[257]|3[013]|4[01]|5[0137]|6[0158]|78|8[1568])|3(?:26|4[1-3]|5[34]|6[01489]|7[02-46]|8[159])|4(?:1[36]|2[1-47]|5[12]|6[0-26-9]|7[0-24-9]|8[013-57]|9[014-7])|5(?:1[025]|22|[36][25]|4[28]|5[12]|[78]1)|6(?:12|[2-4]1|5[17]|6[13]|80)|7(?:12|3[134]|4[47]|61|88)|8(?:16|2[014]|3[126]|6[136]|7[078]|8[34]|91)|(?:43|59|75)[15]|(?:1[59]|29|67|72)[14]", "1(?:2[0-24]|3[0-25]|4[145]|[59][14]|6[1-9]|7[1257]|8[1-57-9])|2(?:1[257]|3[013]|4[01]|5[0137]|6[058]|78|8[1568]|9[14])|3(?:26|4[1-3]|5[34]|6[01489]|7[02-46]|8[159])|4(?:1[36]|2[1-47]|3[15]|5[12]|6[0-26-9]|7[0-24-9]|8[013-57]|9[014-7])|5(?:1[025]|22|[36][25]|4[28]|[578]1|9[15])|674|7(?:(?:2[14]|3[34]|5[15])[2-6]|61[346]|88[0-8])|8(?:70[2-6]|84[235-7]|91[3-7])|(?:1(?:29|60|8[06])|261|552|6(?:12|[2-47]1|5[17]|6[13]|80)|7(?:12|31|4[47])|8(?:16|2[014]|3[126]|6[136]|7[78]|83))[2-7]", "1(?:2[0-24]|3[0-25]|4[145]|[59][14]|6[1-9]|7[1257]|8[1-57-9])|2(?:1[257]|3[013]|4[01]|5[0137]|6[058]|78|8[1568]|9[14])|3(?:26|4[1-3]|5[34]|6[01489]|7[02-46]|8[159])|4(?:1[36]|2[1-47]|3[15]|5[12]|6[0-26-9]|7[0-24-9]|8[013-57]|9[014-7])|5(?:1[025]|22|[36][25]|4[28]|[578]1|9[15])|6(?:12(?:[2-6]|7[0-8])|74[2-7])|7(?:(?:2[14]|5[15])[2-6]|3171|61[346]|88(?:[2-7]|82))|8(?:70[2-6]|84(?:[2356]|7[19])|91(?:[3-6]|7[19]))|73[134][2-6]|(?:74[47]|8(?:16|2[014]|3[126]|6[136]|7[78]|83))(?:[2-6]|7[19])|(?:1(?:29|60|8[06])|261|552|6(?:[2-4]1|5[17]|6[13]|7(?:1|4[0189])|80)|7(?:12|88[01]))[2-7]"], "0$1", 1], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1(?:[2-479]|5[0235-9])|[2-5]|6(?:1[1358]|2[2457-9]|3[2-5]|4[235-7]|5[2-689]|6[24578]|7[235689]|8[1-6])|7(?:1[013-9]|28|3[129]|4[1-35689]|5[29]|6[02-5]|70)|807", "1(?:[2-479]|5[0235-9])|[2-5]|6(?:1[1358]|2(?:[2457]|84|95)|3(?:[2-4]|55)|4[235-7]|5[2-689]|6[24578]|7[235689]|8[1-6])|7(?:1(?:[013-8]|9[6-9])|28[6-8]|3(?:17|2[0-49]|9[2-57])|4(?:1[2-4]|[29][0-7]|3[0-8]|[56]|8[0-24-7])|5(?:2[1-3]|9[0-6])|6(?:0[5689]|2[5-9]|3[02-8]|4|5[0-367])|70[13-7])|807[19]", "1(?:[2-479]|5(?:[0236-9]|5[013-9]))|[2-5]|6(?:2(?:84|95)|355|83)|73179|807(?:1|9[1-3])|(?:1552|6(?:1[1358]|2[2457]|3[2-4]|4[235-7]|5[2-689]|6[24578]|7[235689]|8[124-6])\\d|7(?:1(?:[013-8]\\d|9[6-9])|28[6-8]|3(?:2[0-49]|9[2-57])|4(?:1[2-4]|[29][0-7]|3[0-8]|[56]\\d|8[0-24-7])|5(?:2[1-3]|9[0-6])|6(?:0[5689]|2[5-9]|3[02-8]|4\\d|5[0-367])|70[13-7]))[2-7]"], "0$1", 1], ["(\\d{5})(\\d{5})", "$1 $2", ["[6-9]"], "0$1", 1], ["(\\d{4})(\\d{2,4})(\\d{4})", "$1 $2 $3", ["1(?:6|8[06])", "1(?:6|8[06]0)"], 0, 1], ["(\\d{4})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["18"], 0, 1]], "0"], "IO": ["246", "00", "3\\d{6}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["3"]]]], "IQ": ["964", "00", "(?:1|7\\d\\d)\\d{7}|[2-6]\\d{7,8}", [8, 9, 10], [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["1"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2-6]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"], "0$1"]], "0"], "IR": ["98", "00", "[1-9]\\d{9}|(?:[1-8]\\d\\d|9)\\d{3,4}", [4, 5, 6, 7, 10], [["(\\d{4,5})", "$1", ["96"], "0$1"], ["(\\d{2})(\\d{4,5})", "$1 $2", ["(?:1[137]|2[13-68]|3[1458]|4[145]|5[1468]|6[16]|7[1467]|8[13467])[12689]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["9"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["[1-8]"], "0$1"]], "0"], "IS": ["354", "00|1(?:0(?:01|[12]0)|100)", "(?:38\\d|[4-9])\\d{6}", [7, 9], [["(\\d{3})(\\d{4})", "$1 $2", ["[4-9]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["3"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "IT": ["39", "00", "0\\d{5,10}|1\\d{8,10}|3(?:[0-8]\\d{7,10}|9\\d{7,8})|(?:43|55|70)\\d{8}|8\\d{5}(?:\\d{2,4})?", [6, 7, 8, 9, 10, 11, 12], [["(\\d{2})(\\d{4,6})", "$1 $2", ["0[26]"]], ["(\\d{3})(\\d{3,6})", "$1 $2", ["0[13-57-9][0159]|8(?:03|4[17]|9[2-5])", "0[13-57-9][0159]|8(?:03|4[17]|9(?:2|3[04]|[45][0-4]))"]], ["(\\d{4})(\\d{2,6})", "$1 $2", ["0(?:[13-579][2-46-8]|8[236-8])"]], ["(\\d{4})(\\d{4})", "$1 $2", ["894"]], ["(\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["0[26]|5"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["1(?:44|[679])|[378]|43"]], ["(\\d{3})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["0[13-57-9][0159]|14"]], ["(\\d{2})(\\d{4})(\\d{5})", "$1 $2 $3", ["0[26]"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["0"]], ["(\\d{3})(\\d{4})(\\d{4,5})", "$1 $2 $3", ["3"]]], 0, 0, 0, 0, 0, 0, [["0669[0-79]\\d{1,6}|0(?:1(?:[0159]\\d|[27][1-5]|31|4[1-4]|6[1356]|8[2-57])|2\\d\\d|3(?:[0159]\\d|2[1-4]|3[12]|[48][1-6]|6[2-59]|7[1-7])|4(?:[0159]\\d|[23][1-9]|4[245]|6[1-5]|7[1-4]|81)|5(?:[0159]\\d|2[1-5]|3[2-6]|4[1-79]|6[4-6]|7[1-578]|8[3-8])|6(?:[0-57-9]\\d|6[0-8])|7(?:[0159]\\d|2[12]|3[1-7]|4[2-46]|6[13569]|7[13-6]|8[1-59])|8(?:[0159]\\d|2[3-578]|3[1-356]|[6-8][1-5])|9(?:[0159]\\d|[238][1-5]|4[12]|6[1-8]|7[1-6]))\\d{2,7}", [6, 7, 8, 9, 10, 11]], ["3[2-9]\\d{7,8}|(?:31|43)\\d{8}", [9, 10]], ["80(?:0\\d{3}|3)\\d{3}", [6, 9]], ["(?:0878\\d{3}|89(?:2\\d|3[04]|4(?:[0-4]|[5-9]\\d\\d)|5[0-4]))\\d\\d|(?:1(?:44|6[346])|89(?:38|5[5-9]|9))\\d{6}", [6, 8, 9, 10]], ["1(?:78\\d|99)\\d{6}", [9, 10]], ["3[2-8]\\d{9,10}", [11, 12]], 0, 0, ["55\\d{8}", [10]], ["84(?:[08]\\d{3}|[17])\\d{3}", [6, 9]]]], "JE": ["44", "00", "1534\\d{6}|(?:[3578]\\d|90)\\d{8}", [10], 0, "0", 0, "([0-24-8]\\d{5})$|0", "1534$1", 0, 0, [["1534[0-24-8]\\d{5}"], ["7(?:(?:(?:50|82)9|937)\\d|7(?:00[378]|97\\d))\\d{5}"], ["80(?:07(?:35|81)|8901)\\d{4}"], ["(?:8(?:4(?:4(?:4(?:05|42|69)|703)|5(?:041|800))|7(?:0002|1206))|90(?:066[59]|1810|71(?:07|55)))\\d{4}"], ["701511\\d{4}"], 0, ["(?:3(?:0(?:07(?:35|81)|8901)|3\\d{4}|4(?:4(?:4(?:05|42|69)|703)|5(?:041|800))|7(?:0002|1206))|55\\d{4})\\d{4}"], ["76(?:464|652)\\d{5}|76(?:0[0-28]|2[356]|34|4[01347]|5[49]|6[0-369]|77|8[14]|9[139])\\d{6}"], ["56\\d{8}"]]], "JM": ["1", "011", "(?:[58]\\d\\d|658|900)\\d{7}", [10], 0, "1", 0, 0, 0, 0, "658|876"], "JO": ["962", "00", "(?:(?:[2689]|7\\d)\\d|32|53)\\d{6}", [8, 9], [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[2356]|87"], "(0$1)"], ["(\\d{3})(\\d{5,6})", "$1 $2", ["[89]"], "0$1"], ["(\\d{2})(\\d{7})", "$1 $2", ["70"], "0$1"], ["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["7"], "0$1"]], "0"], "JP": ["81", "010", "00[1-9]\\d{6,14}|[25-9]\\d{9}|(?:00|[1-9]\\d\\d)\\d{6}", [8, 9, 10, 11, 12, 13, 14, 15, 16, 17], [["(\\d{3})(\\d{3})(\\d{3})", "$1-$2-$3", ["(?:12|57|99)0"], "0$1"], ["(\\d{4})(\\d)(\\d{4})", "$1-$2-$3", ["1(?:26|3[79]|4[56]|5[4-68]|6[3-5])|499|5(?:76|97)|746|8(?:3[89]|47|51)|9(?:80|9[16])", "1(?:267|3(?:7[247]|9[278])|466|5(?:47|58|64)|6(?:3[245]|48|5[4-68]))|499[2468]|5(?:76|97)9|7468|8(?:3(?:8[7-9]|96)|477|51[2-9])|9(?:802|9(?:1[23]|69))|1(?:45|58)[67]", "1(?:267|3(?:7[247]|9[278])|466|5(?:47|58|64)|6(?:3[245]|48|5[4-68]))|499[2468]|5(?:769|979[2-69])|7468|8(?:3(?:8[7-9]|96[2457-9])|477|51[2-9])|9(?:802|9(?:1[23]|69))|1(?:45|58)[67]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["60"], "0$1"], ["(\\d)(\\d{4})(\\d{4})", "$1-$2-$3", ["3|4(?:2[09]|7[01])|6[1-9]", "3|4(?:2(?:0|9[02-69])|7(?:0[019]|1))|6[1-9]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["1(?:1|5[45]|77|88|9[69])|2(?:2[1-37]|3[0-269]|4[59]|5|6[24]|7[1-358]|8[1369]|9[0-38])|4(?:[28][1-9]|3[0-57]|[45]|6[248]|7[2-579]|9[29])|5(?:2|3[0459]|4[0-369]|5[29]|8[02389]|9[0-389])|7(?:2[02-46-9]|34|[58]|6[0249]|7[57]|9[2-6])|8(?:2[124589]|3[26-9]|49|51|6|7[0-468]|8[68]|9[019])|9(?:[23][1-9]|4[15]|5[138]|6[1-3]|7[156]|8[189]|9[1-489])", "1(?:1|5(?:4[018]|5[017])|77|88|9[69])|2(?:2(?:[127]|3[014-9])|3[0-269]|4[59]|5(?:[1-3]|5[0-69]|9[19])|62|7(?:[1-35]|8[0189])|8(?:[16]|3[0134]|9[0-5])|9(?:[028]|17))|4(?:2(?:[13-79]|8[014-6])|3[0-57]|[45]|6[248]|7[2-47]|8[1-9]|9[29])|5(?:2|3(?:[045]|9[0-8])|4[0-369]|5[29]|8[02389]|9[0-3])|7(?:2[02-46-9]|34|[58]|6[0249]|7[57]|9(?:[23]|4[0-59]|5[01569]|6[0167]))|8(?:2(?:[1258]|4[0-39]|9[0-2469])|3(?:[29]|60)|49|51|6(?:[0-24]|36|5[0-3589]|7[23]|9[01459])|7[0-468]|8[68])|9(?:[23][1-9]|4[15]|5[138]|6[1-3]|7[156]|8[189]|9(?:[1289]|3[34]|4[0178]))|(?:264|837)[016-9]|2(?:57|93)[015-9]|(?:25[0468]|422|838)[01]|(?:47[59]|59[89]|8(?:6[68]|9))[019]", "1(?:1|5(?:4[018]|5[017])|77|88|9[69])|2(?:2[127]|3[0-269]|4[59]|5(?:[1-3]|5[0-69]|9(?:17|99))|6(?:2|4[016-9])|7(?:[1-35]|8[0189])|8(?:[16]|3[0134]|9[0-5])|9(?:[028]|17))|4(?:2(?:[13-79]|8[014-6])|3[0-57]|[45]|6[248]|7[2-47]|9[29])|5(?:2|3(?:[045]|9(?:[0-58]|6[4-9]|7[0-35689]))|4[0-369]|5[29]|8[02389]|9[0-3])|7(?:2[02-46-9]|34|[58]|6[0249]|7[57]|9(?:[23]|4[0-59]|5[01569]|6[0167]))|8(?:2(?:[1258]|4[0-39]|9[0169])|3(?:[29]|60|7(?:[017-9]|6[6-8]))|49|51|6(?:[0-24]|36[2-57-9]|5(?:[0-389]|5[23])|6(?:[01]|9[178])|7(?:2[2-468]|3[78])|9[0145])|7[0-468]|8[68])|9(?:4[15]|5[138]|7[156]|8[189]|9(?:[1289]|3(?:31|4[357])|4[0178]))|(?:8294|96)[1-3]|2(?:57|93)[015-9]|(?:223|8699)[014-9]|(?:25[0468]|422|838)[01]|(?:48|8292|9[23])[1-9]|(?:47[59]|59[89]|8(?:68|9))[019]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{4})", "$1-$2-$3", ["[14]|[289][2-9]|5[3-9]|7[2-4679]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1-$2-$3", ["800"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4})", "$1-$2-$3", ["[25-9]"], "0$1"]], "0", 0, "(000[259]\\d{6})$|(?:(?:003768)0?)|0", "$1"], "KE": ["254", "000", "(?:[17]\\d\\d|900)\\d{6}|(?:2|80)0\\d{6,7}|[4-6]\\d{6,8}", [7, 8, 9, 10], [["(\\d{2})(\\d{5,7})", "$1 $2", ["[24-6]"], "0$1"], ["(\\d{3})(\\d{6})", "$1 $2", ["[17]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[89]"], "0$1"]], "0"], "KG": ["996", "00", "8\\d{9}|[235-9]\\d{8}", [9, 10], [["(\\d{4})(\\d{5})", "$1 $2", ["3(?:1[346]|[24-79])"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[235-79]|88"], "0$1"], ["(\\d{3})(\\d{3})(\\d)(\\d{2,3})", "$1 $2 $3 $4", ["8"], "0$1"]], "0"], "KH": ["855", "00[14-9]", "1\\d{9}|[1-9]\\d{7,8}", [8, 9, 10], [["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[1-9]"], "0$1"], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1"]]], "0"], "KI": ["686", "00", "(?:[37]\\d|6[0-79])\\d{6}|(?:[2-48]\\d|50)\\d{3}", [5, 8], 0, "0"], "KM": ["269", "00", "[3478]\\d{6}", [7], [["(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3", ["[3478]"]]]], "KN": ["1", "011", "(?:[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2-7]\\d{6})$|1", "869$1", 0, "869"], "KP": ["850", "00|99", "85\\d{6}|(?:19\\d|[2-7])\\d{7}", [8, 10], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["8"], "0$1"], ["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[2-7]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"], "0$1"]], "0"], "KR": ["82", "00(?:[125689]|3(?:[46]5|91)|7(?:00|27|3|55|6[126]))", "00[1-9]\\d{8,11}|(?:[12]|5\\d{3})\\d{7}|[13-6]\\d{9}|(?:[1-6]\\d|80)\\d{7}|[3-6]\\d{4,5}|(?:00|7)0\\d{8}", [5, 6, 8, 9, 10, 11, 12, 13, 14], [["(\\d{2})(\\d{3,4})", "$1-$2", ["(?:3[1-3]|[46][1-4]|5[1-5])1"], "0$1"], ["(\\d{4})(\\d{4})", "$1-$2", ["1"]], ["(\\d)(\\d{3,4})(\\d{4})", "$1-$2-$3", ["2"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1-$2-$3", ["[36]0|8"], "0$1"], ["(\\d{2})(\\d{3,4})(\\d{4})", "$1-$2-$3", ["[1346]|5[1-5]"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4})", "$1-$2-$3", ["[57]"], "0$1"], ["(\\d{2})(\\d{5})(\\d{4})", "$1-$2-$3", ["5"], "0$1"]], "0", 0, "0(8(?:[1-46-8]|5\\d\\d))?"], "KW": ["965", "00", "18\\d{5}|(?:[2569]\\d|41)\\d{6}", [7, 8], [["(\\d{4})(\\d{3,4})", "$1 $2", ["[169]|2(?:[235]|4[1-35-9])|52"]], ["(\\d{3})(\\d{5})", "$1 $2", ["[245]"]]]], "KY": ["1", "011", "(?:345|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2-9]\\d{6})$|1", "345$1", 0, "345"], "KZ": ["7", "810", "(?:33622|8\\d{8})\\d{5}|[78]\\d{9}", [10, 14], 0, "8", 0, 0, 0, 0, "33|7", 0, "8~10"], "LA": ["856", "00", "[23]\\d{9}|3\\d{8}|(?:[235-8]\\d|41)\\d{6}", [8, 9, 10], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["2[13]|3[14]|[4-8]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["30[0135-9]"], "0$1"], ["(\\d{2})(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["[23]"], "0$1"]], "0"], "LB": ["961", "00", "[27-9]\\d{7}|[13-9]\\d{6}", [7, 8], [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[13-69]|7(?:[2-57]|62|8[0-7]|9[04-9])|8[02-9]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[27-9]"]]], "0"], "LC": ["1", "011", "(?:[58]\\d\\d|758|900)\\d{7}", [10], 0, "1", 0, "([2-8]\\d{6})$|1", "758$1", 0, "758"], "LI": ["423", "00", "[68]\\d{8}|(?:[2378]\\d|90)\\d{5}", [7, 9], [["(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3", ["[2379]|8(?:0[09]|7)", "[2379]|8(?:0(?:02|9)|7)"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["8"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["69"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["6"]]], "0", 0, "(1001)|0"], "LK": ["94", "00", "[1-9]\\d{8}", [9], [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[1-689]"], "0$1"]], "0"], "LR": ["231", "00", "(?:[245]\\d|33|77|88)\\d{7}|(?:2\\d|[4-6])\\d{6}", [7, 8, 9], [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["4[67]|[56]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["2"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[2-578]"], "0$1"]], "0"], "LS": ["266", "00", "(?:[256]\\d\\d|800)\\d{5}", [8], [["(\\d{4})(\\d{4})", "$1 $2", ["[2568]"]]]], "LT": ["370", "00", "(?:[3469]\\d|52|[78]0)\\d{6}", [8], [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["52[0-7]"], "(0-$1)", 1], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["[7-9]"], "0 $1", 1], ["(\\d{2})(\\d{6})", "$1 $2", ["37|4(?:[15]|6[1-8])"], "(0-$1)", 1], ["(\\d{3})(\\d{5})", "$1 $2", ["[3-6]"], "(0-$1)", 1]], "0", 0, "[08]"], "LU": ["352", "00", "35[013-9]\\d{4,8}|6\\d{8}|35\\d{2,4}|(?:[2457-9]\\d|3[0-46-9])\\d{2,9}", [4, 5, 6, 7, 8, 9, 10, 11], [["(\\d{2})(\\d{3})", "$1 $2", ["2(?:0[2-689]|[2-9])|[3-57]|8(?:0[2-9]|[13-9])|9(?:0[89]|[2-579])"]], ["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3", ["2(?:0[2-689]|[2-9])|[3-57]|8(?:0[2-9]|[13-9])|9(?:0[89]|[2-579])"]], ["(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["20[2-689]"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{1,2})", "$1 $2 $3 $4", ["2(?:[0367]|4[3-8])"]], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["80[01]|90[015]"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3 $4", ["20"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["6"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})(\\d{1,2})", "$1 $2 $3 $4 $5", ["2(?:[0367]|4[3-8])"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{1,5})", "$1 $2 $3 $4", ["[3-57]|8[13-9]|9(?:0[89]|[2-579])|(?:2|80)[2-9]"]]], 0, 0, "(15(?:0[06]|1[12]|[35]5|4[04]|6[26]|77|88|99)\\d)"], "LV": ["371", "00", "(?:[268]\\d|90)\\d{6}", [8], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[269]|8[01]"]]]], "LY": ["218", "00", "[2-9]\\d{8}", [9], [["(\\d{2})(\\d{7})", "$1-$2", ["[2-9]"], "0$1"]], "0"], "MA": ["212", "00", "[5-8]\\d{8}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["5[45]"], "0$1"], ["(\\d{4})(\\d{5})", "$1-$2", ["5(?:2[2-46-9]|3[3-9]|9)|8(?:0[89]|92)"], "0$1"], ["(\\d{2})(\\d{7})", "$1-$2", ["8"], "0$1"], ["(\\d{3})(\\d{6})", "$1-$2", ["[5-7]"], "0$1"]], "0", 0, 0, 0, 0, 0, [["5(?:2(?:[0-25-79]\\d|3[1-578]|4[02-46-8]|8[0235-7])|3(?:[0-47]\\d|5[02-9]|6[02-8]|8[014-9]|9[3-9])|(?:4[067]|5[03])\\d)\\d{5}"], ["(?:6(?:[0-79]\\d|8[0-247-9])|7(?:[0167]\\d|2[0-467]|5[0-3]|8[0-5]))\\d{6}"], ["80[0-7]\\d{6}"], ["89\\d{7}"], 0, 0, 0, 0, ["(?:592(?:4[0-2]|93)|80[89]\\d\\d)\\d{4}"]]], "MC": ["377", "00", "(?:[3489]|6\\d)\\d{7}", [8, 9], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["4"], "0$1"], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[389]"]], ["(\\d)(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4 $5", ["6"], "0$1"]], "0"], "MD": ["373", "00", "(?:[235-7]\\d|[89]0)\\d{6}", [8], [["(\\d{3})(\\d{5})", "$1 $2", ["[89]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["22|3"], "0$1"], ["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["[25-7]"], "0$1"]], "0"], "ME": ["382", "00", "(?:20|[3-79]\\d)\\d{6}|80\\d{6,7}", [8, 9], [["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[2-9]"], "0$1"]], "0"], "MF": ["590", "00", "(?:590\\d|7090)\\d{5}|(?:69|80|9\\d)\\d{7}", [9], 0, "0", 0, 0, 0, 0, 0, [["590(?:0[079]|[14]3|[27][79]|3[03-7]|5[0-268]|87)\\d{4}"], ["(?:69(?:0\\d\\d|1(?:2[2-9]|3[0-5])|4(?:0[89]|1[2-6]|9\\d)|6(?:1[016-9]|5[0-4]|[67]\\d))|7090[0-4])\\d{4}"], ["80[0-5]\\d{6}"], 0, 0, 0, 0, 0, ["9(?:(?:39[5-7]|76[018])\\d|475[0-5])\\d{4}"]]], "MG": ["261", "00", "[23]\\d{8}", [9], [["(\\d{2})(\\d{2})(\\d{3})(\\d{2})", "$1 $2 $3 $4", ["[23]"], "0$1"]], "0", 0, "([24-9]\\d{6})$|0", "20$1"], "MH": ["692", "011", "329\\d{4}|(?:[256]\\d|45)\\d{5}", [7], [["(\\d{3})(\\d{4})", "$1-$2", ["[2-6]"]]], "1"], "MK": ["389", "00", "[2-578]\\d{7}", [8], [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["2|34[47]|4(?:[37]7|5[47]|64)"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[347]"], "0$1"], ["(\\d{3})(\\d)(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[58]"], "0$1"]], "0"], "ML": ["223", "00", "[24-9]\\d{7}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[24-9]"]]]], "MM": ["95", "00", "1\\d{5,7}|95\\d{6}|(?:[4-7]|9[0-46-9])\\d{6,8}|(?:2|8\\d)\\d{5,8}", [6, 7, 8, 9, 10], [["(\\d)(\\d{2})(\\d{3})", "$1 $2 $3", ["16|2"], "0$1"], ["(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["4(?:[2-46]|5[3-5])|5|6(?:[1-689]|7[235-7])|7(?:[0-4]|5[2-7])|8[1-5]|(?:60|86)[23]"], "0$1"], ["(\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[12]|452|678|86", "[12]|452|6788|86"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[4-7]|8[1-35]"], "0$1"], ["(\\d)(\\d{3})(\\d{4,6})", "$1 $2 $3", ["9(?:2[0-4]|[35-9]|4[137-9])"], "0$1"], ["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"], "0$1"], ["(\\d)(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["92"], "0$1"], ["(\\d)(\\d{5})(\\d{4})", "$1 $2 $3", ["9"], "0$1"]], "0"], "MN": ["976", "001", "[12]\\d{7,9}|[5-9]\\d{7}", [8, 9, 10], [["(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["[12]1"], "0$1"], ["(\\d{4})(\\d{4})", "$1 $2", ["[5-9]"]], ["(\\d{3})(\\d{5,6})", "$1 $2", ["[12]2[1-3]"], "0$1"], ["(\\d{4})(\\d{5,6})", "$1 $2", ["[12](?:27|3[2-8]|4[2-68]|5[1-4689])", "[12](?:27|3[2-8]|4[2-68]|5[1-4689])[0-3]"], "0$1"], ["(\\d{5})(\\d{4,5})", "$1 $2", ["[12]"], "0$1"]], "0"], "MO": ["853", "00", "0800\\d{3}|(?:28|[68]\\d)\\d{6}", [7, 8], [["(\\d{4})(\\d{3})", "$1 $2", ["0"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[268]"]]]], "MP": ["1", "011", "[58]\\d{9}|(?:67|90)0\\d{7}", [10], 0, "1", 0, "([2-9]\\d{6})$|1", "670$1", 0, "670"], "MQ": ["596", "00", "(?:596\\d|7091)\\d{5}|(?:69|[89]\\d)\\d{7}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-79]|8(?:0[6-9]|[36])"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"], "0$1"]], "0"], "MR": ["222", "00", "(?:[2-4]\\d\\d|800)\\d{5}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-48]"]]]], "MS": ["1", "011", "(?:[58]\\d\\d|664|900)\\d{7}", [10], 0, "1", 0, "([34]\\d{6})$|1", "664$1", 0, "664"], "MT": ["356", "00", "3550\\d{4}|(?:[2579]\\d\\d|800)\\d{5}", [8], [["(\\d{4})(\\d{4})", "$1 $2", ["[2357-9]"]]]], "MU": ["230", "0(?:0|[24-7]0|3[03])", "(?:[57]|8\\d\\d)\\d{7}|[2-468]\\d{6}", [7, 8, 10], [["(\\d{3})(\\d{4})", "$1 $2", ["[2-46]|8[013]"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[57]"]], ["(\\d{5})(\\d{5})", "$1 $2", ["8"]]], 0, 0, 0, 0, 0, 0, 0, "020"], "MV": ["960", "0(?:0|19)", "(?:800|9[0-57-9]\\d)\\d{7}|[34679]\\d{6}", [7, 10], [["(\\d{3})(\\d{4})", "$1-$2", ["[34679]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[89]"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "MW": ["265", "00", "(?:[1289]\\d|31|77)\\d{7}|1\\d{6}", [7, 9], [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["1[2-9]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["2"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[137-9]"], "0$1"]], "0"], "MX": ["52", "0[09]", "[2-9]\\d{9}", [10], [["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["33|5[56]|81"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[2-9]"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "MY": ["60", "00", "1\\d{8,9}|(?:3\\d|[4-9])\\d{7}", [8, 9, 10], [["(\\d)(\\d{3})(\\d{4})", "$1-$2 $3", ["[4-79]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1-$2 $3", ["1(?:[02469]|[378][1-9]|53)|8", "1(?:[02469]|[37][1-9]|53|8(?:[1-46-9]|5[7-9]))|8"], "0$1"], ["(\\d)(\\d{4})(\\d{4})", "$1-$2 $3", ["3"], "0$1"], ["(\\d)(\\d{3})(\\d{2})(\\d{4})", "$1-$2-$3-$4", ["1(?:[367]|80)"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1-$2 $3", ["15"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4})", "$1-$2 $3", ["1"], "0$1"]], "0"], "MZ": ["258", "00", "(?:2|8\\d)\\d{7}", [8, 9], [["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2|8[2-79]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["8"]]]], "NA": ["264", "00", "[68]\\d{7,8}", [8, 9], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["88"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["6"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["87"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"], "0$1"]], "0"], "NC": ["687", "00", "(?:050|[2-57-9]\\d\\d)\\d{3}", [6], [["(\\d{2})(\\d{2})(\\d{2})", "$1.$2.$3", ["[02-57-9]"]]]], "NE": ["227", "00", "[027-9]\\d{7}", [8], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["08"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[089]|2[013]|7[0467]"]]]], "NF": ["672", "00", "[13]\\d{5}", [6], [["(\\d{2})(\\d{4})", "$1 $2", ["1[0-3]"]], ["(\\d)(\\d{5})", "$1 $2", ["[13]"]]], 0, 0, "([0-258]\\d{4})$", "3$1"], "NG": ["234", "009", "38\\d{6}|[78]\\d{9,13}|(?:20|9\\d)\\d{8}", [8, 10, 11, 12, 13, 14], [["(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["3"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[7-9]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["20[129]"], "0$1"], ["(\\d{4})(\\d{2})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], ["(\\d{3})(\\d{4})(\\d{4,5})", "$1 $2 $3", ["[78]"], "0$1"], ["(\\d{3})(\\d{5})(\\d{5,6})", "$1 $2 $3", ["[78]"], "0$1"]], "0"], "NI": ["505", "00", "(?:1800|[25-8]\\d{3})\\d{4}", [8], [["(\\d{4})(\\d{4})", "$1 $2", ["[125-8]"]]]], "NL": ["31", "00", "(?:[124-7]\\d\\d|3(?:[02-9]\\d|1[0-8]))\\d{6}|8\\d{6,9}|9\\d{6,10}|1\\d{4,5}", [5, 6, 7, 8, 9, 10, 11], [["(\\d{3})(\\d{4,7})", "$1 $2", ["[89]0"], "0$1"], ["(\\d{2})(\\d{7})", "$1 $2", ["66"], "0$1"], ["(\\d)(\\d{8})", "$1 $2", ["6"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["1[16-8]|2[259]|3[124]|4[17-9]|5[124679]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-578]|91"], "0$1"], ["(\\d{3})(\\d{3})(\\d{5})", "$1 $2 $3", ["9"], "0$1"]], "0"], "NO": ["47", "00", "(?:0|[2-9]\\d{3})\\d{4}", [5, 8], [["(\\d{3})(\\d{2})(\\d{3})", "$1 $2 $3", ["8"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[2-79]"]]], 0, 0, 0, 0, 0, "[02-689]|7[0-8]"], "NP": ["977", "00", "(?:1\\d|9)\\d{9}|[1-9]\\d{7}", [8, 10, 11], [["(\\d)(\\d{7})", "$1-$2", ["1[2-6]"], "0$1"], ["(\\d{2})(\\d{6})", "$1-$2", ["1[01]|[2-8]|9(?:[1-59]|[67][2-6])"], "0$1"], ["(\\d{3})(\\d{7})", "$1-$2", ["9"]]], "0"], "NR": ["674", "00", "(?:444|(?:55|8\\d)\\d|666)\\d{4}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[4-68]"]]]], "NU": ["683", "00", "(?:[4-7]|888\\d)\\d{3}", [4, 7], [["(\\d{3})(\\d{4})", "$1 $2", ["8"]]]], "NZ": ["64", "0(?:0|161)", "[1289]\\d{9}|50\\d{5}(?:\\d{2,3})?|[27-9]\\d{7,8}|(?:[34]\\d|6[0-35-9])\\d{6}|8\\d{4,6}", [5, 6, 7, 8, 9, 10], [["(\\d{2})(\\d{3,8})", "$1 $2", ["8[1-79]"], "0$1"], ["(\\d{3})(\\d{2})(\\d{2,3})", "$1 $2 $3", ["50[036-8]|8|90", "50(?:[0367]|88)|8|90"], "0$1"], ["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["24|[346]|7[2-57-9]|9[2-9]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2(?:10|74)|[589]"], "0$1"], ["(\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["1|2[028]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,5})", "$1 $2 $3", ["2(?:[169]|7[0-35-9])|7"], "0$1"]], "0", 0, 0, 0, 0, 0, 0, "00"], "OM": ["968", "00", "(?:1505|[279]\\d{3}|500)\\d{4}|800\\d{5,6}", [7, 8, 9], [["(\\d{3})(\\d{4,6})", "$1 $2", ["[58]"]], ["(\\d{2})(\\d{6})", "$1 $2", ["2"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[179]"]]]], "PA": ["507", "00", "(?:00800|8\\d{3})\\d{6}|[68]\\d{7}|[1-57-9]\\d{6}", [7, 8, 10, 11], [["(\\d{3})(\\d{4})", "$1-$2", ["[1-57-9]"]], ["(\\d{4})(\\d{4})", "$1-$2", ["[68]"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"]]]], "PE": ["51", "00|19(?:1[124]|77|90)00", "(?:[14-8]|9\\d)\\d{7}", [8, 9], [["(\\d{3})(\\d{5})", "$1 $2", ["80"], "(0$1)"], ["(\\d)(\\d{7})", "$1 $2", ["1"], "(0$1)"], ["(\\d{2})(\\d{6})", "$1 $2", ["[4-8]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"]]], "0", 0, 0, 0, 0, 0, 0, "00", " Anexo "], "PF": ["689", "00", "4\\d{5}(?:\\d{2})?|8\\d{7,8}", [6, 8, 9], [["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3", ["44"]], ["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["4|8[7-9]"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"]]]], "PG": ["675", "00|140[1-3]", "(?:180|[78]\\d{3})\\d{4}|(?:[2-589]\\d|64)\\d{5}", [7, 8], [["(\\d{3})(\\d{4})", "$1 $2", ["18|[2-69]|85"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[78]"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "PH": ["63", "00", "(?:[2-7]|9\\d)\\d{8}|2\\d{5}|(?:1800|8)\\d{7,9}", [6, 8, 9, 10, 11, 12, 13], [["(\\d)(\\d{5})", "$1 $2", ["2"], "(0$1)"], ["(\\d{4})(\\d{4,6})", "$1 $2", ["3(?:23|39|46)|4(?:2[3-6]|[35]9|4[26]|76)|544|88[245]|(?:52|64|86)2", "3(?:230|397|461)|4(?:2(?:35|[46]4|51)|396|4(?:22|63)|59[347]|76[15])|5(?:221|446)|642[23]|8(?:622|8(?:[24]2|5[13]))"], "(0$1)"], ["(\\d{5})(\\d{4})", "$1 $2", ["346|4(?:27|9[35])|883", "3469|4(?:279|9(?:30|56))|8834"], "(0$1)"], ["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["2"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[3-7]|8[2-8]"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["[89]"], "0$1"], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]], ["(\\d{4})(\\d{1,2})(\\d{3})(\\d{4})", "$1 $2 $3 $4", ["1"]]], "0"], "PK": ["92", "00", "122\\d{6}|[24-8]\\d{10,11}|9(?:[013-9]\\d{8,10}|2(?:[01]\\d\\d|2(?:[06-8]\\d|1[01]))\\d{7})|(?:[2-8]\\d{3}|92(?:[0-7]\\d|8[1-9]))\\d{6}|[24-9]\\d{8}|[89]\\d{7}", [8, 9, 10, 11, 12], [["(\\d{3})(\\d{3})(\\d{2,7})", "$1 $2 $3", ["[89]0"], "0$1"], ["(\\d{4})(\\d{5})", "$1 $2", ["1"]], ["(\\d{3})(\\d{6,7})", "$1 $2", ["2(?:3[2358]|4[2-4]|9[2-8])|45[3479]|54[2-467]|60[468]|72[236]|8(?:2[2-689]|3[23578]|4[3478]|5[2356])|9(?:2[2-8]|3[27-9]|4[2-6]|6[3569]|9[25-8])", "9(?:2[3-8]|98)|(?:2(?:3[2358]|4[2-4]|9[2-8])|45[3479]|54[2-467]|60[468]|72[236]|8(?:2[2-689]|3[23578]|4[3478]|5[2356])|9(?:22|3[27-9]|4[2-6]|6[3569]|9[25-7]))[2-9]"], "(0$1)"], ["(\\d{2})(\\d{7,8})", "$1 $2", ["(?:2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91)[2-9]"], "(0$1)"], ["(\\d{5})(\\d{5})", "$1 $2", ["58"], "(0$1)"], ["(\\d{3})(\\d{7})", "$1 $2", ["3"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["2[125]|4[0-246-9]|5[1-35-7]|6[1-8]|7[14]|8[16]|91"], "(0$1)"], ["(\\d{3})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["[24-9]"], "(0$1)"]], "0"], "PL": ["48", "00", "(?:6|8\\d\\d)\\d{7}|[1-9]\\d{6}(?:\\d{2})?|[26]\\d{5}", [6, 7, 8, 9, 10], [["(\\d{5})", "$1", ["19"]], ["(\\d{3})(\\d{3})", "$1 $2", ["11|20|64"]], ["(\\d{2})(\\d{2})(\\d{3})", "$1 $2 $3", ["(?:1[2-8]|2[2-69]|3[2-4]|4[1-468]|5[24-689]|6[1-3578]|7[14-7]|8[1-79]|9[145])1", "(?:1[2-8]|2[2-69]|3[2-4]|4[1-468]|5[24-689]|6[1-3578]|7[14-7]|8[1-79]|9[145])19"]], ["(\\d{3})(\\d{2})(\\d{2,3})", "$1 $2 $3", ["64"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["21|39|45|5[0137]|6[0469]|7[02389]|8(?:0[14]|8)"]], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["1[2-8]|[2-7]|8[1-79]|9[145]"]], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["8"]]]], "PM": ["508", "00", "[45]\\d{5}|(?:708|8\\d\\d)\\d{6}", [6, 9], [["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3", ["[45]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["7"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"], "0$1"]], "0"], "PR": ["1", "011", "(?:[589]\\d\\d|787)\\d{7}", [10], 0, "1", 0, 0, 0, 0, "787|939"], "PS": ["970", "00", "[2489]2\\d{6}|(?:1\\d|5)\\d{8}", [8, 9, 10], [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["[2489]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["5"], "0$1"], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1"]]], "0"], "PT": ["351", "00", "1693\\d{5}|(?:[26-9]\\d|30)\\d{7}", [9], [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["2[12]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["16|[236-9]"]]]], "PW": ["680", "01[12]", "(?:[24-8]\\d\\d|345|900)\\d{4}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[2-9]"]]]], "PY": ["595", "00", "59\\d{4,6}|9\\d{5,10}|(?:[2-46-8]\\d|5[0-8])\\d{4,7}", [6, 7, 8, 9, 10, 11], [["(\\d{3})(\\d{3,6})", "$1 $2", ["[2-9]0"], "0$1"], ["(\\d{2})(\\d{5})", "$1 $2", ["[26]1|3[289]|4[1246-8]|7[1-3]|8[1-36]"], "(0$1)"], ["(\\d{3})(\\d{4,5})", "$1 $2", ["2[279]|3[13-5]|4[359]|5|6(?:[34]|7[1-46-8])|7[46-8]|85"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2[14-68]|3[26-9]|4[1246-8]|6(?:1|75)|7[1-35]|8[1-36]"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["87"]], ["(\\d{3})(\\d{6})", "$1 $2", ["9(?:[5-79]|8[1-7])"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-8]"], "0$1"], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["9"]]], "0"], "QA": ["974", "00", "800\\d{4}|(?:2|800)\\d{6}|(?:0080|[3-7])\\d{7}", [7, 8, 9, 11], [["(\\d{3})(\\d{4})", "$1 $2", ["2[16]|8"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[3-7]"]]]], "RE": ["262", "00", "709\\d{6}|(?:26|[689]\\d)\\d{7}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[26-9]"], "0$1"]], "0", 0, 0, 0, 0, 0, [["26(?:2\\d\\d|3(?:0\\d|1[0-6]))\\d{4}"], ["(?:69(?:2\\d\\d|3(?:[06][0-6]|1[013]|2[0-2]|3[0-39]|4\\d|5[0-5]|7[0-37]|8[0-8]|9[0-479]))|7092[0-3])\\d{4}"], ["80\\d{7}"], ["89[1-37-9]\\d{6}"], 0, 0, 0, 0, ["9(?:399[0-3]|479[0-5]|76(?:2[278]|3[0-37]))\\d{4}"], ["8(?:1[019]|2[0156]|84|90)\\d{6}"]]], "RO": ["40", "00", "(?:[236-8]\\d|90)\\d{7}|[23]\\d{5}", [6, 9], [["(\\d{3})(\\d{3})", "$1 $2", ["2[3-6]", "2[3-6]\\d9"], "0$1"], ["(\\d{2})(\\d{4})", "$1 $2", ["219|31"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[23]1"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[236-9]"], "0$1"]], "0", 0, 0, 0, 0, 0, 0, 0, " int "], "RS": ["381", "00", "38[02-9]\\d{6,9}|6\\d{7,9}|90\\d{4,8}|38\\d{5,6}|(?:7\\d\\d|800)\\d{3,9}|(?:[12]\\d|3[0-79])\\d{5,10}", [6, 7, 8, 9, 10, 11, 12], [["(\\d{3})(\\d{3,9})", "$1 $2", ["(?:2[389]|39)0|[7-9]"], "0$1"], ["(\\d{2})(\\d{5,10})", "$1 $2", ["[1-36]"], "0$1"]], "0"], "RU": ["7", "810", "8\\d{13}|[347-9]\\d{9}", [10, 14], [["(\\d{4})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["7(?:1[0-8]|2[1-9])", "7(?:1(?:[0-356]2|4[29]|7|8[27])|2(?:1[23]|[2-9]2))", "7(?:1(?:[0-356]2|4[29]|7|8[27])|2(?:13[03-69]|62[013-9]))|72[1-57-9]2"], "8 ($1)", 1], ["(\\d{5})(\\d)(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["7(?:1[0-68]|2[1-9])", "7(?:1(?:[06][3-6]|[18]|2[35]|[3-5][3-5])|2(?:[13][3-5]|[24-689]|7[457]))", "7(?:1(?:0(?:[356]|4[023])|[18]|2(?:3[013-9]|5)|3[45]|43[013-79]|5(?:3[1-8]|4[1-7]|5)|6(?:3[0-35-9]|[4-6]))|2(?:1(?:3[178]|[45])|[24-689]|3[35]|7[457]))|7(?:14|23)4[0-8]|71(?:33|45)[1-79]"], "8 ($1)", 1], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"], "8 ($1)", 1], ["(\\d{3})(\\d{3})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["[349]|8(?:[02-7]|1[1-8])"], "8 ($1)", 1], ["(\\d{4})(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["8"], "8 ($1)"]], "8", 0, 0, 0, 0, "3[04-689]|[489]", 0, "8~10"], "RW": ["250", "00", "(?:06|[27]\\d\\d|[89]00)\\d{6}", [8, 9], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["0"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["2"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[7-9]"], "0$1"]], "0"], "SA": ["966", "00", "92\\d{7}|(?:[15]|8\\d)\\d{8}", [9, 10], [["(\\d{4})(\\d{5})", "$1 $2", ["9"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["5"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["81"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"]]], "0"], "SB": ["677", "0[01]", "[6-9]\\d{6}|[1-6]\\d{4}", [5, 7], [["(\\d{2})(\\d{5})", "$1 $2", ["6[89]|7|8[4-9]|9(?:[1-8]|9[0-8])"]]]], "SC": ["248", "010|0[0-2]", "(?:[2489]\\d|64)\\d{5}", [7], [["(\\d)(\\d{3})(\\d{3})", "$1 $2 $3", ["[246]|9[57]"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "SD": ["249", "00", "[19]\\d{8}", [9], [["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[19]"], "0$1"]], "0"], "SE": ["46", "00", "(?:[26]\\d\\d|9)\\d{9}|[1-9]\\d{8}|[1-689]\\d{7}|[1-4689]\\d{6}|2\\d{5}", [6, 7, 8, 9, 10, 12], [["(\\d{2})(\\d{2,3})(\\d{2})", "$1-$2 $3", ["20"], "0$1", 0, "$1 $2 $3"], ["(\\d{3})(\\d{4})", "$1-$2", ["9(?:00|39|44|9)"], "0$1", 0, "$1 $2"], ["(\\d{2})(\\d{3})(\\d{2})", "$1-$2 $3", ["[12][136]|3[356]|4[0246]|6[03]|90[1-9]"], "0$1", 0, "$1 $2 $3"], ["(\\d)(\\d{2,3})(\\d{2})(\\d{2})", "$1-$2 $3 $4", ["8"], "0$1", 0, "$1 $2 $3 $4"], ["(\\d{3})(\\d{2,3})(\\d{2})", "$1-$2 $3", ["1[2457]|2(?:[247-9]|5[0138])|3[0247-9]|4[1357-9]|5[0-35-9]|6(?:[125689]|4[02-57]|7[0-2])|9(?:[125-8]|3[02-5]|4[0-3])"], "0$1", 0, "$1 $2 $3"], ["(\\d{3})(\\d{2,3})(\\d{3})", "$1-$2 $3", ["9(?:00|39|44)"], "0$1", 0, "$1 $2 $3"], ["(\\d{2})(\\d{2,3})(\\d{2})(\\d{2})", "$1-$2 $3 $4", ["1[13689]|2[0136]|3[1356]|4[0246]|54|6[03]|90[1-9]"], "0$1", 0, "$1 $2 $3 $4"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1-$2 $3 $4", ["10|7"], "0$1", 0, "$1 $2 $3 $4"], ["(\\d)(\\d{3})(\\d{3})(\\d{2})", "$1-$2 $3 $4", ["8"], "0$1", 0, "$1 $2 $3 $4"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1-$2 $3 $4", ["[13-5]|2(?:[247-9]|5[0138])|6(?:[124-689]|7[0-2])|9(?:[125-8]|3[02-5]|4[0-3])"], "0$1", 0, "$1 $2 $3 $4"], ["(\\d{3})(\\d{2})(\\d{2})(\\d{3})", "$1-$2 $3 $4", ["9"], "0$1", 0, "$1 $2 $3 $4"], ["(\\d{3})(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1-$2 $3 $4 $5", ["[26]"], "0$1", 0, "$1 $2 $3 $4 $5"]], "0"], "SG": ["65", "0[0-3]\\d", "(?:(?:1\\d|8)\\d\\d|7000)\\d{7}|[3689]\\d{7}", [8, 10, 11], [["(\\d{4})(\\d{4})", "$1 $2", ["[369]|8(?:0[1-9]|[1-9])"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"]], ["(\\d{4})(\\d{4})(\\d{3})", "$1 $2 $3", ["7"]], ["(\\d{4})(\\d{3})(\\d{4})", "$1 $2 $3", ["1"]]]], "SH": ["290", "00", "(?:[256]\\d|8)\\d{3}", [4, 5], 0, 0, 0, 0, 0, 0, "[256]"], "SI": ["386", "00|10(?:22|66|88|99)", "[1-7]\\d{7}|8\\d{4,7}|90\\d{4,6}", [5, 6, 7, 8], [["(\\d{2})(\\d{3,6})", "$1 $2", ["8[09]|9"], "0$1"], ["(\\d{3})(\\d{5})", "$1 $2", ["59|8"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[37][01]|4[0139]|51|6"], "0$1"], ["(\\d)(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[1-57]"], "(0$1)"]], "0", 0, 0, 0, 0, 0, 0, "00"], "SJ": ["47", "00", "0\\d{4}|(?:[489]\\d|79)\\d{6}", [5, 8], 0, 0, 0, 0, 0, 0, "79"], "SK": ["421", "00", "[2-689]\\d{8}|[2-59]\\d{6}|[2-5]\\d{5}", [6, 7, 9], [["(\\d)(\\d{2})(\\d{3,4})", "$1 $2 $3", ["21"], "0$1"], ["(\\d{2})(\\d{2})(\\d{2,3})", "$1 $2 $3", ["[3-5][1-8]1", "[3-5][1-8]1[67]"], "0$1"], ["(\\d)(\\d{3})(\\d{3})(\\d{2})", "$1/$2 $3 $4", ["2"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[689]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1/$2 $3 $4", ["[3-5]"], "0$1"]], "0"], "SL": ["232", "00", "(?:[237-9]\\d|66)\\d{6}", [8], [["(\\d{2})(\\d{6})", "$1 $2", ["[236-9]"], "(0$1)"]], "0"], "SM": ["378", "00", "(?:0549|[5-7]\\d)\\d{6}", [8, 10], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[5-7]"]], ["(\\d{4})(\\d{6})", "$1 $2", ["0"]]], 0, 0, "([89]\\d{5})$", "0549$1"], "SN": ["221", "00", "(?:[378]\\d|93)\\d{7}", [9], [["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"]], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[379]"]]]], "SO": ["252", "00", "[346-9]\\d{8}|[12679]\\d{7}|[1-5]\\d{6}|[1348]\\d{5}", [6, 7, 8, 9], [["(\\d{2})(\\d{4})", "$1 $2", ["8[125]"]], ["(\\d{6})", "$1", ["[134]"]], ["(\\d)(\\d{6})", "$1 $2", ["[15]|2[0-79]|3[0-46-8]|4[0-7]"]], ["(\\d)(\\d{7})", "$1 $2", ["(?:2|90)4|[67]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[348]|64|79|90"]], ["(\\d{2})(\\d{5,7})", "$1 $2", ["1|28|6[0-35-9]|7[67]|9[2-9]"]]], "0"], "SR": ["597", "00", "(?:[2-5]|68|[78]\\d)\\d{5}", [6, 7], [["(\\d{2})(\\d{2})(\\d{2})", "$1-$2-$3", ["56"]], ["(\\d{3})(\\d{3})", "$1-$2", ["[2-5]"]], ["(\\d{3})(\\d{4})", "$1-$2", ["[6-8]"]]]], "SS": ["211", "00", "[19]\\d{8}", [9], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[19]"], "0$1"]], "0"], "ST": ["239", "00", "(?:22|9\\d)\\d{5}", [7], [["(\\d{3})(\\d{4})", "$1 $2", ["[29]"]]]], "SV": ["503", "00", "[267]\\d{7}|(?:80\\d|900)\\d{4}(?:\\d{4})?", [7, 8, 11], [["(\\d{3})(\\d{4})", "$1 $2", ["[89]"]], ["(\\d{4})(\\d{4})", "$1 $2", ["[267]"]], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["[89]"]]]], "SX": ["1", "011", "7215\\d{6}|(?:[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "(5\\d{6})$|1", "721$1", 0, "721"], "SY": ["963", "00", "[1-359]\\d{8}|[1-5]\\d{7}", [8, 9], [["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[1-4]|5[1-3]"], "0$1", 1], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[59]"], "0$1", 1]], "0"], "SZ": ["268", "00", "0800\\d{4}|(?:[237]\\d|900)\\d{6}", [8, 9], [["(\\d{4})(\\d{4})", "$1 $2", ["[0237]"]], ["(\\d{5})(\\d{4})", "$1 $2", ["9"]]]], "TA": ["290", "00", "8\\d{3}", [4], 0, 0, 0, 0, 0, 0, "8"], "TC": ["1", "011", "(?:[58]\\d\\d|649|900)\\d{7}", [10], 0, "1", 0, "([2-479]\\d{6})$|1", "649$1", 0, "649"], "TD": ["235", "00|16", "(?:22|[689]\\d|77)\\d{6}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[26-9]"]]], 0, 0, 0, 0, 0, 0, 0, "00"], "TG": ["228", "00", "[279]\\d{7}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[279]"]]]], "TH": ["66", "00[1-9]", "(?:001800|[2-57]|[689]\\d)\\d{7}|1\\d{7,9}", [8, 9, 10, 13], [["(\\d)(\\d{3})(\\d{4})", "$1 $2 $3", ["2"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[13-9]"], "0$1"], ["(\\d{4})(\\d{3})(\\d{3})", "$1 $2 $3", ["1"]]], "0"], "TJ": ["992", "810", "[0-57-9]\\d{8}", [9], [["(\\d{6})(\\d)(\\d{2})", "$1 $2 $3", ["331", "3317"]], ["(\\d{3})(\\d{2})(\\d{4})", "$1 $2 $3", ["44[02-479]|[34]7"]], ["(\\d{4})(\\d)(\\d{4})", "$1 $2 $3", ["3(?:[1245]|3[12])"]], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[0-57-9]"]]], 0, 0, 0, 0, 0, 0, 0, "8~10"], "TK": ["690", "00", "[2-47]\\d{3,6}", [4, 5, 6, 7]], "TL": ["670", "00", "7\\d{7}|(?:[2-47]\\d|[89]0)\\d{5}", [7, 8], [["(\\d{3})(\\d{4})", "$1 $2", ["[2-489]|70"]], ["(\\d{4})(\\d{4})", "$1 $2", ["7"]]]], "TM": ["993", "810", "(?:[1-6]\\d|71)\\d{6}", [8], [["(\\d{2})(\\d{2})(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["12"], "(8 $1)"], ["(\\d{3})(\\d)(\\d{2})(\\d{2})", "$1 $2-$3-$4", ["[1-5]"], "(8 $1)"], ["(\\d{2})(\\d{6})", "$1 $2", ["[67]"], "8 $1"]], "8", 0, 0, 0, 0, 0, 0, "8~10"], "TN": ["216", "00", "[2-57-9]\\d{7}", [8], [["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-57-9]"]]]], "TO": ["676", "00", "(?:0800|(?:[5-8]\\d\\d|999)\\d)\\d{3}|[2-8]\\d{4}", [5, 7], [["(\\d{2})(\\d{3})", "$1-$2", ["[2-4]|50|6[09]|7[0-24-69]|8[05]"]], ["(\\d{4})(\\d{3})", "$1 $2", ["0"]], ["(\\d{3})(\\d{4})", "$1 $2", ["[5-9]"]]]], "TR": ["90", "00", "4\\d{6}|8\\d{11,12}|(?:[2-58]\\d\\d|900)\\d{7}", [7, 10, 12, 13], [["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["512|8[01589]|90"], "0$1", 1], ["(\\d{3})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["5(?:[0-59]|61)", "5(?:[0-59]|61[06])", "5(?:[0-59]|61[06]1)"], "0$1", 1], ["(\\d{3})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[24][1-8]|3[1-9]"], "(0$1)", 1], ["(\\d{3})(\\d{3})(\\d{6,7})", "$1 $2 $3", ["80"], "0$1", 1]], "0"], "TT": ["1", "011", "(?:[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2-46-8]\\d{6})$|1", "868$1", 0, "868"], "TV": ["688", "00", "(?:2|7\\d\\d|90)\\d{4}", [5, 6, 7], [["(\\d{2})(\\d{3})", "$1 $2", ["2"]], ["(\\d{2})(\\d{4})", "$1 $2", ["90"]], ["(\\d{2})(\\d{5})", "$1 $2", ["7"]]]], "TW": ["886", "0(?:0[25-79]|19)", "[2-689]\\d{8}|7\\d{9,10}|[2-8]\\d{7}|2\\d{6}", [7, 8, 9, 10, 11], [["(\\d{2})(\\d)(\\d{4})", "$1 $2 $3", ["202"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[258]0"], "0$1"], ["(\\d)(\\d{3,4})(\\d{4})", "$1 $2 $3", ["[23568]|4(?:0[02-48]|[1-47-9])|7[1-9]", "[23568]|4(?:0[2-48]|[1-47-9])|(?:400|7)[1-9]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[49]"], "0$1"], ["(\\d{2})(\\d{4})(\\d{4,5})", "$1 $2 $3", ["7"], "0$1"]], "0", 0, 0, 0, 0, 0, 0, 0, "#"], "TZ": ["255", "00[056]", "(?:[25-8]\\d|41|90)\\d{7}", [9], [["(\\d{3})(\\d{2})(\\d{4})", "$1 $2 $3", ["[89]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[24]"], "0$1"], ["(\\d{2})(\\d{7})", "$1 $2", ["5"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[67]"], "0$1"]], "0"], "UA": ["380", "00", "[89]\\d{9}|[3-9]\\d{8}", [9, 10], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["6[12][29]|(?:3[1-8]|4[136-8]|5[12457]|6[49])2|(?:56|65)[24]", "6[12][29]|(?:35|4[1378]|5[12457]|6[49])2|(?:56|65)[24]|(?:3[1-46-8]|46)2[013-9]"], "0$1"], ["(\\d{4})(\\d{5})", "$1 $2", ["3[1-8]|4(?:[1367]|[45][6-9]|8[4-6])|5(?:[1-5]|6[0135689]|7[4-6])|6(?:[12][3-7]|[459])", "3[1-8]|4(?:[1367]|[45][6-9]|8[4-6])|5(?:[1-5]|6(?:[015689]|3[02389])|7[4-6])|6(?:[12][3-7]|[459])"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[3-7]|89|9[1-9]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[89]"], "0$1"]], "0", 0, 0, 0, 0, 0, 0, "0~0"], "UG": ["256", "00[057]", "800\\d{6}|(?:[29]0|[347]\\d)\\d{7}", [9], [["(\\d{4})(\\d{5})", "$1 $2", ["202", "2024"], "0$1"], ["(\\d{3})(\\d{6})", "$1 $2", ["[27-9]|4(?:6[45]|[7-9])"], "0$1"], ["(\\d{2})(\\d{7})", "$1 $2", ["[34]"], "0$1"]], "0"], "US": ["1", "011", "[2-9]\\d{9}|3\\d{6}", [10], [["(\\d{3})(\\d{4})", "$1-$2", ["310"], 0, 1], ["(\\d{3})(\\d{3})(\\d{4})", "($1) $2-$3", ["[2-9]"], 0, 1, "$1-$2-$3"]], "1", 0, 0, 0, 0, 0, [["(?:3052(?:0[0-8]|[1-9]\\d)|5056(?:[0-35-9]\\d|4[468]))\\d{4}|(?:2742|305[3-9]|472[247-9]|505[2-57-9]|983[2-47-9])\\d{6}|(?:2(?:0[1-35-9]|1[02-9]|2[03-57-9]|3[1459]|4[08]|5[1-46]|6[0279]|7[0269]|8[13])|3(?:0[1-47-9]|1[02-9]|2[0135-79]|3[0-24679]|4[167]|5[0-2]|6[01349]|8[056])|4(?:0[124-9]|1[02-579]|2[3-5]|3[0245]|4[023578]|58|6[349]|7[0589]|8[04])|5(?:0[1-47-9]|1[0235-8]|20|3[0149]|4[01]|5[179]|6[1-47]|7[0-5]|8[0256])|6(?:0[1-35-9]|1[024-9]|2[03689]|3[016]|4[0156]|5[01679]|6[0-279]|78|8[0-29])|7(?:0[1-46-8]|1[2-9]|2[04-8]|3[0-247]|4[037]|5[47]|6[02359]|7[0-59]|8[156])|8(?:0[1-68]|1[02-8]|2[068]|3[0-2589]|4[03578]|5[046-9]|6[02-5]|7[028])|9(?:0[1346-9]|1[02-9]|2[0589]|3[0146-8]|4[01357-9]|5[12469]|7[0-389]|8[04-69]))[2-9]\\d{6}"], [""], ["8(?:00|33|44|55|66|77|88)[2-9]\\d{6}"], ["900[2-9]\\d{6}"], ["52(?:3(?:[2-46-9][02-9]\\d|5(?:[02-46-9]\\d|5[0-46-9]))|4(?:[2-478][02-9]\\d|5(?:[034]\\d|2[024-9]|5[0-46-9])|6(?:0[1-9]|[2-9]\\d)|9(?:[05-9]\\d|2[0-5]|49)))\\d{4}|52[34][2-9]1[02-9]\\d{4}|5(?:00|2[125-9]|33|44|66|77|88)[2-9]\\d{6}"], 0, 0, 0, ["305209\\d{4}"]]], "UY": ["598", "0(?:0|1[3-9]\\d)", "0004\\d{2,9}|[1249]\\d{7}|(?:[49]\\d|80)\\d{5}", [6, 7, 8, 9, 10, 11, 12, 13], [["(\\d{3})(\\d{3,4})", "$1 $2", ["0"]], ["(\\d{3})(\\d{4})", "$1 $2", ["[49]0|8"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["9"], "0$1"], ["(\\d{4})(\\d{4})", "$1 $2", ["[124]"]], ["(\\d{3})(\\d{3})(\\d{2,4})", "$1 $2 $3", ["0"]], ["(\\d{3})(\\d{3})(\\d{3})(\\d{2,4})", "$1 $2 $3 $4", ["0"]]], "0", 0, 0, 0, 0, 0, 0, "00", " int. "], "UZ": ["998", "00", "(?:20|33|[5-9]\\d)\\d{7}", [9], [["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["[235-9]"]]]], "VA": ["39", "00", "0\\d{5,10}|3[0-8]\\d{7,10}|55\\d{8}|8\\d{5}(?:\\d{2,4})?|(?:1\\d|39)\\d{7,8}", [6, 7, 8, 9, 10, 11, 12], 0, 0, 0, 0, 0, 0, "06698"], "VC": ["1", "011", "(?:[58]\\d\\d|784|900)\\d{7}", [10], 0, "1", 0, "([2-7]\\d{6})$|1", "784$1", 0, "784"], "VE": ["58", "00", "[68]00\\d{7}|(?:[24]\\d|[59]0)\\d{8}", [10], [["(\\d{3})(\\d{7})", "$1-$2", ["[24-689]"], "0$1"]], "0"], "VG": ["1", "011", "(?:284|[58]\\d\\d|900)\\d{7}", [10], 0, "1", 0, "([2-578]\\d{6})$|1", "284$1", 0, "284"], "VI": ["1", "011", "[58]\\d{9}|(?:34|90)0\\d{7}", [10], 0, "1", 0, "([2-9]\\d{6})$|1", "340$1", 0, "340"], "VN": ["84", "00", "[12]\\d{9}|[135-9]\\d{8}|[16]\\d{7}|[16-8]\\d{6}", [7, 8, 9, 10], [["(\\d{2})(\\d{5})", "$1 $2", ["80"], "0$1", 1], ["(\\d{4})(\\d{4,6})", "$1 $2", ["1"], 0, 1], ["(\\d{2})(\\d{3})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["6"], "0$1", 1], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[357-9]"], "0$1", 1], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["2[48]"], "0$1", 1], ["(\\d{3})(\\d{4})(\\d{3})", "$1 $2 $3", ["2"], "0$1", 1]], "0"], "VU": ["678", "00", "[57-9]\\d{6}|(?:[238]\\d|48)\\d{3}", [5, 7], [["(\\d{3})(\\d{4})", "$1 $2", ["[57-9]"]]]], "WF": ["681", "00", "(?:40|72|8\\d{4})\\d{4}|[89]\\d{5}", [6, 9], [["(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3", ["[47-9]"]], ["(\\d{3})(\\d{2})(\\d{2})(\\d{2})", "$1 $2 $3 $4", ["8"]]]], "WS": ["685", "0", "(?:[2-6]|8\\d{5})\\d{4}|[78]\\d{6}|[68]\\d{5}", [5, 6, 7, 10], [["(\\d{5})", "$1", ["[2-5]|6[1-9]"]], ["(\\d{3})(\\d{3,7})", "$1 $2", ["[68]"]], ["(\\d{2})(\\d{5})", "$1 $2", ["7"]]]], "XK": ["383", "00", "2\\d{7,8}|3\\d{7,11}|(?:4\\d\\d|[89]00)\\d{5}", [8, 9, 10, 11, 12], [["(\\d{3})(\\d{5})", "$1 $2", ["[89]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3})", "$1 $2 $3", ["[2-4]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["2|39"], "0$1"], ["(\\d{2})(\\d{7,10})", "$1 $2", ["3"], "0$1"]], "0"], "YE": ["967", "00", "(?:1|7\\d)\\d{7}|[1-7]\\d{6}", [7, 8, 9], [["(\\d)(\\d{3})(\\d{3,4})", "$1 $2 $3", ["[1-6]|7(?:[24-6]|8[0-7])"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["7"], "0$1"]], "0"], "YT": ["262", "00", "7093\\d{5}|(?:80|9\\d)\\d{7}|(?:26|63)9\\d{6}", [9], 0, "0", 0, 0, 0, 0, 0, [["269(?:0[0-467]|15|5[0-4]|6\\d|[78]0)\\d{4}"], ["(?:639(?:0[0-79]|1[019]|[267]\\d|3[09]|40|5[05-9]|9[04-79])|7093[5-7])\\d{4}"], ["80\\d{7}"], 0, 0, 0, 0, 0, ["9(?:(?:39|47)8[01]|769\\d)\\d{4}"]]], "ZA": ["27", "00", "[1-79]\\d{8}|8\\d{4,9}", [5, 6, 7, 8, 9, 10], [["(\\d{2})(\\d{3,4})", "$1 $2", ["8[1-4]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{2,3})", "$1 $2 $3", ["8[1-4]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["860"], "0$1"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["[1-9]"], "0$1"], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["8"], "0$1"]], "0"], "ZM": ["260", "00", "800\\d{6}|(?:21|63|[79]\\d)\\d{7}", [9], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[28]"], "0$1"], ["(\\d{2})(\\d{7})", "$1 $2", ["[79]"], "0$1"]], "0"], "ZW": ["263", "00", "2(?:[0-57-9]\\d{6,8}|6[0-24-9]\\d{6,7})|[38]\\d{9}|[35-8]\\d{8}|[3-6]\\d{7}|[1-689]\\d{6}|[1-3569]\\d{5}|[1356]\\d{4}", [5, 6, 7, 8, 9, 10], [["(\\d{3})(\\d{3,5})", "$1 $2", ["2(?:0[45]|2[278]|[49]8)|3(?:[09]8|17)|6(?:[29]8|37|75)|[23][78]|(?:33|5[15]|6[68])[78]"], "0$1"], ["(\\d)(\\d{3})(\\d{2,4})", "$1 $2 $3", ["[49]"], "0$1"], ["(\\d{3})(\\d{4})", "$1 $2", ["80"], "0$1"], ["(\\d{2})(\\d{7})", "$1 $2", ["24|8[13-59]|(?:2[05-79]|39|5[45]|6[15-8])2", "2(?:02[014]|4|[56]20|[79]2)|392|5(?:42|525)|6(?:[16-8]21|52[013])|8[13-59]"], "(0$1)"], ["(\\d{2})(\\d{3})(\\d{4})", "$1 $2 $3", ["7"], "0$1"], ["(\\d{3})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["2(?:1[39]|2[0157]|[378]|[56][14])|3(?:12|29)", "2(?:1[39]|2[0157]|[378]|[56][14])|3(?:123|29)"], "0$1"], ["(\\d{4})(\\d{6})", "$1 $2", ["8"], "0$1"], ["(\\d{2})(\\d{3,5})", "$1 $2", ["1|2(?:0[0-36-9]|12|29|[56])|3(?:1[0-689]|[24-6])|5(?:[0236-9]|1[2-4])|6(?:[013-59]|7[0-46-9])|(?:33|55|6[68])[0-69]|(?:29|3[09]|62)[0-79]"], "0$1"], ["(\\d{2})(\\d{3})(\\d{3,4})", "$1 $2 $3", ["29[013-9]|39|54"], "0$1"], ["(\\d{4})(\\d{3,5})", "$1 $2", ["(?:25|54)8", "258|5483"], "0$1"]], "0"] }, "nonGeographic": { "800": ["800", 0, "(?:00|[1-9]\\d)\\d{6}", [8], [["(\\d{4})(\\d{4})", "$1 $2", ["\\d"]]], 0, 0, 0, 0, 0, 0, [0, 0, ["(?:00|[1-9]\\d)\\d{6}"]]], "808": ["808", 0, "[1-9]\\d{7}", [8], [["(\\d{4})(\\d{4})", "$1 $2", ["[1-9]"]]], 0, 0, 0, 0, 0, 0, [0, 0, 0, 0, 0, 0, 0, 0, 0, ["[1-9]\\d{7}"]]], "870": ["870", 0, "7\\d{11}|[235-7]\\d{8}", [9, 12], [["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["[235-7]"]]], 0, 0, 0, 0, 0, 0, [0, ["(?:[356]|774[45])\\d{8}|7[6-8]\\d{7}"], 0, 0, 0, 0, 0, 0, ["2\\d{8}", [9]]]], "878": ["878", 0, "10\\d{10}", [12], [["(\\d{2})(\\d{5})(\\d{5})", "$1 $2 $3", ["1"]]], 0, 0, 0, 0, 0, 0, [0, 0, 0, 0, 0, 0, 0, 0, ["10\\d{10}"]]], "881": ["881", 0, "6\\d{9}|[0-36-9]\\d{8}", [9, 10], [["(\\d)(\\d{3})(\\d{5})", "$1 $2 $3", ["[0-37-9]"]], ["(\\d)(\\d{3})(\\d{5,6})", "$1 $2 $3", ["6"]]], 0, 0, 0, 0, 0, 0, [0, ["6\\d{9}|[0-36-9]\\d{8}"]]], "882": ["882", 0, "[13]\\d{6}(?:\\d{2,5})?|[19]\\d{7}|(?:[25]\\d\\d|4)\\d{7}(?:\\d{2})?", [7, 8, 9, 10, 11, 12], [["(\\d{2})(\\d{5})", "$1 $2", ["16|342"]], ["(\\d{2})(\\d{6})", "$1 $2", ["49"]], ["(\\d{2})(\\d{2})(\\d{4})", "$1 $2 $3", ["1[36]|9"]], ["(\\d{2})(\\d{4})(\\d{3})", "$1 $2 $3", ["3[23]"]], ["(\\d{2})(\\d{3,4})(\\d{4})", "$1 $2 $3", ["16"]], ["(\\d{2})(\\d{4})(\\d{4})", "$1 $2 $3", ["10|23|3(?:[15]|4[57])|4|51"]], ["(\\d{3})(\\d{4})(\\d{4})", "$1 $2 $3", ["34"]], ["(\\d{2})(\\d{4,5})(\\d{5})", "$1 $2 $3", ["[1-35]"]]], 0, 0, 0, 0, 0, 0, [0, ["342\\d{4}|(?:337|49)\\d{6}|(?:3(?:2|47|7\\d{3})|50\\d{3})\\d{7}", [7, 8, 9, 10, 12]], 0, 0, 0, ["348[57]\\d{7}", [11]], 0, 0, ["1(?:3(?:0[0347]|[13][0139]|2[035]|4[013568]|6[0459]|7[06]|8[15-8]|9[0689])\\d{4}|6\\d{5,10})|(?:345\\d|9[89])\\d{6}|(?:10|2(?:3|85\\d)|3(?:[15]|[69]\\d\\d)|4[15-8]|51)\\d{8}"]]], "883": ["883", 0, "(?:[1-4]\\d|51)\\d{6,10}", [8, 9, 10, 11, 12], [["(\\d{3})(\\d{3})(\\d{2,8})", "$1 $2 $3", ["[14]|2[24-689]|3[02-689]|51[24-9]"]], ["(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3", ["510"]], ["(\\d{3})(\\d{3})(\\d{4})", "$1 $2 $3", ["21"]], ["(\\d{4})(\\d{4})(\\d{4})", "$1 $2 $3", ["51[13]"]], ["(\\d{3})(\\d{3})(\\d{3})(\\d{3})", "$1 $2 $3 $4", ["[235]"]]], 0, 0, 0, 0, 0, 0, [0, 0, 0, 0, 0, 0, 0, 0, ["(?:2(?:00\\d\\d|10)|(?:370[1-9]|51\\d0)\\d)\\d{7}|51(?:00\\d{5}|[24-9]0\\d{4,7})|(?:1[0-79]|2[24-689]|3[02-689]|4[0-4])0\\d{5,9}"]]], "888": ["888", 0, "\\d{11}", [11], [["(\\d{3})(\\d{3})(\\d{5})", "$1 $2 $3"]], 0, 0, 0, 0, 0, 0, [0, 0, 0, 0, 0, 0, ["\\d{11}"]]], "979": ["979", 0, "[1359]\\d{8}", [9], [["(\\d)(\\d{4})(\\d{4})", "$1 $2 $3", ["[1359]"]]], 0, 0, 0, 0, 0, 0, [0, 0, 0, ["[1359]\\d{8}"]]] } };
 
   // node_modules/react-phone-number-input/modules/PhoneInputWithCountry.js
-  var import_react22 = __toESM(require_react(), 1);
+  var import_react23 = __toESM(require_react(), 1);
   var import_prop_types9 = __toESM(require_prop_types(), 1);
   var import_classnames4 = __toESM(require_classnames(), 1);
 
   // node_modules/react-phone-number-input/modules/InputSmart.js
-  var import_react14 = __toESM(require_react(), 1);
+  var import_react15 = __toESM(require_react(), 1);
   var import_prop_types2 = __toESM(require_prop_types(), 1);
 
   // node_modules/input-format/modules/react/Input.js
-  var import_react12 = __toESM(require_react(), 1);
+  var import_react13 = __toESM(require_react(), 1);
   var import_prop_types = __toESM(require_prop_types(), 1);
 
   // node_modules/input-format/modules/react/useInput.js
-  var import_react11 = __toESM(require_react(), 1);
+  var import_react12 = __toESM(require_react(), 1);
 
   // node_modules/input-format/modules/edit.js
   function edit(value, caret, operation) {
@@ -39856,8 +39983,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
   function useInput(_ref) {
     var ref = _ref.ref, parse5 = _ref.parse, format4 = _ref.format, value = _ref.value, defaultValue = _ref.defaultValue, _ref$controlled = _ref.controlled, controlled = _ref$controlled === void 0 ? true : _ref$controlled, onChange2 = _ref.onChange, onKeyDown2 = _ref.onKeyDown, rest = _objectWithoutProperties2(_ref, _excluded2);
-    var internalRef = (0, import_react11.useRef)();
-    var setRef = (0, import_react11.useCallback)(function(instance) {
+    var internalRef = (0, import_react12.useRef)();
+    var setRef = (0, import_react12.useCallback)(function(instance) {
       internalRef.current = instance;
       if (ref) {
         if (typeof ref === "function") {
@@ -39867,10 +39994,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }
       }
     }, [ref]);
-    var _onChange = (0, import_react11.useCallback)(function(event) {
+    var _onChange = (0, import_react12.useCallback)(function(event) {
       return onChange(event, internalRef.current, parse5, format4, onChange2);
     }, [internalRef, parse5, format4, onChange2]);
-    var _onKeyDown = (0, import_react11.useCallback)(function(event) {
+    var _onKeyDown = (0, import_react12.useCallback)(function(event) {
       if (onKeyDown2) {
         onKeyDown2(event);
       }
@@ -39968,9 +40095,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       onKeyDown: onKeyDown2,
       type
     }, rest));
-    return /* @__PURE__ */ import_react12.default.createElement(InputComponent, inputProps);
+    return /* @__PURE__ */ import_react13.default.createElement(InputComponent, inputProps);
   }
-  Input = /* @__PURE__ */ import_react12.default.forwardRef(Input);
+  Input = /* @__PURE__ */ import_react13.default.forwardRef(Input);
   Input.propTypes = {
     // Parses a single characher of `<input/>` text.
     parse: import_prop_types.default.func.isRequired,
@@ -44137,10 +44264,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/react-phone-number-input/modules/useInputKeyDownHandler.js
-  var import_react13 = __toESM(require_react(), 1);
+  var import_react14 = __toESM(require_react(), 1);
   function useInputKeyDownHandler(_ref) {
     var onKeyDown2 = _ref.onKeyDown, inputFormat = _ref.inputFormat;
-    return (0, import_react13.useCallback)(function(event) {
+    return (0, import_react14.useCallback)(function(event) {
       if (event.keyCode === BACKSPACE_KEY_CODE && inputFormat === "INTERNATIONAL") {
         if (event.target instanceof HTMLInputElement) {
           if (getCaretPosition2(event.target) === LEADING_PLUS.length) {
@@ -44206,7 +44333,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   function createInput(defaultMetadata) {
     function InputSmart(_ref, ref) {
       var onKeyDown2 = _ref.onKeyDown, country = _ref.country, inputFormat = _ref.inputFormat, _ref$metadata = _ref.metadata, metadata2 = _ref$metadata === void 0 ? defaultMetadata : _ref$metadata, international = _ref.international, withCountryCallingCode = _ref.withCountryCallingCode, rest = _objectWithoutProperties4(_ref, _excluded4);
-      var format4 = (0, import_react14.useCallback)(function(value) {
+      var format4 = (0, import_react15.useCallback)(function(value) {
         var formatter = new AsYouType(country, metadata2);
         var prefix = getPrefixForFormattingValueAsPhoneNumber({
           inputFormat,
@@ -44230,14 +44357,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         onKeyDown: onKeyDown2,
         inputFormat
       });
-      return /* @__PURE__ */ import_react14.default.createElement(Input_default, _extends2({}, rest, {
+      return /* @__PURE__ */ import_react15.default.createElement(Input_default, _extends2({}, rest, {
         ref,
         parse: parsePhoneNumberCharacter_,
         format: format4,
         onKeyDown: _onKeyDown
       }));
     }
-    InputSmart = /* @__PURE__ */ import_react14.default.forwardRef(InputSmart);
+    InputSmart = /* @__PURE__ */ import_react15.default.forwardRef(InputSmart);
     InputSmart.propTypes = {
       /**
        * The parsed phone number.
@@ -44283,7 +44410,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var InputSmart_default = createInput();
 
   // node_modules/react-phone-number-input/modules/InputBasic.js
-  var import_react16 = __toESM(require_react(), 1);
+  var import_react17 = __toESM(require_react(), 1);
   var import_prop_types3 = __toESM(require_prop_types(), 1);
   var _excluded5 = ["value", "onChange", "onKeyDown", "country", "inputFormat", "metadata", "inputComponent", "international", "withCountryCallingCode"];
   function _extends3() {
@@ -44335,7 +44462,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         country,
         metadata: metadata2
       });
-      var _onChange = (0, import_react16.useCallback)(function(event) {
+      var _onChange = (0, import_react17.useCallback)(function(event) {
         var newValue = parseIncompletePhoneNumber(event.target.value);
         if (newValue === value) {
           var newValueFormatted = format3(prefix, newValue, country, metadata2);
@@ -44349,14 +44476,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         onKeyDown: onKeyDown2,
         inputFormat
       });
-      return /* @__PURE__ */ import_react16.default.createElement(Input2, _extends3({}, rest, {
+      return /* @__PURE__ */ import_react17.default.createElement(Input2, _extends3({}, rest, {
         ref,
         value: format3(prefix, value, country, metadata2),
         onChange: _onChange,
         onKeyDown: _onKeyDown
       }));
     }
-    InputBasic = /* @__PURE__ */ import_react16.default.forwardRef(InputBasic);
+    InputBasic = /* @__PURE__ */ import_react17.default.forwardRef(InputBasic);
     InputBasic.propTypes = {
       /**
        * The parsed phone number.
@@ -44409,7 +44536,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/react-phone-number-input/modules/CountrySelect.js
-  var import_react17 = __toESM(require_react(), 1);
+  var import_react18 = __toESM(require_react(), 1);
   var import_prop_types4 = __toESM(require_prop_types(), 1);
   var import_classnames = __toESM(require_classnames(), 1);
 
@@ -44493,21 +44620,21 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
   function CountrySelect(_ref) {
     var value = _ref.value, onChange2 = _ref.onChange, options = _ref.options, disabled = _ref.disabled, readOnly = _ref.readOnly, rest = _objectWithoutProperties6(_ref, _excluded6);
-    var onChange_ = (0, import_react17.useCallback)(function(event) {
+    var onChange_ = (0, import_react18.useCallback)(function(event) {
       var value2 = event.target.value;
       onChange2(value2 === "ZZ" ? void 0 : value2);
     }, [onChange2]);
-    var selectedOption = (0, import_react17.useMemo)(function() {
+    var selectedOption = (0, import_react18.useMemo)(function() {
       return getSelectedOption(options, value);
     }, [options, value]);
-    return /* @__PURE__ */ import_react17.default.createElement("select", _extends4({}, rest, {
+    return /* @__PURE__ */ import_react18.default.createElement("select", _extends4({}, rest, {
       disabled: disabled || readOnly,
       readOnly,
       value: value || "ZZ",
       onChange: onChange_
     }), options.map(function(_ref2) {
       var value2 = _ref2.value, label = _ref2.label, divider = _ref2.divider;
-      return /* @__PURE__ */ import_react17.default.createElement("option", {
+      return /* @__PURE__ */ import_react18.default.createElement("option", {
         key: divider ? "|" : value2 || "ZZ",
         value: divider ? "|" : value2 || "ZZ",
         disabled: divider ? true : false,
@@ -44547,23 +44674,23 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   };
   function CountrySelectWithIcon(_ref3) {
     var value = _ref3.value, options = _ref3.options, className = _ref3.className, Icon = _ref3.iconComponent, getIconAspectRatio = _ref3.getIconAspectRatio, _ref3$arrowComponent = _ref3.arrowComponent, Arrow = _ref3$arrowComponent === void 0 ? DefaultArrowComponent : _ref3$arrowComponent, unicodeFlags = _ref3.unicodeFlags, rest = _objectWithoutProperties6(_ref3, _excluded22);
-    var selectedOption = (0, import_react17.useMemo)(function() {
+    var selectedOption = (0, import_react18.useMemo)(function() {
       return getSelectedOption(options, value);
     }, [options, value]);
-    return /* @__PURE__ */ import_react17.default.createElement("div", {
+    return /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "PhoneInputCountry"
-    }, /* @__PURE__ */ import_react17.default.createElement(CountrySelect, _extends4({}, rest, {
+    }, /* @__PURE__ */ import_react18.default.createElement(CountrySelect, _extends4({}, rest, {
       value,
       options,
       className: (0, import_classnames.default)("PhoneInputCountrySelect", className)
-    })), selectedOption && (unicodeFlags && value ? /* @__PURE__ */ import_react17.default.createElement("div", {
+    })), selectedOption && (unicodeFlags && value ? /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "PhoneInputCountryIconUnicode"
-    }, getCountryFlag(value)) : /* @__PURE__ */ import_react17.default.createElement(Icon, {
+    }, getCountryFlag(value)) : /* @__PURE__ */ import_react18.default.createElement(Icon, {
       "aria-hidden": true,
       country: value,
       label: selectedOption.label,
       aspectRatio: unicodeFlags ? 1 : void 0
-    })), /* @__PURE__ */ import_react17.default.createElement(Arrow, null));
+    })), /* @__PURE__ */ import_react18.default.createElement(Arrow, null));
   }
   CountrySelectWithIcon.propTypes = {
     // Country flag component.
@@ -44574,7 +44701,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     unicodeFlags: import_prop_types4.default.bool
   };
   function DefaultArrowComponent() {
-    return /* @__PURE__ */ import_react17.default.createElement("div", {
+    return /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "PhoneInputCountrySelectArrow"
     });
   }
@@ -44596,7 +44723,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/react-phone-number-input/modules/Flag.js
-  var import_react18 = __toESM(require_react(), 1);
+  var import_react19 = __toESM(require_react(), 1);
   var import_prop_types5 = __toESM(require_prop_types(), 1);
   var import_classnames2 = __toESM(require_classnames(), 1);
   var _excluded7 = ["country", "countryName", "flags", "flagUrl"];
@@ -44648,7 +44775,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         title: countryName
       });
     }
-    return /* @__PURE__ */ import_react18.default.createElement("img", _extends5({}, rest, {
+    return /* @__PURE__ */ import_react19.default.createElement("img", _extends5({}, rest, {
       alt: countryName,
       role: countryName ? void 0 : "presentation",
       src: flagUrl.replace("{XX}", country).replace("{xx}", country.toLowerCase())
@@ -44674,7 +44801,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   };
 
   // node_modules/react-phone-number-input/modules/InternationalIcon.js
-  var import_react19 = __toESM(require_react(), 1);
+  var import_react20 = __toESM(require_react(), 1);
   var import_prop_types6 = __toESM(require_prop_types(), 1);
   var _excluded8 = ["aspectRatio"];
   var _excluded23 = ["title"];
@@ -44723,9 +44850,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   function InternationalIcon(_ref) {
     var aspectRatio = _ref.aspectRatio, rest = _objectWithoutProperties8(_ref, _excluded8);
     if (aspectRatio === 1) {
-      return /* @__PURE__ */ import_react19.default.createElement(InternationalIcon1x1, rest);
+      return /* @__PURE__ */ import_react20.default.createElement(InternationalIcon1x1, rest);
     } else {
-      return /* @__PURE__ */ import_react19.default.createElement(InternationalIcon3x2, rest);
+      return /* @__PURE__ */ import_react20.default.createElement(InternationalIcon3x2, rest);
     }
   }
   InternationalIcon.propTypes = {
@@ -44734,37 +44861,37 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   };
   function InternationalIcon3x2(_ref2) {
     var title = _ref2.title, rest = _objectWithoutProperties8(_ref2, _excluded23);
-    return /* @__PURE__ */ import_react19.default.createElement("svg", _extends6({}, rest, {
+    return /* @__PURE__ */ import_react20.default.createElement("svg", _extends6({}, rest, {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 75 50"
-    }), /* @__PURE__ */ import_react19.default.createElement("title", null, title), /* @__PURE__ */ import_react19.default.createElement("g", {
+    }), /* @__PURE__ */ import_react20.default.createElement("title", null, title), /* @__PURE__ */ import_react20.default.createElement("g", {
       className: "PhoneInputInternationalIconGlobe",
       stroke: "currentColor",
       fill: "none",
       strokeWidth: "2",
       strokeMiterlimit: "10"
-    }, /* @__PURE__ */ import_react19.default.createElement("path", {
+    }, /* @__PURE__ */ import_react20.default.createElement("path", {
       strokeLinecap: "round",
       d: "M47.2,36.1C48.1,36,49,36,50,36c7.4,0,14,1.7,18.5,4.3"
-    }), /* @__PURE__ */ import_react19.default.createElement("path", {
+    }), /* @__PURE__ */ import_react20.default.createElement("path", {
       d: "M68.6,9.6C64.2,12.3,57.5,14,50,14c-7.4,0-14-1.7-18.5-4.3"
-    }), /* @__PURE__ */ import_react19.default.createElement("line", {
+    }), /* @__PURE__ */ import_react20.default.createElement("line", {
       x1: "26",
       y1: "25",
       x2: "74",
       y2: "25"
-    }), /* @__PURE__ */ import_react19.default.createElement("line", {
+    }), /* @__PURE__ */ import_react20.default.createElement("line", {
       x1: "50",
       y1: "1",
       x2: "50",
       y2: "49"
-    }), /* @__PURE__ */ import_react19.default.createElement("path", {
+    }), /* @__PURE__ */ import_react20.default.createElement("path", {
       strokeLinecap: "round",
       d: "M46.3,48.7c1.2,0.2,2.5,0.3,3.7,0.3c13.3,0,24-10.7,24-24S63.3,1,50,1S26,11.7,26,25c0,2,0.3,3.9,0.7,5.8"
-    }), /* @__PURE__ */ import_react19.default.createElement("path", {
+    }), /* @__PURE__ */ import_react20.default.createElement("path", {
       strokeLinecap: "round",
       d: "M46.8,48.2c1,0.6,2.1,0.8,3.2,0.8c6.6,0,12-10.7,12-24S56.6,1,50,1S38,11.7,38,25c0,1.4,0.1,2.7,0.2,4c0,0.1,0,0.2,0,0.2"
-    })), /* @__PURE__ */ import_react19.default.createElement("path", {
+    })), /* @__PURE__ */ import_react20.default.createElement("path", {
       className: "PhoneInputInternationalIconPhone",
       stroke: "none",
       fill: "currentColor",
@@ -44776,34 +44903,34 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   };
   function InternationalIcon1x1(_ref3) {
     var title = _ref3.title, rest = _objectWithoutProperties8(_ref3, _excluded32);
-    return /* @__PURE__ */ import_react19.default.createElement("svg", _extends6({}, rest, {
+    return /* @__PURE__ */ import_react20.default.createElement("svg", _extends6({}, rest, {
       xmlns: "http://www.w3.org/2000/svg",
       viewBox: "0 0 50 50"
-    }), /* @__PURE__ */ import_react19.default.createElement("title", null, title), /* @__PURE__ */ import_react19.default.createElement("g", {
+    }), /* @__PURE__ */ import_react20.default.createElement("title", null, title), /* @__PURE__ */ import_react20.default.createElement("g", {
       className: "PhoneInputInternationalIconGlobe",
       stroke: "currentColor",
       fill: "none",
       strokeWidth: "2",
       strokeLinecap: "round"
-    }, /* @__PURE__ */ import_react19.default.createElement("path", {
+    }, /* @__PURE__ */ import_react20.default.createElement("path", {
       d: "M8.45,13A21.44,21.44,0,1,1,37.08,41.56"
-    }), /* @__PURE__ */ import_react19.default.createElement("path", {
+    }), /* @__PURE__ */ import_react20.default.createElement("path", {
       d: "M19.36,35.47a36.9,36.9,0,0,1-2.28-13.24C17.08,10.39,21.88.85,27.8.85s10.72,9.54,10.72,21.38c0,6.48-1.44,12.28-3.71,16.21"
-    }), /* @__PURE__ */ import_react19.default.createElement("path", {
+    }), /* @__PURE__ */ import_react20.default.createElement("path", {
       d: "M17.41,33.4A39,39,0,0,1,27.8,32.06c6.62,0,12.55,1.5,16.48,3.86"
-    }), /* @__PURE__ */ import_react19.default.createElement("path", {
+    }), /* @__PURE__ */ import_react20.default.createElement("path", {
       d: "M44.29,8.53c-3.93,2.37-9.86,3.88-16.49,3.88S15.25,10.9,11.31,8.54"
-    }), /* @__PURE__ */ import_react19.default.createElement("line", {
+    }), /* @__PURE__ */ import_react20.default.createElement("line", {
       x1: "27.8",
       y1: "0.85",
       x2: "27.8",
       y2: "34.61"
-    }), /* @__PURE__ */ import_react19.default.createElement("line", {
+    }), /* @__PURE__ */ import_react20.default.createElement("line", {
       x1: "15.2",
       y1: "22.23",
       x2: "49.15",
       y2: "22.23"
-    })), /* @__PURE__ */ import_react19.default.createElement("path", {
+    })), /* @__PURE__ */ import_react20.default.createElement("path", {
       className: "PhoneInputInternationalIconPhone",
       stroke: "transparent",
       fill: "currentColor",
@@ -44940,7 +45067,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/react-phone-number-input/modules/CountryIcon.js
-  var import_react20 = __toESM(require_react(), 1);
+  var import_react21 = __toESM(require_react(), 1);
   var import_prop_types7 = __toESM(require_prop_types(), 1);
   var import_classnames3 = __toESM(require_classnames(), 1);
   var _excluded9 = ["country", "label", "aspectRatio"];
@@ -44990,18 +45117,18 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     function CountryIcon(_ref2) {
       var country = _ref2.country, label = _ref2.label, aspectRatio = _ref2.aspectRatio, rest = _objectWithoutProperties9(_ref2, _excluded9);
       var _aspectRatio = InternationalIcon2 === InternationalIcon ? aspectRatio : void 0;
-      return /* @__PURE__ */ import_react20.default.createElement("div", _extends7({}, rest, {
+      return /* @__PURE__ */ import_react21.default.createElement("div", _extends7({}, rest, {
         className: (0, import_classnames3.default)("PhoneInputCountryIcon", {
           "PhoneInputCountryIcon--square": _aspectRatio === 1,
           "PhoneInputCountryIcon--border": country
         })
-      }), country ? /* @__PURE__ */ import_react20.default.createElement(FlagComponent2, {
+      }), country ? /* @__PURE__ */ import_react21.default.createElement(FlagComponent2, {
         country,
         countryName: label,
         flags,
         flagUrl,
         className: "PhoneInputCountryIconImg"
-      }) : /* @__PURE__ */ import_react20.default.createElement(InternationalIcon2, {
+      }) : /* @__PURE__ */ import_react21.default.createElement(InternationalIcon2, {
         title: label,
         aspectRatio: _aspectRatio,
         className: "PhoneInputCountryIconImg"
@@ -45022,7 +45149,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   });
 
   // node_modules/react-phone-number-input/modules/useExternalRef.js
-  var import_react21 = __toESM(require_react(), 1);
+  var import_react22 = __toESM(require_react(), 1);
   function _createForOfIteratorHelperLoose14(o, allowArrayLike) {
     var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"];
     if (it) return (it = it.call(o)).next.bind(it);
@@ -45861,7 +45988,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           }
         }
       });
-      _this.inputRef = /* @__PURE__ */ import_react22.default.createRef();
+      _this.inputRef = /* @__PURE__ */ import_react23.default.createRef();
       var _this$props3 = _this.props, _value = _this$props3.value, labels2 = _this$props3.labels, _international = _this$props3.international, _addInternationalOption = _this$props3.addInternationalOption, displayInitialValueAsLocalNumber = _this$props3.displayInitialValueAsLocalNumber, initialValueFormat = _this$props3.initialValueFormat, _metadata = _this$props3.metadata;
       var _this$props4 = _this.props, _defaultCountry = _this$props4.defaultCountry, _countries = _this$props4.countries;
       if (_defaultCountry) {
@@ -45998,14 +46125,14 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         var countrySelectOptions = this.getCountrySelectOptions({
           countries
         });
-        return /* @__PURE__ */ import_react22.default.createElement(ContainerComponent, _extends8({
+        return /* @__PURE__ */ import_react23.default.createElement(ContainerComponent, _extends8({
           style,
           className: (0, import_classnames4.default)(className, "PhoneInput", {
             "PhoneInput--focus": isFocused,
             "PhoneInput--disabled": disabled,
             "PhoneInput--readOnly": readOnly
           })
-        }, containerComponentProps), /* @__PURE__ */ import_react22.default.createElement(CountrySelectComponent, _extends8({
+        }, containerComponentProps), /* @__PURE__ */ import_react23.default.createElement(CountrySelectComponent, _extends8({
           name: name ? "".concat(name, "Country") : void 0,
           "aria-label": labels2.country
         }, countrySelectProps, {
@@ -46017,7 +46144,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           disabled: disabled || countrySelectProps && countrySelectProps.disabled,
           readOnly: readOnly || countrySelectProps && countrySelectProps.readOnly,
           iconComponent: this.CountryIcon
-        })), /* @__PURE__ */ import_react22.default.createElement(InputComponent, _extends8({
+        })), /* @__PURE__ */ import_react23.default.createElement(InputComponent, _extends8({
           ref: this.setInputRef,
           type: "tel",
           autoComplete
@@ -46054,9 +46181,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         }
       )
     }]);
-  }(import_react22.default.PureComponent);
-  var PhoneNumberInput = /* @__PURE__ */ import_react22.default.forwardRef(function(props, ref) {
-    return /* @__PURE__ */ import_react22.default.createElement(PhoneNumberInput_, _extends8({}, withDefaultProps(props), {
+  }(import_react23.default.PureComponent);
+  var PhoneNumberInput = /* @__PURE__ */ import_react23.default.forwardRef(function(props, ref) {
+    return /* @__PURE__ */ import_react23.default.createElement(PhoneNumberInput_, _extends8({}, withDefaultProps(props), {
       inputRef: ref
     }));
   });
@@ -46492,7 +46619,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   }
 
   // node_modules/react-phone-number-input/modules/PhoneInputWithCountryDefault.js
-  var import_react23 = __toESM(require_react(), 1);
+  var import_react24 = __toESM(require_react(), 1);
 
   // node_modules/react-phone-number-input/locale/en.json.js
   var en_json_default = {
@@ -46800,9 +46927,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     return target;
   }
   function createPhoneInput(defaultMetadata) {
-    var PhoneInputDefault = /* @__PURE__ */ import_react23.default.forwardRef(function(_ref, ref) {
+    var PhoneInputDefault = /* @__PURE__ */ import_react24.default.forwardRef(function(_ref, ref) {
       var _ref$metadata = _ref.metadata, metadata2 = _ref$metadata === void 0 ? defaultMetadata : _ref$metadata, _ref$labels = _ref.labels, labels2 = _ref$labels === void 0 ? en_json_default : _ref$labels, rest = _objectWithoutProperties11(_ref, _excluded11);
-      return /* @__PURE__ */ import_react23.default.createElement(PhoneInputWithCountry_default, _extends9({}, rest, {
+      return /* @__PURE__ */ import_react24.default.createElement(PhoneInputWithCountry_default, _extends9({}, rest, {
         ref,
         metadata: metadata2,
         labels: labels2
@@ -46820,8 +46947,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var min_default = createPhoneInput(metadata_min_json_default);
 
   // src/components/UserForm.jsx
-  var import_react25 = __toESM(require_react());
-  var import_jsx_runtime5 = __toESM(require_jsx_runtime());
+  var import_react26 = __toESM(require_react());
+  var import_jsx_runtime6 = __toESM(require_jsx_runtime());
   var userSchema = z.object({
     name: z.string().min(1, "Name is required"),
     email: z.string().email("Email is required"),
@@ -46830,10 +46957,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     phone: z.string().min(12, "Invalid phone number")
   });
   var UserForm = () => {
-    const [formData, setFormData] = (0, import_react24.useState)({ name: "", email: "", dateOfBirth: null, gender: "", phone: "" });
-    const [errors, setErrors] = (0, import_react24.useState)({});
+    const [formData, setFormData] = (0, import_react25.useState)({ name: "", email: "", dateOfBirth: null, gender: "", phone: "" });
+    const [errors, setErrors] = (0, import_react25.useState)({});
     const navigate = useNavigate();
-    const { dispatch } = (0, import_react25.useContext)(AppContext_default);
+    const { dispatch } = (0, import_react26.useContext)(AppContext_default);
     const handleSubmit = (e) => __async(void 0, null, function* () {
       e.preventDefault();
       try {
@@ -46863,12 +46990,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         phone
       }));
     };
-    return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "UserForm", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "container mt-5", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("h2", { className: "text-center mb-4", children: "Create User" }),
-      /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("form", { onSubmit: handleSubmit, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { htmlFor: "name", children: "Name:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "UserForm", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "container mt-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("h2", { className: "text-center mb-4", children: "Create User" }),
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "name", children: "Name:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             "input",
             {
               type: "text",
@@ -46880,11 +47007,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter your name"
             }
           ),
-          errors.name && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.name[0] })
+          errors.name && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.name[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { htmlFor: "email", children: "Email:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "email", children: "Email:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             "input",
             {
               type: "email",
@@ -46896,11 +47023,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter your email"
             }
           ),
-          errors.email && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.email[0] })
+          errors.email && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.email[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { htmlFor: "dateOfBirth", className: "form-label", children: "Select a Date" }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "input-group", children: /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "dateOfBirth", className: "form-label", children: "Select a Date" }),
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "input-group", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             DatePicker,
             {
               selected: formData.dateOfBirth,
@@ -46912,12 +47039,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
             },
             formData.dateOfBirth
           ) }),
-          errors.dateOfBirth && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.dateOfBirth[0] })
+          errors.dateOfBirth && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.dateOfBirth[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { children: "Gender" }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "form-check", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { children: "Gender" }),
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "form-check", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
               "input",
               {
                 className: "form-check-input",
@@ -46929,10 +47056,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
                 onChange: handleChange
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { className: "form-check-label", htmlFor: "male", children: "Male" })
+            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { className: "form-check-label", htmlFor: "male", children: "Male" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "form-check", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "form-check", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
               "input",
               {
                 className: "form-check-input",
@@ -46944,13 +47071,13 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
                 onChange: handleChange
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { className: "form-check-label", htmlFor: "female", children: "Female" })
+            /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { className: "form-check-label", htmlFor: "female", children: "Female" })
           ] }),
-          errors.gender && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.gender[0] })
+          errors.gender && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.gender[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("label", { htmlFor: "phone", className: "form-label", children: "Phone Number" }),
-          /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "phone", className: "form-label", children: "Phone Number" }),
+          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
             min_default,
             {
               placeholder: "Enter phone number",
@@ -46958,16 +47085,16 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               onChange: handlePhoneChange
             }
           ),
-          errors.phone && /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("div", { className: "text-danger", children: errors.phone[0] })
+          errors.phone && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.phone[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime5.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save User" })
+        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save User" })
       ] })
     ] }) });
   };
   var UserForm_default = UserForm;
 
   // src/components/departmentForm.jsx
-  var import_react26 = __toESM(require_react());
+  var import_react27 = __toESM(require_react());
 
   // node_modules/axios/lib/helpers/bind.js
   function bind(fn, thisArg) {
@@ -49053,7 +49180,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       return true;
     };
   };
-  function assertOptions(options, schema2, allowUnknown) {
+  function assertOptions(options, schema3, allowUnknown) {
     if (typeof options !== "object") {
       throw new AxiosError_default("options must be an object", AxiosError_default.ERR_BAD_OPTION_VALUE);
     }
@@ -49061,7 +49188,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     let i = keys.length;
     while (i-- > 0) {
       const opt = keys[i];
-      const validator = schema2[opt];
+      const validator = schema3[opt];
       if (validator) {
         const value = options[opt];
         const result2 = value === void 0 || validator(value, opt, options);
@@ -49537,20 +49664,20 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var v4_default = v4;
 
   // src/components/departmentForm.jsx
-  var import_jsx_runtime6 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime7 = __toESM(require_jsx_runtime());
   var schema = z.object({
     code: z.string().min(3, "Code is required"),
     name: z.string().min(3, "Name is required"),
     description: z.string().min(3, "Description is required")
   });
   var DepartmentForm = ({ onSave }) => {
-    const [formData, setFormData] = (0, import_react26.useState)({
+    const [formData, setFormData] = (0, import_react27.useState)({
       id: v4_default(),
       code: "",
       name: "",
       description: ""
     });
-    const [errors, setErrors] = (0, import_react26.useState)({});
+    const [errors, setErrors] = (0, import_react27.useState)({});
     const navigate = useNavigate();
     const handleSubmit = (e) => __async(void 0, null, function* () {
       e.preventDefault();
@@ -49574,12 +49701,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     const handleChange = (e) => {
       setFormData(__spreadProps(__spreadValues({}, formData), { [e.target.name]: e.target.value }));
     };
-    return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "DepartmentForm", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "container mt-5", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("h2", { className: "text-center mb-4", children: "Create Department" }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("form", { onSubmit: handleSubmit, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "code", children: "Code:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "DepartmentForm", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "container mt-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h2", { className: "text-center mb-4", children: "Create Department" }),
+      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("label", { htmlFor: "code", children: "Code:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
             "input",
             {
               type: "text",
@@ -49591,11 +49718,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter department code"
             }
           ),
-          errors.code && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.code[0] })
+          errors.code && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-danger", children: errors.code[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "name", children: "Name:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("label", { htmlFor: "name", children: "Name:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
             "input",
             {
               type: "text",
@@ -49607,11 +49734,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter your name"
             }
           ),
-          errors.name && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.name[0] })
+          errors.name && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-danger", children: errors.name[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("label", { htmlFor: "description", children: "Description:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("label", { htmlFor: "description", children: "Description:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(
             "input",
             {
               type: "text",
@@ -49623,26 +49750,26 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter department description"
             }
           ),
-          errors.description && /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("div", { className: "text-danger", children: errors.description[0] })
+          errors.description && /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "text-danger", children: errors.description[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime6.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save Department" })
+        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save Department" })
       ] })
     ] }) });
   };
   var departmentForm_default = DepartmentForm;
 
   // src/components/departmentList.jsx
-  var import_react29 = __toESM(require_react());
   var import_react30 = __toESM(require_react());
   var import_react31 = __toESM(require_react());
+  var import_react32 = __toESM(require_react());
 
   // src/components/assetList.jsx
-  var import_react27 = __toESM(require_react());
-  var import_jsx_runtime7 = __toESM(require_jsx_runtime());
+  var import_react28 = __toESM(require_react());
+  var import_jsx_runtime8 = __toESM(require_jsx_runtime());
   var AssetList = () => {
     const { departmentId } = useParams();
-    const [assets, setAssets] = (0, import_react27.useState)([]);
-    (0, import_react27.useEffect)(() => {
+    const [assets, setAssets] = (0, import_react28.useState)([]);
+    (0, import_react28.useEffect)(() => {
       axios_default.get(`https://localhost:7117/api/Asset/pagedlist/${departmentId}`, {
         headers: {
           "Content-Type": "application/json",
@@ -49654,23 +49781,23 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         console.error("Error fetching assets:", error2);
       });
     }, [departmentId]);
-    return /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "AssetList", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("div", { className: "container mt-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("h1", { className: "text-center mb-4", children: "List" }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("div", { className: "col-md-6 mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(Link, { to: `/departments/${departmentId}/add-asset`, className: "btn btn-info", children: "Add Asset " }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("table", { className: "table table-striped", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Code" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Name" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Quantity" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Amount" }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("th", { children: "Total" })
+    return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "AssetList", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { className: "text-center mb-4", children: "List" }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "col-md-6 mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(Link, { to: `/departments/${departmentId}/add-asset`, className: "btn btn-info", children: "Add Asset " }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("th", { children: "Code" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("th", { children: "Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("th", { children: "Quantity" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("th", { children: "Amount" }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("th", { children: "Total" })
         ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("tbody", { children: assets.map((asset, index3) => /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.code }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.name }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.quantity }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.amount }),
-          /* @__PURE__ */ (0, import_jsx_runtime7.jsx)("td", { children: asset.total })
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("tbody", { children: assets.map((asset, index3) => /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("td", { children: asset.code }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("td", { children: asset.name }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("td", { children: asset.quantity }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("td", { children: asset.amount }),
+          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("td", { children: asset.total })
         ] }, asset.id || index3)) })
       ] })
     ] }) });
@@ -49678,8 +49805,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   var assetList_default = AssetList;
 
   // src/components/assetForm.jsx
-  var import_react28 = __toESM(require_react());
-  var import_jsx_runtime8 = __toESM(require_jsx_runtime());
+  var import_react29 = __toESM(require_react());
+  var import_jsx_runtime9 = __toESM(require_jsx_runtime());
   var assetSchema = z.object({
     code: z.string().min(3, "Code is required"),
     name: z.string().min(3, "Name is required"),
@@ -49691,7 +49818,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   });
   var AssetForm = ({ onAssetAdded }) => {
     const { departmentId } = useParams();
-    const [formData, setFormData] = (0, import_react28.useState)({
+    const [formData, setFormData] = (0, import_react29.useState)({
       id: v4_default(),
       code: "",
       name: "",
@@ -49701,7 +49828,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       description: "",
       departmentId: departmentId || ""
     });
-    const [errors, setErrors] = (0, import_react28.useState)({});
+    const [errors, setErrors] = (0, import_react29.useState)({});
     const navigate = useNavigate();
     const handleSubmit = (e) => __async(void 0, null, function* () {
       e.preventDefault();
@@ -49734,12 +49861,12 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         total: name === "quantity" || name === "amount" ? name === "quantity" ? newValue * prevState.amount : prevState.quantity * newValue : prevState.total
       }));
     };
-    return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "AddAsset", children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "container mt-5", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h2", { className: "text-center mb-4", children: "Add Asset" }),
-      /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("form", { onSubmit: handleSubmit, children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "code", children: "Code:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "AddAsset", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "container mt-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h2", { className: "text-center mb-4", children: "Add Asset" }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("label", { htmlFor: "code", children: "Code:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             "input",
             {
               type: "text",
@@ -49751,11 +49878,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter asset code"
             }
           ),
-          errors.code && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.code[0] })
+          errors.code && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-danger", children: errors.code[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "name", children: "Name:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("label", { htmlFor: "name", children: "Name:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             "input",
             {
               type: "text",
@@ -49767,11 +49894,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter asset name"
             }
           ),
-          errors.name && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.name[0] })
+          errors.name && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-danger", children: errors.name[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "quantity", children: "Quantity:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("label", { htmlFor: "quantity", children: "Quantity:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             "input",
             {
               type: "number",
@@ -49783,11 +49910,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter quantity"
             }
           ),
-          errors.quantity && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.quantity[0] })
+          errors.quantity && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-danger", children: errors.quantity[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "amount", children: "Amount:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("label", { htmlFor: "amount", children: "Amount:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             "input",
             {
               type: "number",
@@ -49799,11 +49926,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter amount"
             }
           ),
-          errors.amount && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.amount[0] })
+          errors.amount && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-danger", children: errors.amount[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "total", children: "Total:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("label", { htmlFor: "total", children: "Total:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             "input",
             {
               readOnly: true,
@@ -49816,11 +49943,11 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter total"
             }
           ),
-          errors.total && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.total[0] })
+          errors.total && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-danger", children: errors.total[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "col-md-6 mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("label", { htmlFor: "description", children: "Description:" }),
-          /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("label", { htmlFor: "description", children: "Description:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
             "input",
             {
               type: "text",
@@ -49832,19 +49959,19 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
               placeholder: "Enter asset description"
             }
           ),
-          errors.description && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "text-danger", children: errors.description[0] })
+          errors.description && /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "text-danger", children: errors.description[0] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save Asset" })
+        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save Asset" })
       ] })
     ] }) });
   };
   var assetForm_default = AssetForm;
 
   // src/components/departmentList.jsx
-  var import_jsx_runtime9 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime10 = __toESM(require_jsx_runtime());
   var DepartmentList = () => {
-    const { state, dispatch } = (0, import_react30.useContext)(AppContext_default);
-    (0, import_react31.useEffect)(() => {
+    const { state, dispatch } = (0, import_react31.useContext)(AppContext_default);
+    (0, import_react32.useEffect)(() => {
       axios_default.get("https://localhost:7117/api/Department/pagedlist").then((response) => {
         dispatch({ type: "SAVE_DEPARTMENT", payload: response.data.data || [] });
         console.log(response.data);
@@ -49852,42 +49979,176 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         console.error("Error fetching departments:", error2);
       });
     }, [dispatch]);
-    return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: "DepartmentList", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "container mt-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("h1", { className: "text-center mb-4", children: "Department Data" }),
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("table", { className: "table table-striped", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Code" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Name" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Description" }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("th", { children: "Assets" })
+    return /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("div", { className: "DepartmentList", children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("h1", { className: "text-center mb-4", children: "Department Data" }),
+      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("th", { children: "Code" }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("th", { children: "Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("th", { children: "Description" }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("th", { children: "Assets" })
         ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tbody", { children: Array.isArray(state.departments) && state.departments.length > 0 ? state.departments.map((department, index3) => /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("tr", { children: [
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.code }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.name }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: department.description }),
-          /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)(Link, { to: `/departments/${department.id}/asset-list`, children: [
-            /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(FaList, {}),
+        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("tbody", { children: Array.isArray(state.departments) && state.departments.length > 0 ? state.departments.map((department, index3) => /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("td", { children: department.code }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("td", { children: department.name }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("td", { children: department.description }),
+          /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Link, { to: `/departments/${department.id}/asset-list`, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(FaList, {}),
             " Assets"
           ] }) })
-        ] }, department.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("td", { colSpan: "3", children: "No departments available" }) }) })
+        ] }, department.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)("td", { colSpan: "3", children: "No departments available" }) }) })
       ] })
     ] }) });
   };
   var departmentList_default = DepartmentList;
 
+  // src/components/subjectList.jsx
+  var import_react33 = __toESM(require_react());
+  var import_react34 = __toESM(require_react());
+  var import_react35 = __toESM(require_react());
+  var import_jsx_runtime11 = __toESM(require_jsx_runtime());
+  var SubjectList = () => {
+    const { state, dispatch } = (0, import_react34.useContext)(AppContext_default);
+    (0, import_react35.useEffect)(() => {
+      axios_default.get("https://localhost:7117/api/Subject/pagedlist").then((response) => {
+        dispatch({ type: "SAVE_SUBJECT", payload: response.data.data || [] });
+        console.log(response.data);
+      }).catch((error2) => {
+        console.error("Error fetching subjects:", error2);
+      });
+    }, [dispatch]);
+    return /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "SubjectList", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("h1", { className: "text-center mb-4", children: "Subject List" }),
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: "col-md-6 mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Link, { to: "/add-subject", className: "btn btn-info", children: "Add Subject " }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("th", { children: "Code" }),
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("th", { children: "Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("th", { children: "Description" })
+        ] }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("tbody", { children: Array.isArray(state.subjects) && state.subjects.length > 0 ? state.subjects.map((subject, index3) => /* @__PURE__ */ (0, import_jsx_runtime11.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("td", { children: subject.code }),
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("td", { children: subject.name }),
+          /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("td", { children: subject.description })
+        ] }, subject.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("td", { colSpan: "3", children: "No subjects available" }) }) })
+      ] })
+    ] }) });
+  };
+  var subjectList_default = SubjectList;
+
+  // src/components/subjectForm.jsx
+  var import_react36 = __toESM(require_react());
+  var import_jsx_runtime12 = __toESM(require_jsx_runtime());
+  var schema2 = z.object({
+    code: z.string().min(3, "Code is required"),
+    name: z.string().min(3, "Name is required"),
+    description: z.string().min(3, "Description is required")
+  });
+  var SubjectForm = ({ onSave }) => {
+    const [formData, setFormData] = (0, import_react36.useState)({
+      id: v4_default(),
+      code: "",
+      name: "",
+      description: ""
+    });
+    const [errors, setErrors] = (0, import_react36.useState)({});
+    const navigate = useNavigate();
+    const handleSubmit = (e) => __async(void 0, null, function* () {
+      e.preventDefault();
+      try {
+        const validatedData = schema2.parse(formData);
+        const response = yield axios_default.post("https://localhost:7117/api/Subject/Save", validatedData);
+        console.log("Subject saved:", response.data);
+        if (onSave) {
+          onSave(response.data);
+        }
+        navigate("/subjects");
+      } catch (error2) {
+        if (error2 instanceof z.ZodError) {
+          setErrors(error2.flatten().fieldErrors);
+          console.error("Validation Errors:", error2.flatten().fieldErrors);
+        } else {
+          console.error("Unexpected error:", error2);
+        }
+      }
+    });
+    const handleChange = (e) => {
+      setFormData(__spreadProps(__spreadValues({}, formData), { [e.target.name]: e.target.value }));
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "SubjectForm", children: /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "container mt-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("h2", { className: "text-center mb-4", children: "Create Subject" }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "code", children: "Code:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "code",
+              className: "form-control",
+              id: "code",
+              value: formData.code,
+              onChange: handleChange,
+              placeholder: "Enter subject code"
+            }
+          ),
+          errors.code && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "text-danger", children: errors.code[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "name", children: "Name:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "name",
+              className: "form-control",
+              id: "name",
+              value: formData.name,
+              onChange: handleChange,
+              placeholder: "Enter subject name"
+            }
+          ),
+          errors.name && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "text-danger", children: errors.name[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("label", { htmlFor: "description", children: "Description:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "description",
+              className: "form-control",
+              id: "description",
+              value: formData.description,
+              onChange: handleChange,
+              placeholder: "Enter subject description"
+            }
+          ),
+          errors.description && /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: "text-danger", children: errors.description[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save Subject" })
+      ] })
+    ] }) });
+  };
+  var subjectForm_default = SubjectForm;
+
   // src/App.js
-  var import_jsx_runtime10 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime13 = __toESM(require_jsx_runtime());
   var App = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Navbar_default, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime10.jsxs)(Routes, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(UserForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(UserList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(assetForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/departments/:departmentId/asset-list", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(assetList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime10.jsx)(departmentList_default, {}) })
+    return /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Navbar_default, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)(Routes, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/offcanvas", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(offCanvas_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(UserForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(departmentForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(UserList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(departmentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(assetForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/departments/:departmentId/asset-list", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(assetList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/subjects", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(subjectList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/add-subject", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(subjectForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(departmentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Route, { path: "*", element: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("h1", { children: "Not Found" }) })
       ] })
     ] });
   };
@@ -49895,10 +50156,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
 
   // src/index.js
   var import_bootstrap_bundle2 = __toESM(require_bootstrap_bundle_min());
-  var import_jsx_runtime11 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime14 = __toESM(require_jsx_runtime());
   var root = (0, import_client.createRoot)(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(App_default, {}) }) })
+    /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime14.jsx)(App_default, {}) }) })
   );
 })();
 /*! Bundled license information:

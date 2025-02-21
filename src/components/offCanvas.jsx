@@ -1,3 +1,7 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaPlusSquare, FaList } from "react-icons/fa";
+
 const Offcanvas = () => {
     const handleNavClick = () => {
         const offcanvasElement = document.getElementById("offcanvasNavbar");
@@ -56,4 +60,5 @@ const Offcanvas = () => {
             </div>
         </div>
     );
-}
+};
+export default Offcanvas;

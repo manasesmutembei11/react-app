@@ -3,6 +3,7 @@ import React, { createContext, useReducer } from 'react';
 const initialState = {
     users: [],
     departments: [],
+    subjects: [],
 };
 
 const AppContext = createContext(initialState);
@@ -18,6 +19,11 @@ const appReducer = (state, action) => {
             return {
                 ...state,
                 departments: Array.isArray(action.payload) ? action.payload : [],
+            };
+        case 'SAVE_SUBJECT':
+            return {
+                ...state,
+                subjects: Array.isArray(action.payload) ? action.payload : [],
             };
         default:
             return state;
