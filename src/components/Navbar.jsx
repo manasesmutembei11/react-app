@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaUsers, FaBuilding, FaPlusSquare, FaList } from 'react-icons/fa';
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navbar = () => {
     return (

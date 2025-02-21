@@ -21,20 +21,12 @@ const AssetList = () => {
                 console.error('Error fetching assets:', error);
             });
     }, [departmentId]);
-
-    const handleAssetAdded = (departmentId, newAsset) => {
-        dispatch({
-            type: 'UPDATE_DEPARTMENT_ASSETS',
-            payload: { departmentId, newAsset }
-        });
-    };
-
     return (
-        <div className="DepartmentList">
+        <div className="AssetList">
             <div className="container mt-4">
                 <h1 className="text-center mb-4">List</h1>
-                <div>
-                    <Link to={`/departments/${departmentId}/add-asset`} className="btn btn-primary">Add Asset </Link>
+                <div className="col-md-6 mb-2">
+                    <Link to={`/departments/${departmentId}/add-asset`} className="btn btn-info">Add Asset </Link>
                 </div>
                 <table className="table table-striped">
                     <thead>

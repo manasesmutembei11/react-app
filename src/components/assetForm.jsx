@@ -37,7 +37,7 @@ const AssetForm = ({ onAssetAdded }) => {
                 ...formData,
                 quantity: Number(formData.quantity),
                 amount: Number(formData.amount),
-                total: Number(formData.total)
+                total: Number(formData.quantity) * Number(formData.amount)
             });
             const response = await axios.post('https://localhost:7117/api/Asset/Save', validatedData);
             console.log('Asset saved:', response.data);
@@ -128,6 +128,7 @@ const AssetForm = ({ onAssetAdded }) => {
                     <div className="col-md-6 mb-2">
                         <label htmlFor='total'>Total:</label>
                         <input
+                            readOnly
                             type="number"
                             name="total"
                             className="form-control"

@@ -6,6 +6,7 @@ import axios from 'axios';
 import AssetList from './assetList';
 import AssetForm from './assetForm';
 import { Link } from 'react-router-dom';
+import { FaList } from 'react-icons/fa';
 
 
 const DepartmentList = () => {
@@ -45,7 +46,7 @@ const DepartmentList = () => {
                                     <td>{department.name}</td>
                                     <td>{department.description}</td>
                                     <td>
-                                        <Link to={`/departments/${department.id}/asset-list`}>Assets</Link>
+                                        <Link to={`/departments/${department.id}/asset-list`}><FaList /> Assets</Link>
                                     </td>
                                 </tr>
                             ))
