@@ -1575,7 +1575,7 @@
           return dispatcher;
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var React46 = require_react(), Internals = {
+        var React48 = require_react(), Internals = {
           d: {
             f: noop2,
             r: function() {
@@ -1593,7 +1593,7 @@
           },
           p: 0,
           findDOMNode: null
-        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React46.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        }, REACT_PORTAL_TYPE = Symbol.for("react.portal"), ReactSharedInternals = React48.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
         "function" === typeof Map && null != Map.prototype && "function" === typeof Map.prototype.forEach && "function" === typeof Set && null != Set.prototype && "function" === typeof Set.prototype.clear && "function" === typeof Set.prototype.forEach || console.error(
           "React depends on Map and Set built-in types. Make sure that you load a polyfill in older browsers. https://reactjs.org/link/react-polyfills"
         );
@@ -3049,7 +3049,7 @@
           "number" === type && getActiveElement(node.ownerDocument) === node || node.defaultValue === "" + value || (node.defaultValue = "" + value);
         }
         function validateOptionProps(element, props) {
-          null == props.value && ("object" === typeof props.children && null !== props.children ? React46.Children.forEach(props.children, function(child) {
+          null == props.value && ("object" === typeof props.children && null !== props.children ? React48.Children.forEach(props.children, function(child) {
             null == child || "string" === typeof child || "number" === typeof child || "bigint" === typeof child || didWarnInvalidChild || (didWarnInvalidChild = true, console.error(
               "Cannot infer the option value of complex children. Pass a `value` prop or use a plain string as children to <option>."
             ));
@@ -16519,13 +16519,13 @@
           ));
         }
         "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
-        var Scheduler = require_scheduler(), React46 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
+        var Scheduler = require_scheduler(), React48 = require_react(), ReactDOM4 = require_react_dom(), REACT_LEGACY_ELEMENT_TYPE = Symbol.for("react.element"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_PROVIDER_TYPE = Symbol.for("react.provider"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy");
         Symbol.for("react.scope");
         Symbol.for("react.debug_trace_mode");
         var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
         Symbol.for("react.legacy_hidden");
         Symbol.for("react.tracing_marker");
-        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React46.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_MEMO_CACHE_SENTINEL = Symbol.for("react.memo_cache_sentinel"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React48.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, assign = Object.assign, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -19245,7 +19245,7 @@
           }
         };
         (function() {
-          var isomorphicReactPackageVersion = React46.version;
+          var isomorphicReactPackageVersion = React48.version;
           if ("19.0.0" !== isomorphicReactPackageVersion)
             throw Error(
               'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' + (isomorphicReactPackageVersion + "\n  - react-dom:  19.0.0\nLearn more: https://react.dev/warnings/version-mismatch")
@@ -21964,9 +21964,9 @@
           info || (parentType = getComponentNameFromType(parentType)) && (info = "\n\nCheck the top-level render call using <" + parentType + ">.");
           return info;
         }
-        var React46 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        var React48 = require_react(), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
         Symbol.for("react.provider");
-        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React46.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React48.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty2 = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
         disabledLog.__reactDisabledLog = true;
         var prefix, suffix, reentry = false;
         var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
@@ -23096,7 +23096,7 @@
   var import_client = __toESM(require_client());
 
   // src/App.js
-  var import_react48 = __toESM(require_react());
+  var import_react50 = __toESM(require_react());
 
   // src/components/Navbar.jsx
   var import_react4 = __toESM(require_react());
@@ -32051,37 +32051,37 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       return this.min(1, message2);
     }
   };
-  ZodArray.create = (schema6, params) => {
+  ZodArray.create = (schema7, params) => {
     return new ZodArray(__spreadValues({
-      type: schema6,
+      type: schema7,
       minLength: null,
       maxLength: null,
       exactLength: null,
       typeName: ZodFirstPartyTypeKind.ZodArray
     }, processCreateParams(params)));
   };
-  function deepPartialify(schema6) {
-    if (schema6 instanceof ZodObject) {
+  function deepPartialify(schema7) {
+    if (schema7 instanceof ZodObject) {
       const newShape = {};
-      for (const key in schema6.shape) {
-        const fieldSchema = schema6.shape[key];
+      for (const key in schema7.shape) {
+        const fieldSchema = schema7.shape[key];
         newShape[key] = ZodOptional.create(deepPartialify(fieldSchema));
       }
-      return new ZodObject(__spreadProps(__spreadValues({}, schema6._def), {
+      return new ZodObject(__spreadProps(__spreadValues({}, schema7._def), {
         shape: () => newShape
       }));
-    } else if (schema6 instanceof ZodArray) {
-      return new ZodArray(__spreadProps(__spreadValues({}, schema6._def), {
-        type: deepPartialify(schema6.element)
+    } else if (schema7 instanceof ZodArray) {
+      return new ZodArray(__spreadProps(__spreadValues({}, schema7._def), {
+        type: deepPartialify(schema7.element)
       }));
-    } else if (schema6 instanceof ZodOptional) {
-      return ZodOptional.create(deepPartialify(schema6.unwrap()));
-    } else if (schema6 instanceof ZodNullable) {
-      return ZodNullable.create(deepPartialify(schema6.unwrap()));
-    } else if (schema6 instanceof ZodTuple) {
-      return ZodTuple.create(schema6.items.map((item) => deepPartialify(item)));
+    } else if (schema7 instanceof ZodOptional) {
+      return ZodOptional.create(deepPartialify(schema7.unwrap()));
+    } else if (schema7 instanceof ZodNullable) {
+      return ZodNullable.create(deepPartialify(schema7.unwrap()));
+    } else if (schema7 instanceof ZodTuple) {
+      return ZodTuple.create(schema7.items.map((item) => deepPartialify(item)));
     } else {
-      return schema6;
+      return schema7;
     }
   }
   var ZodObject = class _ZodObject extends ZodType {
@@ -32286,8 +32286,8 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     //   }) as any;
     //   return merged;
     // }
-    setKey(key, schema6) {
-      return this.augment({ [key]: schema6 });
+    setKey(key, schema7) {
+      return this.augment({ [key]: schema7 });
     }
     // merge<Incoming extends AnyZodObject>(
     //   merging: Incoming
@@ -32718,10 +32718,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
         status.dirty();
       }
       const items = [...ctx.data].map((item, itemIndex) => {
-        const schema6 = this._def.items[itemIndex] || this._def.rest;
-        if (!schema6)
+        const schema7 = this._def.items[itemIndex] || this._def.rest;
+        if (!schema7)
           return null;
-        return schema6._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
+        return schema7._parse(new ParseInputLazyPath(ctx, item, ctx.path, itemIndex));
       }).filter((x) => !!x);
       if (ctx.common.async) {
         return Promise.all(items).then((results) => {
@@ -33236,9 +33236,9 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       }));
     }
   };
-  ZodPromise.create = (schema6, params) => {
+  ZodPromise.create = (schema7, params) => {
     return new ZodPromise(__spreadValues({
-      type: schema6,
+      type: schema7,
       typeName: ZodFirstPartyTypeKind.ZodPromise
     }, processCreateParams(params)));
   };
@@ -33362,16 +33362,16 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       util.assertNever(effect);
     }
   };
-  ZodEffects.create = (schema6, effect, params) => {
+  ZodEffects.create = (schema7, effect, params) => {
     return new ZodEffects(__spreadValues({
-      schema: schema6,
+      schema: schema7,
       typeName: ZodFirstPartyTypeKind.ZodEffects,
       effect
     }, processCreateParams(params)));
   };
-  ZodEffects.createWithPreprocess = (preprocess, schema6, params) => {
+  ZodEffects.createWithPreprocess = (preprocess, schema7, params) => {
     return new ZodEffects(__spreadValues({
-      schema: schema6,
+      schema: schema7,
       effect: { type: "preprocess", transform: preprocess },
       typeName: ZodFirstPartyTypeKind.ZodEffects
     }, processCreateParams(params)));
@@ -49470,7 +49470,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
       return true;
     };
   };
-  function assertOptions(options, schema6, allowUnknown) {
+  function assertOptions(options, schema7, allowUnknown) {
     if (typeof options !== "object") {
       throw new AxiosError_default("options must be an object", AxiosError_default.ERR_BAD_OPTION_VALUE);
     }
@@ -49478,7 +49478,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
     let i = keys.length;
     while (i-- > 0) {
       const opt = keys[i];
-      const validator = schema6[opt];
+      const validator = schema7[opt];
       if (validator) {
         const value = options[opt];
         const result2 = value === void 0 || validator(value, opt, options);
@@ -50752,15 +50752,15 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("th", { children: "Code" }),
           /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("th", { children: "Name" }),
           /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("th", { children: "Description" }),
-          /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("th", { children: "Assets" })
+          /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("th", { children: "Students" })
         ] }) }),
         /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("tbody", { children: Array.isArray(state.rooms) && state.rooms.length > 0 ? state.rooms.map((room, index3) => /* @__PURE__ */ (0, import_jsx_runtime17.jsxs)("tr", { children: [
           /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("td", { children: room.code }),
           /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("td", { children: room.name }),
           /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("td", { children: room.description }),
-          /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime17.jsxs)(Link, { to: `/departments/${room.id}/asset-list`, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("td", { children: /* @__PURE__ */ (0, import_jsx_runtime17.jsxs)(Link, { to: `/rooms/${room.id}/students`, children: [
             /* @__PURE__ */ (0, import_jsx_runtime17.jsx)(FaList, {}),
-            " Assets"
+            " Students"
           ] }) })
         ] }, room.id || index3)) : /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("tr", { children: /* @__PURE__ */ (0, import_jsx_runtime17.jsx)("td", { colSpan: "3", children: "No rooms available" }) }) })
       ] })
@@ -50864,29 +50864,224 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
   };
   var roomForm_default = RoomForm;
 
-  // src/App.js
+  // src/components/studentForm.jsx
+  var import_react48 = __toESM(require_react());
   var import_jsx_runtime19 = __toESM(require_jsx_runtime());
+  var schema6 = z.object({
+    code: z.string().min(3, "Code is required"),
+    firstName: z.string().min(3, "First name is required"),
+    lastName: z.string().min(3, "Last name is required"),
+    parentEmail: z.string().email("Email is required"),
+    parentPhone: z.string().min(12, "Invalid phone number"),
+    parentName: z.string().min(3, "Parent name is required"),
+    roomId: z.string().uuid()
+  });
+  var StudentForm = () => {
+    const { roomId } = useParams();
+    const [formData, setFormData] = (0, import_react48.useState)({
+      id: v4_default(),
+      code: "",
+      firstName: "",
+      lastName: "",
+      parentEmail: "",
+      parentPhone: "",
+      parentName: "",
+      roomId
+    });
+    const [errors, setErrors] = (0, import_react48.useState)({});
+    const navigate = useNavigate();
+    const handleSubmit = (e) => __async(void 0, null, function* () {
+      e.preventDefault();
+      try {
+        const validatedData = schema6.parse(formData);
+        const response = yield axios_default.post("https://localhost:7117/api/Student/Save", validatedData);
+        console.log("Student saved:", response.data);
+        navigate(`/rooms/${roomId}/students`);
+      } catch (error2) {
+        if (error2 instanceof z.ZodError) {
+          setErrors(error2.flatten().fieldErrors);
+          console.error("Validation Errors:", error2.flatten().fieldErrors);
+        } else {
+          console.error("Unexpected error:", error2);
+        }
+      }
+    });
+    const handleChange = (e) => {
+      setFormData(__spreadProps(__spreadValues({}, formData), { [e.target.name]: e.target.value }));
+    };
+    const handlePhoneChange = (parentPhone) => {
+      setFormData(__spreadProps(__spreadValues({}, formData), {
+        parentPhone
+      }));
+    };
+    return /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "StudentForm", children: /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "container mt-5", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("h2", { className: "text-center mb-4", children: "Add Student" }),
+      /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("form", { onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("label", { htmlFor: "code", children: "Code:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "code",
+              className: "form-control",
+              id: "code",
+              value: formData.code,
+              onChange: handleChange,
+              placeholder: "Enter student code"
+            }
+          ),
+          errors.code && /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "text-danger", children: errors.code[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("label", { htmlFor: "firstName", children: "First Name:" }),
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "firstName",
+              className: "form-control",
+              id: "firstName",
+              value: formData.firstName,
+              onChange: handleChange,
+              placeholder: "Enter first name"
+            }
+          ),
+          errors.firstName && /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "text-danger", children: errors.firstName[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("label", { htmlFor: "lastName", children: "Last Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "lastName",
+              className: "form-control",
+              id: "lastName",
+              value: formData.lastName,
+              onChange: handleChange,
+              placeholder: "Enter last name"
+            }
+          ),
+          errors.lastName && /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "text-danger", children: errors.lastName[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("label", { htmlFor: "parentEmail", children: "Parent email" }),
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
+            "input",
+            {
+              type: "email",
+              name: "parentEmail",
+              className: "form-control",
+              id: "parentEmail",
+              value: formData.parentEmail,
+              onChange: handleChange,
+              placeholder: "Enter last name"
+            }
+          ),
+          errors.parentEmail && /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "text-danger", children: errors.parentEmail[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("label", { htmlFor: "parentName", children: "Parent Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
+            "input",
+            {
+              type: "text",
+              name: "parentName",
+              className: "form-control",
+              id: "parentName",
+              value: formData.parentName,
+              onChange: handleChange,
+              placeholder: "Enter parent name"
+            }
+          ),
+          errors.parentName && /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "text-danger", children: errors.parentName[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { className: "col-md-6 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(
+            min_default,
+            {
+              placeholder: "Enter parent phone number",
+              value: formData.parentPhone,
+              onChange: handlePhoneChange
+            }
+          ),
+          errors.parentPhone && /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("div", { className: "text-danger", children: errors.parentPhone[0] })
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("button", { className: "btn btn-info", type: "submit", children: "Save" })
+      ] })
+    ] }) });
+  };
+  var studentForm_default = StudentForm;
+
+  // src/components/studentList.jsx
+  var import_react49 = __toESM(require_react());
+  var import_jsx_runtime20 = __toESM(require_jsx_runtime());
+  var StudentList = () => {
+    const { roomId } = useParams();
+    const [students, setStudents] = (0, import_react49.useState)([]);
+    (0, import_react49.useEffect)(() => {
+      axios_default.get(`https://localhost:7117/api/Student/pagedlist/${roomId}`, {
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        }
+      }).then((response) => {
+        setStudents(response.data.data || []);
+      }).catch((error2) => {
+        console.error("Error fetching students:", error2);
+      });
+    }, [roomId]);
+    return /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: "StudentList", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("div", { className: "container mt-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("h1", { className: "text-center mb-4", children: " List" }),
+      /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("div", { className: "col-md-6 mb-2", children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(Link, { to: `/rooms/${roomId}/add-student`, className: "btn btn-info", children: "Add Student " }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("table", { className: "table table-striped", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("thead", { children: /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("th", { children: "Code" }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("th", { children: "First Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("th", { children: "last Name" }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("th", { children: "Parent Email" }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("th", { children: "Parent Phone" }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("th", { children: "Parent Name" })
+        ] }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("tbody", { children: students.map((student, index3) => /* @__PURE__ */ (0, import_jsx_runtime20.jsxs)("tr", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("td", { children: student.code }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("td", { children: student.firstName }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("td", { children: student.lastName }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("td", { children: student.parentEmail }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("td", { children: student.parentPhone }),
+          /* @__PURE__ */ (0, import_jsx_runtime20.jsx)("td", { children: student.parentName })
+        ] }, student.id || index3)) })
+      ] })
+    ] }) });
+  };
+  var studentList_default = StudentList;
+
+  // src/App.js
+  var import_jsx_runtime21 = __toESM(require_jsx_runtime());
   var App = () => {
-    return /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Navbar_default, {}),
-      /* @__PURE__ */ (0, import_jsx_runtime19.jsxs)(Routes, { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/offcanvas", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(offCanvas_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(UserForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(departmentForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(UserList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(departmentList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(assetForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/departments/:departmentId/asset-list", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(assetList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/subjects", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(subjectList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/add-subject", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(subjectForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/counties", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(countyList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/add-county", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(countyForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/rooms", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(roomList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/add-room", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(roomForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/disciplines", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(disciplineList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/add-discipline", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(disciplineForm_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(departmentList_default, {}) }),
-        /* @__PURE__ */ (0, import_jsx_runtime19.jsx)(Route, { path: "*", element: /* @__PURE__ */ (0, import_jsx_runtime19.jsx)("h1", { children: "Not Found" }) })
+    return /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Navbar_default, {}),
+      /* @__PURE__ */ (0, import_jsx_runtime21.jsxs)(Routes, { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/offcanvas", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(offCanvas_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/add-user", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(UserForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/add-department", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(departmentForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/users", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(UserList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/departments", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(departmentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/departments/:departmentId/add-asset", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(assetForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/departments/:departmentId/asset-list", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(assetList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/subjects", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(subjectList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/add-subject", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(subjectForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/counties", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(countyList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/add-county", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(countyForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/rooms", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(roomList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/add-room", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(roomForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/rooms/:roomId/add-student", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(studentForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/rooms/:roomId/students", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(studentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/disciplines", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(disciplineList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/add-discipline", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(disciplineForm_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "/", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(departmentList_default, {}) }),
+        /* @__PURE__ */ (0, import_jsx_runtime21.jsx)(Route, { path: "*", element: /* @__PURE__ */ (0, import_jsx_runtime21.jsx)("h1", { children: "Not Found" }) })
       ] })
     ] });
   };
@@ -50894,10 +51089,10 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
 
   // src/index.js
   var import_bootstrap_bundle2 = __toESM(require_bootstrap_bundle_min());
-  var import_jsx_runtime20 = __toESM(require_jsx_runtime());
+  var import_jsx_runtime22 = __toESM(require_jsx_runtime());
   var root = (0, import_client.createRoot)(document.getElementById("root"));
   root.render(
-    /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime20.jsx)(App_default, {}) }) })
+    /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(BrowserRouter, { children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(AppProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime22.jsx)(App_default, {}) }) })
   );
 })();
 /*! Bundled license information:

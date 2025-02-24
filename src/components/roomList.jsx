@@ -37,7 +37,7 @@ const RoomList = () => {
                             <th>Code</th>
                             <th>Name</th>
                             <th>Description</th>
-                            <th>Assets</th>
+                            <th>Students</th>
 
                         </tr>
                     </thead>
@@ -49,7 +49,7 @@ const RoomList = () => {
                                     <td>{room.name}</td>
                                     <td>{room.description}</td>
                                     <td>
-                                        <Link to={`/departments/${room.id}/asset-list`}><FaList /> Assets</Link>
+                                        <Link to={`/rooms/${room.id}/students`}><FaList /> Students</Link>
                                     </td>
                                 </tr>
                             ))

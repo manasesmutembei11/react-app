@@ -16,6 +16,8 @@ import DisciplineList from './components/disciplineList';
 import DisciplineForm from './components/disciplineForm';
 import RoomList from './components/roomList';
 import RoomForm from './components/roomForm';
+import StudentForm from './components/studentForm';
+import StudentList from './components/studentList';
 
 const App = () => {
   return (
@@ -36,6 +38,8 @@ const App = () => {
         <Route path="/add-county" element={<CountyForm />} />
         <Route path="/rooms" element={<RoomList />} />
         <Route path="/add-room" element={<RoomForm />} />
+        <Route path="/rooms/:roomId/add-student" element={<StudentForm />} />
+        <Route path="/rooms/:roomId/students" element={<StudentList />} />
         <Route path="/disciplines" element={<DisciplineList />} />
         <Route path="/add-discipline" element={<DisciplineForm />} />
         <Route path="/" element={<DepartmentList />} />
