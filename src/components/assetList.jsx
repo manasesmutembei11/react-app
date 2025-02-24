@@ -24,7 +24,7 @@ const AssetList = () => {
     return (
         <div className="AssetList">
             <div className="container mt-4">
-                <h1 className="text-center mb-4">List</h1>
+                <h1 className="text-center mb-4">Asset List</h1>
                 <div className="col-md-6 mb-2">
                     <Link to={`/departments/${departmentId}/add-asset`} className="btn btn-info">Add Asset </Link>
                 </div>

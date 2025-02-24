@@ -9,7 +9,8 @@ import AppContext from '../context/AppContext';
 import { useContext } from 'react';
 
 const userSchema = z.object({
-    name: z.string().min(1, 'Name is required'),
+    firstName: z.string().min(1, 'First name is required'),
+    secondName: z.string().min(1, 'Second name is required'),
     email: z.string().email('Email is required'),
     dateOfBirth: z.date(),
     gender: z.string().min(3, 'Gender is required'),

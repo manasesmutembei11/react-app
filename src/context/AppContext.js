@@ -6,6 +6,7 @@ const initialState = {
     subjects: [],
     counties: [],
     disciplines: [],
+    rooms: [],
 };
 
 const AppContext = createContext(initialState);
@@ -36,6 +37,11 @@ const appReducer = (state, action) => {
             return {
                 ...state,
                 disciplines: Array.isArray(action.payload) ? action.payload : [],
+            };
+        case 'SAVE_ROOM':
+            return {
+                ...state,
+                rooms: Array.isArray(action.payload) ? action.payload : [],
             };
         default:
             return state;

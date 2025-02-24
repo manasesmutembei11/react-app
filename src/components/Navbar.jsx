@@ -23,11 +23,12 @@ const Navbar = () => {
                         <li><Link className="dropdown-item" to="/subjects"> <FaBuilding /> Subjects</Link></li>
                         <li><Link className="dropdown-item" to="/counties"> <FaBuilding /> Counties</Link></li>
                         <li><Link className="dropdown-item" to="/disciplines"> <FaBuilding /> Disciplines</Link></li>
+                        <li><Link className="dropdown-item" to="/rooms"> <FaBuilding /> Rooms</Link></li>
                     </ul>
                 </div>
 
 
-                <h1 className="navbar-brand">User Management App</h1>
+                <h1 className="navbar-brand">School Management App</h1>
                 <div className="ml-auto d-flex">
                     <div className="dropdown mr-3">
                         <button
@@ -56,6 +57,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
+
             </nav>
         </div>
 

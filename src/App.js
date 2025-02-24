@@ -14,6 +14,8 @@ import CountyList from './components/countyList';
 import CountyForm from './components/countyForm';
 import DisciplineList from './components/disciplineList';
 import DisciplineForm from './components/disciplineForm';
+import RoomList from './components/roomList';
+import RoomForm from './components/roomForm';
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
         <Route path="/add-subject" element={<SubjectForm />} />
         <Route path="/counties" element={<CountyList />} />
         <Route path="/add-county" element={<CountyForm />} />
+        <Route path="/rooms" element={<RoomList />} />
+        <Route path="/add-room" element={<RoomForm />} />
         <Route path="/disciplines" element={<DisciplineList />} />
         <Route path="/add-discipline" element={<DisciplineForm />} />
         <Route path="/" element={<DepartmentList />} />

@@ -14,7 +14,7 @@ const schema = z.object({
 
 });
 
-const DisciplineForm = ({ onSave }) => {
+const DisciplineForm = () => {
     const [formData, setFormData] = useState({
         id: uuidv4(),
         code: '',
@@ -37,10 +37,8 @@ const DisciplineForm = ({ onSave }) => {
         try {
             const validatedData = schema.parse(formData);
             const response = await axios.post('https://localhost:7117/api/Discipline/Save', validatedData);
+            console.log('ValidatedData', validatedData)
             console.log('Discipline saved:', response.data);
-            if (onSave) {
-                onSave(response.data);
-            }
             navigate("/disciplines");
 
         } catch (error) {
@@ -54,7 +52,8 @@ const DisciplineForm = ({ onSave }) => {
     };
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
     };
 
     return (
