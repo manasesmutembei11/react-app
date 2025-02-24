@@ -3,8 +3,6 @@ import { useContext } from 'react';
 import AppContext from '../context/AppContext';
 import { useEffect } from 'react';
 import axios from 'axios';
-import AssetList from './assetList';
-import AssetForm from './assetForm';
 import { Link } from 'react-router-dom';
 import { FaList } from 'react-icons/fa';
 
