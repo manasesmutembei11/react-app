@@ -18,6 +18,8 @@ import RoomList from './components/roomList';
 import RoomForm from './components/roomForm';
 import StudentForm from './components/studentForm';
 import StudentList from './components/studentList';
+import TeacherForm from './components/teacherForm';
+import TeacherList from './components/teacherList';
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
         <Route path="/departments" element={<DepartmentList />} />
         <Route path="/departments/:departmentId/add-asset" element={<AssetForm />} />
         <Route path="/departments/:departmentId/asset-list" element={<AssetList />} />
+        <Route path="/departments/:departmentId/add-teacher" element={<TeacherForm />} />
+        <Route path="/departments/:departmentId/teacher-list" element={<TeacherList />} />
         <Route path="/subjects" element={<SubjectList />} />
         <Route path="/add-subject" element={<SubjectForm />} />
         <Route path="/counties" element={<CountyList />} />

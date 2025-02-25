@@ -33,6 +33,7 @@ const DepartmentList = () => {
                             <th>Name</th>
                             <th>Description</th>
                             <th>Assets</th>
+                            <th>Teachers</th>
 
                         </tr>
                     </thead>
@@ -45,6 +46,9 @@ const DepartmentList = () => {
                                     <td>{department.description}</td>
                                     <td>
                                         <Link to={`/departments/${department.id}/asset-list`}><FaList /> Assets</Link>
+                                    </td>
+                                    <td>
+                                        <Link to={`/departments/${department.id}/teacher-list`}><FaList /> Teachers</Link>
                                     </td>
                                 </tr>
                             ))

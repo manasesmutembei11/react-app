@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { z } from 'zod';
 import { v4 as uuidv4 } from 'uuid';
@@ -13,7 +13,7 @@ const schema = z.object({
     phoneNumber: z.string().min(12, 'Invalid phone number'),
     physicalAddress: z.string().min(3, 'Physical address is required'),
     type: z.number().int().min(0, 'Type is required'),
-    subjectId: z.string.uuid(),
+    subjectId: z.string().uuid(),
     departmentId: z.string().uuid()
 });
 
@@ -33,6 +33,27 @@ const TeacherForm = () => {
     });
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
+    const [subjects, setSubjects] = useState([]);
+    const [selectedSubjects, setSelectedSubjects] = useState([]);
+    const [teacherTypes, setTeacherTypes] = useState([]);
+
+    useEffect(() => {
+        axios.get("https://localhost:7117/api/Subject/pagedlist")
+            .then(response => setSubjects(response.data))
+            .catch(error => console.error("Error fetching subjects:", error));
+    }, []);
+
+    useEffect(() => {
+        axios.get("https://localhost:7117/api/EnumLookup/TeacherTypeList")
+            .then(response => setTeacherTypes(response.data))
+            .catch(error => console.error("Error fetching teacher types:", error));
+    }, []);
+
+    const handleCheckboxChange = (subjectId) => {
+        setSelectedSubjects(prev =>
+            prev.includes(subjectId) ? prev.filter(id => id !== subjectId) : [...prev, subjectId]
+        );
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -40,7 +61,8 @@ const TeacherForm = () => {
             const validatedData = schema.parse(formData);
             const response = await axios.post('https://localhost:7117/api/Teacher/Save', validatedData);
             console.log('Teacher saved:', response.data);
-            navigate(`/departments/${departmentId}/asset-list`);
+            alert('Teacher saved successfully');
+            navigate(`/departments/${departmentId}/teacher-list`);
         } catch (error) {
             if (error instanceof z.ZodError) {
                 setErrors(error.flatten().fieldErrors);
@@ -53,6 +75,13 @@ const TeacherForm = () => {
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handlePhoneChange = (phoneNumber) => {
+        setFormData({
+            ...formData,
+            phoneNumber: phoneNumber,
+        });
     };
 
     return (
@@ -132,6 +161,39 @@ const TeacherForm = () => {
                         />
                         {errors.physicalAddress && <div className="text-danger">{errors.physicalAddress[0]}</div>}
                     </div>
+                    <div>
+                        <label>Select Subjects:</label>
+                        {subjects.map(subject => (
+                            <div key={subject.id}>
+                                <input
+                                    type="checkbox"
+                                    checked={selectedSubjects.includes(subject.id)}
+                                    onChange={() => handleCheckboxChange(subject.id)}
+                                />
+                                {subject.name}
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="col-md-6 mb-2">
+                        <label htmlFor="type">Type:</label>
+                        <select
+                            name="type"
+                            id="type"
+                            className="form-control"
+                            value={formData.type}
+                            onChange={handleChange}
+                        >
+                            <option value="">-- Select an action --</option>
+                            {teacherTypes.map(type => (
+                                <option key={type.id} value={type.id}>
+                                    {type.name}
+                                </option>
+                            ))}
+                        </select>
+                        {errors.type && <div className="text-danger">{errors.type[0]}</div>}
+                    </div>
+
                     <button className="btn btn-info" type="submit">Save Asset</button>
                 </form>
             </div>
