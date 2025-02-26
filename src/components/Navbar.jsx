@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { FaUsers, FaBuilding, FaPlusSquare, FaList, FaBars } from 'react-icons/fa';
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Offcanvas from './offCanvas';
 
 const Navbar = () => {
     return (

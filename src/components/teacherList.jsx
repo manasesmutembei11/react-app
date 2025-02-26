@@ -36,6 +36,8 @@ const TeacherList = () => {
                             <th>Last Name</th>
                             <th>Email</th>
                             <th>Phone Number</th>
+                            <th>Type</th>
+                            <th>Subject</th>
 
                         </tr>
                     </thead>
@@ -48,6 +50,8 @@ const TeacherList = () => {
                                 <td>{teacher.lastName}</td>
                                 <td>{teacher.email}</td>
                                 <td>{teacher.phoneNumber}</td>
+                                <td>{teacher.typeName}</td>
+                                <td>{teacher.subjectName}</td>
                             </tr>
                         ))}
 
@@ -57,5 +61,4 @@ const TeacherList = () => {
         </div>
     );
 };
-
 export default TeacherList;

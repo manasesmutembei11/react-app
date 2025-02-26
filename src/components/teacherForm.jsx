@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { z } from 'zod';
 import { v4 as uuidv4 } from 'uuid';
-import { useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import 'react-phone-number-input/style.css'
+import PhoneInput from "react-phone-number-input";
 
 const schema = z.object({
     code: z.string().min(3, 'Code is required'),
@@ -13,7 +14,7 @@ const schema = z.object({
     phoneNumber: z.string().min(12, 'Invalid phone number'),
     physicalAddress: z.string().min(3, 'Physical address is required'),
     type: z.number().int().min(0, 'Type is required'),
-    subjectId: z.string().uuid(),
+    subjectId: z.string().uuid('Invalid subject ID'),
     departmentId: z.string().uuid()
 });
 
@@ -27,19 +28,24 @@ const TeacherForm = () => {
         email: '',
         phoneNumber: '',
         physicalAddress: '',
-        type: 0,
+        type: '',
         subjectId: '',
         departmentId: departmentId || ''
     });
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
     const [subjects, setSubjects] = useState([]);
-    const [selectedSubjects, setSelectedSubjects] = useState([]);
     const [teacherTypes, setTeacherTypes] = useState([]);
 
     useEffect(() => {
-        axios.get("https://localhost:7117/api/Subject/pagedlist")
-            .then(response => setSubjects(response.data))
+        axios.get("https://localhost:7117/api/Subject/lookuplist")
+            .then(response => {
+                if (Array.isArray(response.data)) {
+                    setSubjects(response.data);
+                } else {
+                    setSubjects([]);
+                }
+            })
             .catch(error => console.error("Error fetching subjects:", error));
     }, []);
 
@@ -50,15 +56,21 @@ const TeacherForm = () => {
     }, []);
 
     const handleCheckboxChange = (subjectId) => {
-        setSelectedSubjects(prev =>
-            prev.includes(subjectId) ? prev.filter(id => id !== subjectId) : [...prev, subjectId]
-        );
+        setFormData(prev => ({
+            ...prev,
+            subjectIds: prev.subjectIds.includes(subjectId)
+                ? prev.subjectIds.filter(id => id !== subjectId)
+                : [...prev.subjectIds, subjectId]
+        }));
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const validatedData = schema.parse(formData);
+            const validatedData = schema.parse({
+                ...formData,
+                type: Number(formData.type)
+            });
             const response = await axios.post('https://localhost:7117/api/Teacher/Save', validatedData);
             console.log('Teacher saved:', response.data);
             alert('Teacher saved successfully');
@@ -161,18 +173,23 @@ const TeacherForm = () => {
                         />
                         {errors.physicalAddress && <div className="text-danger">{errors.physicalAddress[0]}</div>}
                     </div>
-                    <div>
-                        <label>Select Subjects:</label>
-                        {subjects.map(subject => (
-                            <div key={subject.id}>
-                                <input
-                                    type="checkbox"
-                                    checked={selectedSubjects.includes(subject.id)}
-                                    onChange={() => handleCheckboxChange(subject.id)}
-                                />
-                                {subject.name}
-                            </div>
-                        ))}
+                    <div className="col-md-6 mb-2">
+                        <label htmlFor="subjectId">Subject:</label>
+                        <select
+                            name="subjectId"
+                            id="subjectId"
+                            className="form-control"
+                            value={formData.subjectId}
+                            onChange={handleChange}
+                        >
+                            <option value="">-- Select a subject --</option>
+                            {subjects.map(subject => (
+                                <option key={subject.id} value={subject.id}>
+                                    {subject.name}
+                                </option>
+                            ))}
+                        </select>
+                        {errors.subjectId && <div className="text-danger">{errors.subjectId[0]}</div>}
                     </div>
 
                     <div className="col-md-6 mb-2">
