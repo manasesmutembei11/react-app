@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Modal, Button } from 'react-bootstrap';
 
 const TeacherList = () => {
     const { departmentId } = useParams();
     const [teachers, setTeachers] = useState([]);
+    const [selectedTeacher, setSelectedTeacher] = useState(null);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         axios.get(`https://localhost:7117/api/Teacher/pagedlist/${departmentId}`, {
@@ -21,6 +24,17 @@ const TeacherList = () => {
                 console.error('Error fetching teachers:', error);
             });
     }, [departmentId]);
+
+    const handleShowModal = (teacher) => {
+        setSelectedTeacher(teacher);
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+        setSelectedTeacher(null);
+    };
+
     return (
         <div className="TeacherList">
             <div className="container mt-4">
@@ -38,6 +52,7 @@ const TeacherList = () => {
                             <th>Phone Number</th>
                             <th>Type</th>
                             <th>Subject</th>
+                            <th>Actions</th>
 
                         </tr>
                     </thead>
@@ -52,12 +67,34 @@ const TeacherList = () => {
                                 <td>{teacher.phoneNumber}</td>
                                 <td>{teacher.typeName}</td>
                                 <td>{teacher.subjectName}</td>
+                                <td>
+                                    <Button variant="info" onClick={() => handleShowModal(teacher)}>View</Button>
+                                </td>
                             </tr>
                         ))}
 
                     </tbody>
                 </table>
             </div>
+            {selectedTeacher && (
+                <Modal show={showModal} onHide={handleCloseModal}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Teacher Details</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <p><strong>Code:</strong> {selectedTeacher.code}</p>
+                        <p><strong>First Name:</strong> {selectedTeacher.firstName}</p>
+                        <p><strong>Last Name:</strong> {selectedTeacher.lastName}</p>
+                        <p><strong>Email:</strong> {selectedTeacher.email}</p>
+                        <p><strong>Phone Number:</strong> {selectedTeacher.phoneNumber}</p>
+                        <p><strong>Type:</strong> {selectedTeacher.typeName}</p>
+                        <p><strong>Subject:</strong> {selectedTeacher.subjectName}</p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleCloseModal}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+            )}
         </div>
     );
 };
