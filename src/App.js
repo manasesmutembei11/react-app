@@ -20,6 +20,7 @@ import StudentForm from './components/studentForm';
 import StudentList from './components/studentList';
 import TeacherForm from './components/teacherForm';
 import TeacherList from './components/teacherList';
+import ExamForm from './components/examForm';
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/rooms/:roomId/students" element={<StudentList />} />
         <Route path="/disciplines" element={<DisciplineList />} />
         <Route path="/add-discipline" element={<DisciplineForm />} />
+        <Route path="/add-exam" element={<ExamForm />} />
         <Route path="/" element={<DepartmentList />} />
         <Route path="*" element={<h1>Not Found</h1>} />
 

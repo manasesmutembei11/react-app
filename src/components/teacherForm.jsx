@@ -55,15 +55,6 @@ const TeacherForm = () => {
             .catch(error => console.error("Error fetching teacher types:", error));
     }, []);
 
-    const handleCheckboxChange = (subjectId) => {
-        setFormData(prev => ({
-            ...prev,
-            subjectIds: prev.subjectIds.includes(subjectId)
-                ? prev.subjectIds.filter(id => id !== subjectId)
-                : [...prev.subjectIds, subjectId]
-        }));
-    };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
