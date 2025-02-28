@@ -255,20 +255,21 @@ const ExamForm = () => {
                             {errors.examStatus && <div className="text-danger">{errors.examStatus[0]}</div>}
                         </div>
                     </div>
-                    <div className="col-md-6 mb-2">
-                        <label htmlFor='description'> Description:</label>
-                        <Textarea
-                            type="textArea"
-                            name="description"
-                            className="form-control"
-                            id="description"
-                            value={formData.description}
-                            onChange={handleChange}
-                            placeholder='Enter description'
-                        />
-                        {errors.description && <div className="text-danger">{errors.description[0]}</div>}
+                    <div className='row'>
+                        <div className="col-md-12 mb-2">
+                            <label htmlFor='description'> Description:</label>
+                            <Textarea
+                                type="text"
+                                name="description"
+                                className="form-control"
+                                id="description"
+                                value={formData.description}
+                                onChange={handleChange}
+                                placeholder='Enter description'
+                            />
+                            {errors.description && <div className="text-danger">{errors.description[0]}</div>}
+                        </div>
                     </div>
-
                     <button className="btn btn-info" type="submit">Save Exam</button>
                 </form>
             </div>

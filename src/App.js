@@ -22,6 +22,7 @@ import TeacherForm from './components/teacherForm';
 import TeacherList from './components/teacherList';
 import ExamForm from './components/examForm';
 import ExamList from './components/examList';
+import ExamResultForm from './components/examResultForm';
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/add-discipline" element={<DisciplineForm />} />
         <Route path="/add-exam" element={<ExamForm />} />
         <Route path="/exams" element={<ExamList />} />
+        <Route path="/exam-result" element={<ExamResultForm />} />
         <Route path="/" element={<DepartmentList />} />
         <Route path="*" element={<h1>Not Found</h1>} />
 
