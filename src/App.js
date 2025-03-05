@@ -23,6 +23,7 @@ import TeacherList from './components/teacherList';
 import ExamForm from './components/examForm';
 import ExamList from './components/examList';
 import ExamResultForm from './components/examResultForm';
+import SubjectStudentsList from './components/subjectStudentsList';
 
 const App = () => {
   return (
@@ -41,6 +42,8 @@ const App = () => {
         <Route path="/departments/:departmentId/teacher-list" element={<TeacherList />} />
         <Route path="/subjects" element={<SubjectList />} />
         <Route path="/add-subject" element={<SubjectForm />} />
+        <Route path="/edit-subject/:subjectId" element={<SubjectForm />} />
+        <Route path="/subjects/:subjectId/students" element={<SubjectStudentsList />} />
         <Route path="/counties" element={<CountyList />} />
         <Route path="/add-county" element={<CountyForm />} />
         <Route path="/rooms" element={<RoomList />} />

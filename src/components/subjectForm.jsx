@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { z } from 'zod';
 import 'react-phone-input-2/lib/style.css'
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const schema = z.object({
     code: z.string().min(3, 'Code is required'),
@@ -13,6 +13,7 @@ const schema = z.object({
 });
 
 const SubjectForm = ({ onSave }) => {
+    const { subjectId } = useParams();
     const [formData, setFormData] = useState({
         id: uuidv4(),
         code: '',
@@ -21,6 +22,18 @@ const SubjectForm = ({ onSave }) => {
     });
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if (subjectId) {
+            axios.get(`https://localhost:7117/api/Subject/${subjectId}`)
+                .then(response => {
+                    setFormData(response.data);
+                })
+                .catch(error => {
+                    console.error('Error fetching subject:', error);
+                });
+        }
+    }, [subjectId]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -50,7 +63,7 @@ const SubjectForm = ({ onSave }) => {
     return (
         <div className='SubjectForm'>
             <div className="container mt-5">
-                <h2 className="text-center mb-4">Create Subject</h2>
+                <h2 className="text-center mb-4">{subjectId ? 'Edit Subject' : 'Create Subject'}</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="col-md-6 mb-2">
                         <label htmlFor='code'>Code:</label>
@@ -93,7 +106,7 @@ const SubjectForm = ({ onSave }) => {
                     </div>
 
 
-                    <button className="btn btn-info" type="submit">Save Subject</button>
+                    <button className="btn btn-info" type="submit">{subjectId ? 'Update Subject' : 'Save Subject'}</button>
                 </form>
 
             </div>
