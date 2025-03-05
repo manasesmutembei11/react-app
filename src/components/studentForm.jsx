@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { z } from 'zod';
 import 'react-phone-input-2/lib/style.css'
 import axios from 'axios';
@@ -6,6 +6,8 @@ import { v4 as uuidv4 } from 'uuid';
 import { useNavigate, useParams } from 'react-router-dom';
 import 'react-phone-number-input/style.css'
 import PhoneInput from "react-phone-number-input";
+import Select from 'react-select';
+
 
 const schema = z.object({
     code: z.string().min(3, 'Code is required'),
@@ -14,8 +16,8 @@ const schema = z.object({
     parentEmail: z.string().email('Email is required'),
     parentPhone: z.string().min(12, 'Invalid phone number'),
     parentName: z.string().min(3, 'Parent name is required'),
-    roomId: z.string().uuid()
-
+    roomId: z.string().uuid(),
+    subjectIds: z.array(z.string().uuid())
 });
 
 const StudentForm = () => {
@@ -28,10 +30,24 @@ const StudentForm = () => {
         parentEmail: '',
         parentPhone: '',
         parentName: '',
-        roomId: roomId
+        roomId: roomId,
+        subjectIds: []
     });
     const [errors, setErrors] = useState({});
+    const [subjects, setSubjects] = useState([]);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        axios.get('https://localhost:7117/api/Subject/lookuplist')
+            .then(response => {
+                if (Array.isArray(response.data)) {
+                    setSubjects(response.data);
+                } else {
+                    setSubjects([]);
+                }
+            })
+            .catch(error => console.error('Error fetching subjects:', error));
+    }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -62,6 +78,10 @@ const StudentForm = () => {
         });
     };
 
+    const handleSubjectChange = (selectedOptions) => {
+        const subjectIds = selectedOptions.map(option => option.value);
+        setFormData({ ...formData, subjectIds });
+    };
     return (
         <div className='StudentForm'>
             <div className="container mt-5">
@@ -139,6 +159,19 @@ const StudentForm = () => {
                             value={formData.parentPhone}
                             onChange={handlePhoneChange} />
                         {errors.parentPhone && <div className="text-danger">{errors.parentPhone[0]}</div>}
+                    </div>
+
+                    <div className="col-md-6 mb-2">
+                        <label htmlFor='subjectIds'>Subjects:</label>
+                        <Select
+                            isMulti
+                            name="subjectIds"
+                            options={subjects.map(subject => ({ value: subject.id, label: subject.name }))}
+                            className="basic-multi-select"
+                            classNamePrefix="select"
+                            onChange={handleSubjectChange}
+                        />
+                        {errors.subjectIds && <div className="text-danger">{errors.subjectIds[0]}</div>}
                     </div>
 
 
