@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { z } from 'zod';
-import 'react-phone-input-2/lib/style.css'
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate, useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const schema = z.object({
     code: z.string().min(3, 'Code is required'),
     name: z.string().min(3, 'Name is required'),
     description: z.string().min(3, 'Description is required'),
-
 });
 
-const SubjectForm = ({ onSave }) => {
+const SubjectForm = () => {
     const { subjectId } = useParams();
     const [formData, setFormData] = useState({
         id: uuidv4(),
@@ -40,12 +40,9 @@ const SubjectForm = ({ onSave }) => {
         try {
             const validatedData = schema.parse(formData);
             const response = await axios.post('https://localhost:7117/api/Subject/Save', validatedData);
+            toast.success('Subject saved successfully');
             console.log('Subject saved:', response.data);
-            if (onSave) {
-                onSave(response.data);
-            }
             navigate("/subjects");
-
         } catch (error) {
             if (error instanceof z.ZodError) {
                 setErrors(error.flatten().fieldErrors);
@@ -64,6 +61,7 @@ const SubjectForm = ({ onSave }) => {
         <div className='SubjectForm'>
             <div className="container mt-5">
                 <h2 className="text-center mb-4">{subjectId ? 'Edit Subject' : 'Create Subject'}</h2>
+                <ToastContainer />
                 <form onSubmit={handleSubmit}>
                     <div className="col-md-6 mb-2">
                         <label htmlFor='code'>Code:</label>
@@ -104,16 +102,11 @@ const SubjectForm = ({ onSave }) => {
                         />
                         {errors.description && <div className="text-danger">{errors.description[0]}</div>}
                     </div>
-
-
                     <button className="btn btn-info" type="submit">{subjectId ? 'Update Subject' : 'Save Subject'}</button>
                 </form>
-
             </div>
 
-
         </div>
-
     );
 };
 

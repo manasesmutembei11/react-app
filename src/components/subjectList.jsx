@@ -4,10 +4,11 @@ import AppContext from '../context/AppContext';
 import { useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { Dropdown, DropdownButton, Modal, Button } from 'react-bootstrap';
+import { Dropdown, DropdownButton } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ConfirmDeleteModal from '../modals/ConfirmDeleteModal';
 
 
 const SubjectList = () => {
@@ -100,20 +101,11 @@ const SubjectList = () => {
                     </tbody>
                 </table>
             </div>
-            <Modal show={showModal} onHide={handleCloseModal}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Confirm Delete</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>Are you sure you want to delete this subject?</Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseModal}>
-                        Cancel
-                    </Button>
-                    <Button variant="danger" onClick={confirmDelete}>
-                        Delete
-                    </Button>
-                </Modal.Footer>
-            </Modal>
+            <ConfirmDeleteModal
+                show={showModal}
+                handleClose={handleCloseModal}
+                handleConfirm={confirmDelete}
+            />
 
             <ToastContainer />
         </div>
