@@ -1,13 +1,16 @@
 import React, { useContext, useState, useEffect } from "react";
-import AppContext from "../context/AppContext";
-import axios from "axios";
 import { Link } from "react-router-dom";
-import ReactPaginate from "react-paginate";
+import axios from "axios";
+import AppContext from "../context/AppContext";
+import Pagination from "./pagination";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CountyList = () => {
     const { state, dispatch } = useContext(AppContext);
+
+    // State for pagination
+    const [currentPage, setCurrentPage] = useState(1);
     const [metaData, setMetaData] = useState({
-        currentPage: 1,
         pageSize: 10,
         totalPages: 1,
         totalCount: 0,
@@ -16,27 +19,35 @@ const CountyList = () => {
     });
 
     useEffect(() => {
-        fetchCounties(metaData.currentPage);
-    }, [metaData.currentPage]);
+        fetchCounties(currentPage);
+    }, [currentPage]);
 
     const fetchCounties = async (page) => {
         try {
-            const response = await axios.get(`https://localhost:7117/api/County/pagedlist?page=${page}`);
-            dispatch({ type: "SAVE_COUNTY", payload: response.data.data || [] });
+            console.log(`Fetching counties for page: ${page}`);
 
-            if (response.data.metaData) {
-                setMetaData((prev) => ({
-                    ...prev,
-                    ...response.data.metaData,
-                }));
-            }
+            const response = await axios.get(`https://localhost:7117/api/County/pagedlist?pageNumber=${page}`);
+            console.log("API Response:", response.data); // Debugging log
+
+            const { data, metaData: newMetaData } = response.data;
+
+            // Update state with new data
+            dispatch({ type: "SAVE_COUNTY", payload: data || [] });
+
+            // Update pagination metadata
+            setMetaData((prev) => ({
+                ...prev,
+                ...newMetaData,
+            }));
         } catch (error) {
             console.error("Error fetching counties:", error);
         }
     };
 
-    const handlePageClick = (event) => {
-        setMetaData((prev) => ({ ...prev, currentPage: event.selected + 1 }));
+    const handlePageChange = ({ selected }) => {
+        const newPage = selected + 1;
+        console.log(`Changing to page: ${newPage}`); // Debugging log
+        setCurrentPage(newPage);  // Update state, triggering useEffect
     };
 
     return (
@@ -63,32 +74,15 @@ const CountyList = () => {
                             ))
                         ) : (
                             <tr>
-                                <td colSpan="2">No counties available</td>
+                                <td colSpan="2" className="text-center">No counties available</td>
                             </tr>
                         )}
                     </tbody>
                 </table>
             </div>
-            <ReactPaginate
-                previousLabel={"← Previous"}
-                nextLabel={"Next →"}
-                breakLabel={"..."}
-                pageCount={metaData.totalPages || 1}
-                marginPagesDisplayed={2}
-                pageRangeDisplayed={3}
-                onPageChange={handlePageClick}
-                forcePage={metaData.currentPage - 1}
-                containerClassName={"pagination justify-content-center"}
-                pageClassName={"page-item"}
-                pageLinkClassName={"page-link"}
-                previousClassName={"page-item"}
-                previousLinkClassName={"page-link"}
-                nextClassName={"page-item"}
-                nextLinkClassName={"page-link"}
-                breakClassName={"page-item"}
-                breakLinkClassName={"page-link"}
-                activeClassName={"active"}
-            />
+
+            {/* Pagination Component */}
+            <Pagination metaData={metaData} onPageChange={handlePageChange} />
         </div>
     );
 };

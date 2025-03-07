@@ -78,7 +78,7 @@ const Chatbot = () => {
                     <input
                         type="text"
                         className="form-control me-2"
-                        placeholder="Ask anything..."
+                        placeholder="Hi! How can I help you today?"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         disabled={loading}
