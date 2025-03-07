@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { FaUsers, FaBuilding, FaPlusSquare, FaList, FaBars } from 'react-icons/fa';
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ChatbotButton from '../buttons/ChatbotButton';
 
 const Navbar = () => {
     return (
-        <div className="container mt-5">
+        <div className="container mt-5" style={{ position: 'relative' }}>
             <nav className="navbar" style={{ backgroundColor: '#85c1e9' }}>
                 <div className="dropdown mr-3">
                     <button
@@ -60,6 +61,7 @@ const Navbar = () => {
                 </div>
 
             </nav>
+
         </div>
 
     );

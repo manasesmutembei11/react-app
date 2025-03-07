@@ -24,6 +24,9 @@ import ExamForm from './components/examForm';
 import ExamList from './components/examList';
 import ExamResultForm from './components/examResultForm';
 import SubjectStudentsList from './components/subjectStudentsList';
+import Chatbot from './chatbot/ChatBot';
+import './buttons/ChatbotButton.css';
+import ChatbotButton from './buttons/ChatbotButton';
 
 const App = () => {
   return (
@@ -55,11 +58,11 @@ const App = () => {
         <Route path="/add-exam" element={<ExamForm />} />
         <Route path="/exams" element={<ExamList />} />
         <Route path="/exam-result" element={<ExamResultForm />} />
+        <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/" element={<DepartmentList />} />
         <Route path="*" element={<h1>Not Found</h1>} />
 
       </Routes>
-
 
 
     </div>

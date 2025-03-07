@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { FaList } from 'react-icons/fa';
+import ChatbotButton from '../buttons/ChatbotButton';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const DepartmentList = () => {
@@ -26,6 +28,9 @@ const DepartmentList = () => {
         <div className="DepartmentList">
             <div className="container mt-4">
                 <h1 className="text-center mb-4">Department Data</h1>
+                <div className="d-flex justify-content-end mb-3">
+                    <ChatbotButton />
+                </div>
                 <table className="table table-striped">
                     <thead>
                         <tr>

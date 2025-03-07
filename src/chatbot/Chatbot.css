@@ -1,0 +1,47 @@
+.chat-messages {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat message bubbles */
+.chat-message {
+    max-width: 80%;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* User messages (align right) */
+.chat-message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+}
+
+/* Bot messages (align left) */
+.chat-message.bot {
+    align-self: flex-start;
+    background-color: #e9ecef;
+    color: black;
+    border-radius: 15px 15px 15px 0;
+}
+
+/* Typing indicator */
+.chat-message.bot.typing {
+    font-style: italic;
+    color: gray;
+}
+
+/* Input field & button */
+.card-footer {
+    display: flex;
+    align-items: center;
+}

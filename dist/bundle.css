@@ -11370,6 +11370,28 @@ fieldset:disabled .btn {
   }
 }
 
+/* src/buttons/ChatbotButton.css */
+.floating-chat-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+}
+.floating-chat-button:hover {
+  background-color: #0056b3;
+}
+
 /* node_modules/react-datepicker/dist/react-datepicker.css */
 .react-datepicker__navigation-icon::before,
 .react-datepicker__year-read-view--down-arrow,
@@ -13761,6 +13783,45 @@ h2.react-datepicker__current-month {
   to {
     transform: rotate(360deg);
   }
+}
+
+/* src/chatbot/Chatbot.css */
+.chat-messages {
+  height: 400px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.chat-message {
+  max-width: 80%;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  border-radius: 15px 15px 0 15px;
+}
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: #e9ecef;
+  color: black;
+  border-radius: 15px 15px 15px 0;
+}
+.chat-message.bot.typing {
+  font-style: italic;
+  color: gray;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
 }
 /*! Bundled license information:
 
