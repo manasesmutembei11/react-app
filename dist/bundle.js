@@ -57011,6 +57011,7 @@ Please change the parent <Route path="${parentPath}"> to <Route path="${parentPa
           console.error("Validation Errors:", error3.flatten().fieldErrors);
         } else {
           console.error("Unexpected error:", error3);
+          y.error("Error saving subject");
         }
       }
     });

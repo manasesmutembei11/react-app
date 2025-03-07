@@ -49,6 +49,7 @@ const SubjectForm = () => {
                 console.error("Validation Errors:", error.flatten().fieldErrors);
             } else {
                 console.error('Unexpected error:', error);
+                toast.error('Error saving subject');
             }
         }
     };
